@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎧 🤍 音ノ乃のの 歌枠検索サイト</title>
+
+<style>
+body {
+  margin: 0;
+  background: #f2f7fa; /* ののさん衣装イメージ：クリアなうるおいホワイト */
+  color: #383d52; /* 柔らかく見やすいディープアッシュ */
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", sans-serif;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+/* ヘッダー */
+.header {
+  padding: 45px 20px 35px 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #fff2f9 45%, #e6f9ff 100%);
+  font-size: 26px;
+  font-weight: 900;
+  border-bottom: 4px solid #ffbfe8;
+  box-shadow: 0 6px 20px rgba(255, 153, 214, 0.25);
+  color: #ff3b9d;
+  text-shadow: 2px 2px 0px #ffffff, 0 0 12px rgba(255, 59, 157, 0.15);
+  letter-spacing: 1px;
+  position: relative;
+}
+
+/* 非公式テキスト */
+.disclaimer {
+  font-size: 13px;
+  font-weight: normal;
+  margin-top: 10px;
+  color: #788699;
+  text-shadow: none;
+}
+
+/* 🔍 隠し検索バー */
+.search-panel {
+  position: fixed;
+  top: -90px; /* 初期状態は画面の上に隠す */
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(12px);
+  padding: 15px 20px;
+  box-shadow: 0 4px 20px rgba(163, 191, 207, 0.25);
+  z-index: 200;
+  transition: top 0.3s cubic-bezier(0.1, 0.8, 0.3, 1);
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.search-panel.open {
+  top: 0;
+}
+.search-panel input {
+  flex: 1;
+  max-width: 450px;
+  padding: 12px 16px;
+  border-radius: 20px;
+  border: 2px solid #b3f0ff;
+  font-size: 15px;
+  outline: none;
+}
+.search-panel input:focus {
+  border-color: #ffbfe8;
+}
+.search-panel button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #ff85cb, #ffbfe8);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* 🧭 右上のフローティングメニュー */
+.floating-menu {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  gap: 6px;
+  z-index: 250;
+}
+.menu-circle-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s;
+  border: 1px solid #edf4f7;
+  text-decoration: none;
+}
+.menu-circle-btn:hover {
+  transform: scale(1.1);
+}
+.btn-x { color: #1e1e1e; font-weight: 900; }
+.btn-yt { color: #ff0000; }
+
+/* 📖 使い方解説用のポップアップ画面 */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(4px);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.2s;
+}
+.modal-overlay.open { opacity: 1; pointer-events: auto; }
+.modal-content {
+  background: white;
+  width: 88%;
+  max-width: 450px;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+.modal-content h4 { margin: 0 0 15px 0; color: #ff3b9d; border-bottom: 2px solid #ffbfe8; padding-bottom: 5px; }
+.modal-content ol { padding-left: 20px; margin: 0 0 20px 0; line-height: 1.6; }
+.modal-content li { margin-bottom: 8px; font-size: 14px; }
+.modal-close-btn {
+  width: 100%; padding: 12px; background: #f2f7fa; border: 1px solid #e2f0f7;
+  border-radius: 12px; font-weight: bold; color: #65728a; cursor: pointer;
+}
+
+/* 🔵 ページ最上部へ戻るフローティングボタン */
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(4px);
+  border: 2px solid #e2f0f7;
+  box-shadow: 0 4px 12px rgba(163, 191, 207, 0.3);
+  color: #65728a;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 150;
+  transition: all 0.2s;
+  user-select: none;
+}
+.scroll-to-top-btn:hover {
+  background: #fff5fa;
+  border-color: #ffbfe8;
+  color: #ff3b9d;
+  transform: translateY(-3px);
+}
+/* コンテナ設定 */
+.container {
+  width: 92%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* セクションの見出し */
+h3 {
+  font-size: 19px;
+  color: #ff3b9d;
+  text-align: left;
+  margin: 40px auto 14px auto;
+  padding-left: 10px;
+  border-left: 5px solid #00c3ff;
+  text-shadow: 1px 1px 0 #ffffff;
+}
+
+/* グリッド */
+.grid {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .grid { grid-template-columns: repeat(auto-fill, minmax(72px, 1fr)); gap: 10px; }
+}
+
+/* 五十音・アルファベットボタン */
+.btn {
+  background: linear-gradient(to bottom, #ffffff, #f9fbfd);
+  padding: 12px 4px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: #65728a;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #e2f0f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(226, 240, 247, 0.6);
+  position: relative;
+}
+.btn:hover {
+  background: linear-gradient(to bottom, #fff5fa, #ffe6f5);
+  border-color: #ffbfe8;
+  color: #ff3b9d;
+  transform: scale(1.08) translateY(-2px);
+}
+
+/* 五十音ボタンの曲数バッジ */
+.btn .badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #00c3ff;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 195, 255, 0.3);
+  display: none;
+}
+.btn:hover .badge {
+  background: #ff3b9d;
+  box-shadow: 0 2px 5px rgba(255, 59, 157, 0.3);
+}
+
+/* 結果・お気に入りエリア */
+#result, #fav-list {
+  margin-top: 25px;
+  text-align: left;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 20px;
+  border: 2px solid #edf4f7;
+  box-shadow: 0 6px 16px rgba(163, 191, 207, 0.12);
+}
+
+#fav-list { line-height: 1.9; font-weight: bold; color: #4f5866; }
+#fav-list p { color: #92a1b3; text-align: center; margin: 10px 0; font-weight: normal; }
+
+/* 検索結果内の曲名見出し */
+#result h4 {
+  margin: 18px 0 10px 0;
+  padding: 14px 18px;
+  background: linear-gradient(90deg, #fff2f9 0%, #ffffff 100%);
+  border-radius: 12px;
+  color: #ff3b9d;
+  border-left: 5px solid #ff73c2;
+  font-size: 17px;
+  font-weight: bold;
+  transition: 0.2s;
+  user-select: none;
+  box-shadow: 0 2px 6px rgba(255, 115, 194, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#result h4:hover { background: linear-gradient(90deg, #ffe6f5 0%, #fff2f9 100%); }
+.count-badge {
+  font-size: 12px;
+  background: white;
+  color: #ff3b9d;
+  border: 1px solid #ffbfe8;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* 歌枠開閉時のコンテナデザイン */
+.song-detail-wrap {
+  background: #fbfdfe;
+  padding: 8px 18px;
+  border-radius: 14px;
+  margin-bottom: 18px;
+  border: 1px solid #eaf2f5;
+}
+
+/* お気に入りボタンを動画リンクのすぐ隣へ近づけるレイアウト */
+.song-detail-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px dashed #e2f0f7;
+}
+.song-detail-item:last-child { border-bottom: none; }
+.song-detail-item p { margin: 0; display: flex; align-items: center; }
+
+/* 閉じるボタン */
+.close-btn {
+  margin: 14px 0 6px 0; padding: 9px 24px; border: 2px solid #e2f0f7; background: #ffffff;
+  color: #65728a; border-radius: 10px; cursor: pointer; font-size: 14px; font-weight: bold;
+  transition: 0.2s; box-shadow: 0 3px 6px rgba(0,0,0,0.02);
+}
+.close-btn:hover { background: #fff5fa; border-color: #ffbfe8; color: #ff3b9d; }
+
+a { color: #0099ff; text-decoration: none; font-weight: bold; transition: color 0.2s; }
+a:hover { text-decoration: underline; color: #0077cc; }
+
+/* お気に入りスターボタン */
+.star-btn {
+  cursor: pointer;
+  margin-left: 12px;
+  color: #e2e8f0;
+  transition: all 0.2s ease;
+  font-size: 24px;
+  user-select: none;
+  display: inline-block;
+  line-height: 1;
+}
+.star-btn:hover { transform: scale(1.2); }
+.star-btn.active { color: #ffcc00; text-shadow: 0 0 8px rgba(255, 204, 0, 0.7); }
+</style>
+</head>
+<body>
+
+<!-- 🔍 隠し検索バーパネル -->
+<div id="searchPanel" class="search-panel">
+  <input id="searchInput" type="text" placeholder="曲名、歌手名、ひらがな（例：アイドル / YOASOBI / あいどる）">
+  <button onclick="searchSong()">検索</button>
+</div>
+
+<!-- 🔵 ページ最上部へ戻るフローティングボタン -->
+<div class="scroll-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="一番上に戻る">▲</div>
+
+<div class="header">
+  🎧 🤍 音ノ乃のの 歌枠検索サイト
+  <div class="disclaimer">※本サイトはファンが個人で運営する非公式ファンサイトです</div>
+  
+  <!-- 右上のフローティングメニュー（本人の公式SNSリンクを完全固定） -->
+  <div class="floating-menu">
+    <div class="menu-circle-btn btn-x" onclick="window.open('https://x.com/_nonono_nono', '_blank')" title="音ノ乃のの公式𝕏">𝕏</div>
+  <div class="menu-circle-btn btn-yt" onclick="window.open('https://www.youtube.com/@_nonono_nono', '_blank')" title="音ノ乃のの公式YouTube">📺</div>
+    <div class="menu-circle-btn" onclick="toggleSearchPanel()" title="曲名検索">🔍</div>
+    <div class="menu-circle-btn" onclick="toggleHelpModal(true)" title="使い方">❓</div>
+  </div>
+</div>
+
+<!-- 📖 使い方解説ポップアップ本体 -->
+<div id="helpModal" class="modal-overlay" onclick="toggleHelpModal(false)">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <h4>📖 このサイトの使い方</h4>
+    <ol style="padding-left: 20px; margin: 0 0 20px 0; line-height: 1.6;">
+      <li><b>五十音・アルファベット検索</b>：下のボタンをタップすると、その文字で始まる曲が一覧で出現します。ボタンの右上の数字は登録曲数です。</li>
+      <li><b>隠し検索機能</b>：右上の「🔍」ボタンを押すと、曲名・歌手名・よみがなで直接探せます。</li>
+      <li><b>歌枠を聴く</b>：曲名を押して開いた日付リンク（🎵）を押すと、YouTubeの歌枠へ直接ジャンプします。</li>
+      <li><b>お気に入り機能</b>：日付リンクのすぐ右にある「★」を押すと、一番下のお気に入り欄にいつでも自動保存されます。</li>
+      <li><b>便利ボタン</b>：最新の歌枠へ一発で飛べるボタンや、今日聴く曲を迷ったときの「ランダム選曲ガチャ」もあります。</li>
+    </ol>
+    <button class="modal-close-btn" onclick="toggleHelpModal(false)">閉じる</button>
+  </div>
+</div><div class="container">
+  <!-- 🔥 便利ボタン配置 -->
+  <div style="margin-top: 25px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+    <button class="btn" onclick="jumpToLatestSong()" style="background: linear-gradient(45deg, #ff85cb, #ffbfe8); color: white; width: 100%; max-width: 260px; border-radius: 20px; font-size: 15px; padding: 12px 16px;">🔥 最新の歌枠へ一発ジャンプ！</button>
+    <button class="btn" onclick="playRandomSong()" style="background: linear-gradient(45deg, #00c3ff, #b3f0ff); color: white; width: 100%; max-width: 260px; border-radius: 20px; font-size: 15px; padding: 12px 16px;">🎲 おまかせランダム選曲ガチャ</button>
+  </div>
+  <h3>JAPANESE</h3>
+  <div class="grid">
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('あ')">あ<span id="badge-あ" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('い')">い<span id="badge-い" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('う')">う<span id="badge-う" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('え')">え<span id="badge-え" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('お')">お<span id="badge-お" class="badge">0</span></a>
+
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('か')">か<span id="badge-か" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('き')">き<span id="badge-き" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('く')">く<span id="badge-く" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('け')">け<span id="badge-け" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('こ')">こ<span id="badge-こ" class="badge">0</span></a>
+
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('さ')">さ<span id="badge-さ" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('し')">し<span id="badge-し" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('す')">す<span id="badge-す" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('せ')">せ<span id="badge-せ" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('そ')">そ<span id="badge-そ" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('た')">た<span id="badge-た" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('ち')">ち<span id="badge-ち" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('つ')">つ<span id="badge-つ" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('て')">て<span id="badge-て" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('と')">と<span id="badge-と" class="badge">0</span></a>
+
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('な')">な<span id="badge-な" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('に')">に<span id="badge-に" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('ぬ')">ぬ<span id="badge-ぬ" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('ね')">ね<span id="badge-ね" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('の')">の<span id="badge-の" class="badge">0</span></a>
+
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('は')">は<span id="badge-は" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('ひ')">ひ<span id="badge-ひ" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('ふ')">ふ<span id="badge-ふ" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('へ')">へ<span id="badge-へ" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('ほ')">ほ<span id="badge-ほ" class="badge">0</span></a>
+
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('ま')">ま<span id="badge-ま" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('み')">み<span id="badge-み" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('む')">む<span id="badge-む" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('め')">め<span id="badge-め" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('も')">も<span id="badge-も" class="badge">0</span></a>
+
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('や')">や<span id="badge-や" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('ゆ')">ゆ<span id="badge-ゆ" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('よ')">よ<span id="badge-よ" class="badge">0</span></a>
+
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('ら')">ら<span id="badge-ら" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('り')">り<span id="badge-り" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('る')">る<span id="badge-る" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('れ')">れ<span id="badge-れ" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('ろ')">ろ<span id="badge-ろ" class="badge">0</span></a>
+
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('わ')">わ<span id="badge-わ" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('を')">を<span id="badge-を" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterKana('ん')">ん<span id="badge-ん" class="badge">0</span></a>
+  </div>
+  <h3>ENGLISH</h3>
+  <div class="grid">
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('A')">A<span id="badge-A" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('B')">B<span id="badge-B" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('C')">C<span id="badge-C" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('D')">D<span id="badge-D" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('E')">E<span id="badge-E" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('F')">F<span id="badge-F" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('G')">G<span id="badge-G" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('H')">H<span id="badge-H" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('I')">I<span id="badge-I" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('J')">J<span id="badge-J" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('K')">K<span id="badge-K" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('L')">L<span id="badge-L" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('M')">M<span id="badge-M" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('N')">N<span id="badge-N" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('O')">O<span id="badge-O" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('P')">P<span id="badge-P" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('Q')">Q<span id="badge-Q" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('R')">R<span id="badge-R" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('S')">S<span id="badge-S" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('T')">T<span id="badge-T" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('U')">U<span id="badge-U" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('V')">V<span id="badge-V" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('W')">W<span id="badge-W" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('X')">X<span id="badge-X" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('Y')">Y<span id="badge-Y" class="badge">0</span></a>
+    <a class="btn" href="javascript:void(0);" onclick="filterAlpha('Z')">Z<span id="badge-Z" class="badge">0</span></a>
+  </div>
+
+  <div id="result" style="display:none;"></div>
+
+  <h3>⭐ お気に入り</h3>
+  <div id="fav-list"></div>
+
+  <!-- 一括コピーとクリアボタン -->
+  <div style="margin-top: 15px; display: flex; gap: 10px; justify-content: center;">
+    <button class="close-btn" onclick="copyFavList()" style="background: #fff5fa; border-color: #ffbfe8; color: #ff3b9d;">📋 セトリを一括コピー</button>
+    <button class="close-btn" onclick="clearFavList()" style="background: #fdf2f2; border-color: #f8b4b4; color: #e53e3e;">🗑️ リストを空にする</button>
+  </div>
+<!-- 外部データの読み込み -->
+<script src="data/data_a.js"></script>
+<script src="data/data_ka.js"></script>
+<script src="data/data_sa.js"></script>
+<script src="data/data_ta.js"></script>
+<script src="data/data_na.js"></script>
+<script src="data/data_ha.js"></script>
+<script src="data/data_ma.js"></script>
+<script src="data/data_ya.js"></script>
+<script src="data/data_ra.js"></script>
+<script src="data/data_wa.js"></script>
+<script src="data/data_alpha.js"></script>
+
+<script>
+let openId = null;
+let favorites = JSON.parse(localStorage.getItem("favDates") || "[]");
+
+function getSongsData() {
+  if (typeof songs !== 'undefined') return songs;
+  return [];
+}
+
+function makeKey(songId, item) {
+  return songId + "__" + item.date + "__" + item.time;
+}
+
+function toggleFav(songId, item, el) {
+  const key = makeKey(songId, item);
+
+  if (favorites.includes(key)) {
+    favorites = favorites.filter(k => k !== key);
+    el.classList.remove("active");
+  } else {
+    favorites.push(key);
+    el.classList.add("active");
+  }
+
+  localStorage.setItem("favDates", JSON.stringify(favorites));
+  renderFav();
+}
+function renderFav() {
+  const el = document.getElementById("fav-list");
+  let list = [];
+  const songsData = getSongsData();
+
+  if (songsData.length) {
+    songsData.forEach(s => {
+      s.list.forEach(item => {
+        const key = makeKey(s.id, item);
+        if (favorites.includes(key)) {
+          list.push(`⭐ <a href="${item.url}" target="_blank">${s.name}（${item.date} ${item.time}）</a>`);
+        }
+      });
+    });
+  }
+
+  el.innerHTML = list.length ? list.join("<br>") : "<p style='color:#92a1b3;text-align:center;'>お気に入りなし</p>";
+}
+
+// 隠し検索バーの開閉
+function toggleSearchPanel() {
+  const panel = document.getElementById("searchPanel");
+  panel.classList.toggle("open");
+  if (panel.classList.contains("open")) {
+    document.getElementById("searchInput").focus();
+  }
+}
+
+// 使い方ポップアップの開閉
+function toggleHelpModal(show) {
+  const modal = document.getElementById("helpModal");
+  if (show) {
+    modal.classList.add("open");
+  } else {
+    modal.classList.remove("open");
+  }
+}
+
+// おまかせランダム選曲ガチャ機能
+function playRandomSong() {
+  const songsData = getSongsData();
+  if (!songsData.length) {
+    alert("歌枠データが見つかりませんでした。");
+    return;
+  }
+
+  let allItems = [];
+  songsData.forEach(s => {
+    if (s.list && s.list.length) {
+      s.list.forEach(item => {
+        allItems.push({
+          name: s.name,
+          artist: s.artist || "",
+          url: item.url,
+          date: item.date,
+          time: item.time
+        });
+      });
+    }
+  });
+
+  if (allItems.length === 0) {
+    alert("再生可能な曲がありません。");
+    return;
+  }
+
+  const randomIndex = Math.floor(Math.random() * allItems.length);
+  const luckySong = allItems[randomIndex];
+  const artistText = luckySong.artist ? ` / ${luckySong.artist}` : "";
+  alert(`🎲 ガチャ選曲結果！\n\n【 ${luckySong.name}${artistText} 】\n(${luckySong.date} ${luckySong.time} の歌枠) を再生します！🎧✨`);
+  
+  window.open(luckySong.url, '_blank');
+}
+// セトリ（お気に入り）の一括コピー機能
+function copyFavList() {
+  const songsData = getSongsData();
+  let textList = [];
+
+  if (songsData.length) {
+    songsData.forEach(s => {
+      s.list.forEach(item => {
+        const key = makeKey(s.id, item);
+        if (favorites.includes(key)) {
+          textList.push(`・${s.name} (${item.date} ${item.time})\n  ${item.url}`);
+        }
+      });
+    });
+  }
+
+  if (textList.length === 0) {
+    alert("お気に入りに曲が登録されていません。");
+    return;
+  }
+
+  const resultText = `🎧🤍 音ノ乃のの マイセトリ 🤍🎧\n\n${textList.join('\n')}`;
+  
+  navigator.clipboard.writeText(resultText).then(() => {
+    alert("セトリをクリップボードにコピーしました！SNSなどに貼り付けられます。");
+  }).catch(() => {
+    alert("コピーに失敗しました。お使いのブラウザの権限を確認してください。");
+  });
+}
+
+// お気に入りの一括削除機能
+function clearFavList() {
+  if (favorites.length === 0) return;
+  if (confirm("お気に入りリストをすべて空にしてもよろしいですか？")) {
+    favorites = [];
+    localStorage.removeItem("favDates");
+    renderFav();
+    const activeKeyword = document.getElementById("searchInput").value.trim();
+    if (activeKeyword) {
+      searchSong();
+    } else {
+      document.getElementById("result").innerHTML = "";
+      document.getElementById("result").style.display = "none";
+    }
+    alert("お気に入りをすべて削除しました。");
+  }
+}
+
+// ひらがな・アーティスト名同時検索
+function searchSong() {
+  document.getElementById("searchPanel").classList.remove("open");
+
+  const keyword = document.getElementById("searchInput").value.trim().toLowerCase();
+  const resEl = document.getElementById("result");
+  const songsData = getSongsData();
+
+  if (!keyword) {
+    resEl.innerHTML = "";
+    resEl.style.display = "none";
+    return;
+  }
+
+  const filtered = songsData.filter(s => {
+    const nameMatch = s.name && s.name.toLowerCase().includes(keyword);
+    const kanaMatch = s.kana && s.kana.toLowerCase().includes(keyword);
+    const artistMatch = s.artist && s.artist.toLowerCase().includes(keyword);
+    return nameMatch || kanaMatch || artistMatch;
+  });
+
+  showResult(filtered);
+}
+// ★濁点（だ行・べ等）を「た」「へ」に自動変換して先頭文字を判定するグループ化処理
+function getFirstKanaGroup(kanaStr) {
+  if (!kanaStr) return "";
+  const first = kanaStr.charAt(0);
+  
+  const map = {
+    'が':'か','ぎ':'き','ぐ':'く','げ':'け','ご':'こ',
+    'ざ':'さ','じ':'し','ず':'す','ぜ':'せ','ぞ':'そ',
+    'だ':'た','ぢ':'ち','づ':'つ','で':'て','ど':'と',
+    'ば':'は','び':'ひ','ぶ':'ふ','べ':'へ','ぼ':'ほ',
+    'ぱ':'は','ぴ':'ひ','ぷ':'ふ','ぺ':'へ','ぽ':'ほ'
+  };
+  return map[first] || first;
+}
+
+function filterKana(kana) {
+  const songsData = getSongsData();
+  // 先頭文字をグループ化して「だ」の曲も「た」で正しく集まるように修正！
+  showResult(songsData.filter(s => s.kana && getFirstKanaGroup(s.kana) === kana));
+}
+
+function filterAlpha(alpha) {
+  const songsData = getSongsData();
+  showResult(songsData.filter(s => s.alpha && s.alpha.toUpperCase() === alpha.toUpperCase()));
+}
+
+// ➔ 【最終決定版】濁点も2文字目以降も日本の100%正しい辞書順に整列する処理
+function showResult(result) {
+  const el = document.getElementById("result");
+  el.style.display = "block";
+
+  if (result.length === 0) {
+    el.innerHTML = "<p class='status-msg' style='color:#92a1b3;text-align:center;margin:10px 0;'>見つからない</p>";
+    return;
+  }
+
+  // 国際基準の日本語辞書ルールを使い、フルよみがなを完璧な50音順に並び替えます
+  const sortedResult = [...result].sort((a, b) => {
+    return (a.kana || "").localeCompare((b.kana || ""), 'ja', { numeric: true });
+  });
+
+  el.innerHTML = sortedResult.map(s => {
+        const singCount = s.list ? s.list.length : 0;
+        const artistInfo = s.artist ? `<span style="font-size:12px;color:#65728a;margin-left:5px;font-weight:normal;">(${s.artist})</span>` : '';
+
+        return `
+          <h4 onclick="toggleSong('${s.id}')" style="cursor:pointer;">
+            <div>🎤 ${s.name} ${artistInfo}</div>
+            <span class="count-badge">歌唱: ${singCount}回</span>
+          </h4>
+          <div id="song-${s.id}" class="song-detail-wrap" style="display:none;">
+            ${s.list.map(item => {
+              const isFav = favorites.includes(makeKey(s.id, item));
+              return `
+                <div class="song-detail-item">
+                  <p style="margin:0;">
+                    🎵 <a href="${item.url}" target="_blank">${item.date} ${item.time}</a>
+                    <span class="star-btn ${isFav ? 'active' : ''}"
+                      onclick="event.stopPropagation(); toggleFav('${s.id}', ${JSON.stringify(item).replace(/"/g,'&quot;')}, this)">
+                      ★
+                    </span>
+                  </p>
+                </div>
+              `;
+            }).join("")}
+            <button class="close-btn" onclick="closeSong('${s.id}')">閉じる</button>
+          </div>
+        `;
+      }).join("");
+}
+
+function toggleSong(id) {
+  if (openId && openId !== id) {
+    const old = document.getElementById(`song-${openId}`);
+    if (old) old.style.display = "none";
+  }
+
+  const el = document.getElementById(`song-${id}`);
+  if (!el) return;
+  const isOpen = el.style.display === "block";
+
+  el.style.display = isOpen ? "none" : "block";
+  openId = isOpen ? null : id;
+}
+
+function closeSong(id) {
+  const el = document.getElementById(`song-${id}`);
+  if (el) el.style.display = "none";
+  if (openId === id) openId = null;
+}
+
+// ★バッジのカウント時も、濁点・半濁点の曲を「た」や「は」に合算して正しく表示する修正！
+function countAndRenderBadges() {
+  const songsData = getSongsData();
+  if (!songsData.length) return;
+
+  const counts = {};
+  songsData.forEach(s => {
+    if (s.kana) {
+      const groupKana = getFirstKanaGroup(s.kana);
+      counts[groupKana] = (counts[groupKana] || 0) + 1;
+    }
+    if (s.alpha) {
+      const upperAlpha = s.alpha.toUpperCase();
+      counts[upperAlpha] = (counts[upperAlpha] || 0) + 1;
+    }
+  });
+
+  // 一度バッジの表示をリセット
+  const allBadges = document.querySelectorAll(".badge");
+  allBadges.forEach(b => { b.style.display = "none"; b.innerText = "0"; });
+
+  for (const key in counts) {
+    const badgeEl = document.getElementById(`badge-${key}`);
+    if (badgeEl && counts[key] > 0) {
+      badgeEl.innerText = counts[key];
+      badgeEl.style.display = "inline-block";
+    }
+  }
+}
+
+function jumpToLatestSong() {
+  const songsData = getSongsData();
+  if (!songsData.length) return;
+
+  let latestItem = null;
+
+  songsData.forEach(s => {
+    if (s.list && s.list.length) {
+      s.list.forEach(item => {
+        if (!latestItem || item.date > latestItem.date) {
+          latestItem = item;
+        }
+      });
+    }
+  });
+
+  if (latestItem && latestItem.url) {
+    let rawUrl = latestItem.url;
+    const parts = rawUrl.split(/[?&]t=/);
+    let targetUrl = parts[0];
+    window.open(targetUrl, '_blank');
+  } else {
+    alert("歌枠データが見つかりませんでした。");
+  }
+}
+
+renderFav();
+countAndRenderBadges();
+
+document.getElementById("searchInput").addEventListener("keydown", function(e) {
+  if (e.key === "Enter") {
+    searchSong();
+  }
+});
+</script>
+
+</body>
+</html>
+
+
+
+
