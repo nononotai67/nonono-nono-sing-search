@@ -333,7 +333,7 @@ a:hover { text-decoration: underline; color: #0077cc; }
 
 <!-- 🔍 隠し検索バーパネル -->
 <div id="searchPanel" class="search-panel">
-  <input id="searchInput" type="text" placeholder="曲名、歌手名、ひらがな（例：アイドル / YOASOBI / あいどる）">
+  <input id="searchInput" type="text" placeholder="曲名、ひらがな（例：アイドル / あいどる）">
   <button onclick="searchSong()">検索</button>
 </div>
 
@@ -480,6 +480,32 @@ a:hover { text-decoration: underline; color: #0077cc; }
 <script src="data/data_ya.js"></script>
 <script src="data/data_ra.js"></script>
 <script src="data/data_wa.js"></script>
+<script src="data/data_aa.js"></script>
+<script src="data/data_b.js"></script>
+<script src="data/data_c.js"></script>
+<script src="data/data_d.js"></script>
+<script src="data/data_e.js"></script>
+<script src="data/data_f.js"></script>
+<script src="data/data_g.js"></script>
+<script src="data/data_h.js"></script>
+<script src="data/data_i.js"></script>
+<script src="data/data_j.js"></script>
+<script src="data/data_k.js"></script>
+<script src="data/data_l.js"></script>
+<script src="data/data_m.js"></script>
+<script src="data/data_n.js"></script>
+<script src="data/data_o.js"></script>
+<script src="data/data_p.js"></script>
+<script src="data/data_q.js"></script>
+<script src="data/data_r.js"></script>
+<script src="data/data_s.js"></script>
+<script src="data/data_t.js"></script>
+<script src="data/data_u.js"></script>
+<script src="data/data_v.js"></script>
+<script src="data/data_w.js"></script>
+<script src="data/data_x.js"></script>
+<script src="data/data_y.js"></script>
+<script src="data/data_z.js"></script>
 <script src="data/data_alpha.js"></script>
 
 <script>
@@ -676,8 +702,9 @@ function filterKana(kana) {
 
 function filterAlpha(alpha) {
   const songsData = getSongsData();
-  showResult(songsData.filter(s => s.alpha && s.alpha.toUpperCase() === alpha.toUpperCase()));
+  showResult(songsData.filter(s => s.alpha && s.alpha.toUpperCase().startsWith(alpha.toUpperCase())));
 }
+
 
 // ➔ 【最終決定版】濁点も2文字目以降も日本の100%正しい辞書順に整列する処理
 function showResult(result) {
@@ -703,8 +730,8 @@ function showResult(result) {
             <div>🎤 ${s.name} ${artistInfo}</div>
             <span class="count-badge">歌唱: ${singCount}回</span>
           </h4>
-          <div id="song-${s.id}" class="song-detail-wrap" style="display:none;">
-            ${s.list.map(item => {
+                  <div id="song-${s.id}" class="song-detail-wrap" style="display:none;">
+            ${[...s.list].sort((a, b) => a.date.localeCompare(b.date)).map(item => {
               const isFav = favorites.includes(makeKey(s.id, item));
               return `
                 <div class="song-detail-item">
@@ -720,6 +747,7 @@ function showResult(result) {
             }).join("")}
             <button class="close-btn" onclick="closeSong('${s.id}')">閉じる</button>
           </div>
+  
         `;
       }).join("");
 }

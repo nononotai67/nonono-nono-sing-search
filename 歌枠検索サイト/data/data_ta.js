@@ -21,7 +21,12 @@ window.songs.push({
       date: "2023-06-10",
       time: "0:5:41",
       url: "https://www.youtube.com/live/hMGOsqP8TWY?si=2Tf0QpXdRBs5iTRa&t=341"
-     }
+      }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2023-07-50",
+      time: "0:17:51",
+      url: "https://www.youtube.com/live/PMXYFe5t780?si=XZtlvPTig6JOEa9s&t=1071"
+    }
   ]
 });
 window.songs.push({
@@ -57,6 +62,11 @@ window.songs.push({
       date: "2023-06-13",
       time: "1:28:33",
       url: "https://www.youtube.com/live/1fNsi2TZMaE?si=lvntkjPptmFbHxa0&t=5313"
+     }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2023-07-30",
+      time: "1:51:36",
+      url: "https://www.youtube.com/live/PMXYFe5t780?si=34hkG6oZQy9CPTGS&t=6696"
     }
   ]
 });
@@ -102,4 +112,29 @@ window.songs.push({
     }
   ]
 });
-
+window.songs.push({
+  id: "songta8",
+  name: " デーモンロード" ,
+  kana: "でーもんろーど",
+  alpha: "",
+  list: [
+    {
+      date: "2023-07-30",
+      time: "1:08:48",
+      url: "https://www.youtube.com/live/PMXYFe5t780?si=6yDC2YzPhcwwDuGs&t=4128h"
+    }
+  ]
+});
+window.songs.push({
+  id: "songta9",
+  name: " 津軽海峡・冬景色" ,
+  kana: "つがるかいきょう・ふゆげしき",
+  alpha: "",
+  list: [
+    {
+      date: "2023-07-30",
+      time: "1:46:30",
+      url: "https://www.youtube.com/live/PMXYFe5t780?si=CMidhfCrhU8hAWBl&t=6390"
+    }
+  ]
+});

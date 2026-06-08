@@ -1,7 +1,7 @@
 window.songs.push({
   id: "songha1",
   name: "花に亡霊",
-  kana: "は",
+  kana: "はなにぼうれい",
   alpha: "",
   list: [
     {
@@ -14,7 +14,7 @@ window.songs.push({
 window.songs.push({
   id: "songha2",
   name: "ベノム",
-  kana: "へ",
+  kana: "べのむ",
   alpha: "",
   list: [
     {
@@ -53,6 +53,45 @@ window.songs.push({
       date: "2023-06-13",
       time: "0:17:11",
       url: "https://www.youtube.com/live/1fNsi2TZMaE?si=ZZjhlC7tmHoOcVBi&t=1031"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha5",
+  name: "花占い",
+  kana: "はなうらない",
+  alpha: "",
+  list: [
+    {
+      date: "2023-07-30",
+      time: "0:17:11",
+      url: "https://www.youtube.com/live/1fNsi2TZMaE?si=ZZjhlC7tmHoOcVBi&t=1031"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha6",
+  name: "不可幸力",
+  kana: "ふかこうりょく",
+  alpha: "",
+  list: [
+    {
+      date: "2023-07-30",
+      time: "0:24:54",
+      url: "https://www.youtube.com/live/PMXYFe5t780?si=QGeLq0kYW3yC-vgm&t=1494"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha7",
+  name: "秒針を噛む",
+  kana: "びょうしんをかむ",
+  alpha: "",
+  list: [
+    {
+      date: "2023-07-30",
+      time: "1:21:34",
+      url: "https://www.youtube.com/live/PMXYFe5t780?si=E2MGsG_2sUbGz29P&t=4894"
     }
   ]
 });

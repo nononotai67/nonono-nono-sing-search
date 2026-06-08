@@ -42,3 +42,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songka3",
+  name: "強風オールバック",
+  kana: "きょうふおーるばっく",
+  alpha: "",
+  list: [
+    {
+      date: "2023-07-30",
+      time: "1:04:27",
+      url: "https://www.youtube.com/live/PMXYFe5t780?si=BTDy0WW5arU7jS26&t=3867h"
+    }
+  ]
+});

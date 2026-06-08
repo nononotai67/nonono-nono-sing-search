@@ -1,14 +1,14 @@
 window.songs = [
   {
-    id: "song1",
+    id: "songa1",
     name: "アイドル",
-    kana: "あ",
+    kana: "あいどる",
     alpha: "",
     list: [
       {
-        date: "2026-05-20",
-        time: "1:23:15",
-        url: "https://youtu.be/WDqmop8G-Sk?si=Qfw4CAdlnwW6W503"
+        date: "2026-07-30",
+        time: "1:15:22",
+        url: "https://www.youtube.com/live/PMXYFe5t780?si=aGBUmD7ce_i9-fht&t=4522"
       }
     ]
   }
@@ -16,7 +16,7 @@ window.songs = [
 window.songs.push({
   id: "songa2",
   name: "ヴィラン",
-  kana: "う",
+  kana: "うぃらん",
   alpha: "",
   list: [
     {
@@ -29,7 +29,7 @@ window.songs.push({
 window.songs.push({
   id: "songa3",
   name: "明日への手紙",
-  kana: "あ",
+  kana: "あしたへのてがみ",
   alpha: "",
   list: [
     {
@@ -43,6 +43,5 @@ window.songs.push({
 
 
 
-
-
+ 
 

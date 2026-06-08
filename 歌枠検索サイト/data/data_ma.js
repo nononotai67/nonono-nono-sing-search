@@ -24,3 +24,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songma3",
+  name: "みんな空の下",
+  kana: "みんなそらのした",
+  alpha: "",
+  list: [
+    {
+      date: "2023-07-30",
+      time: "0:57:10",
+      url: "https://www.youtube.com/live/PMXYFe5t780?si=RZy5Caa623ZlgwUQ&t=3430"
+    }
+  ]
+});
