@@ -83,6 +83,11 @@ window.songs.push({
       date: "2023-12-29",
       time: "0:39:54",
       url: "https://www.youtube.com/live/q7URvTzczco?si=6K2a_gTM9i4danMq&t=2394"
+     },
+    {
+      date: "2025-03-30",
+      time: "0:35:02",
+      url: "https://www.youtube.com/live/V2HB4Cnl3SI?si=_pPlcVmSbaQnz-YS&t=2102"
     }
   ]
 });

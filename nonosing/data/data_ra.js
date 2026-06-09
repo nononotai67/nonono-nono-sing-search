@@ -13,6 +13,11 @@ window.songs.push({
       date: "2023-12-29",
       time: "0:34:36",
       url: "https://www.youtube.com/live/q7URvTzczco?si=ohI9w99IKh3LRsl_&t=2076"
+     }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2025-03-30",
+      time: "0:4:32",
+      url: "https://www.youtube.com/live/V2HB4Cnl3SI?si=apuk-0xfQAiFte4y&t=272"
     }
   ]
 });

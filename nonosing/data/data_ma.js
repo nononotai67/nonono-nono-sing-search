@@ -60,6 +60,11 @@ window.songs.push({
       date: "2024-04-17", // 💡もし別の日の場合は、実際の配信日に書き換えてください
       time: "0:54:50",     // 💡実際の歌い出し時間に書き換えてください
       url: "https://www.youtube.com/live/Ig6w5qKHfSg?si=MSMnPW5u2H703drH&t=3290" // 💡実際のタイムスタンプ付きURLに書き換えてください
+     }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2025-03-50",
+      time: "0:11:03",
+      url: "https://www.youtube.com/live/V2HB4Cnl3SI?si=grzDZujdLdp9H4wB&t=663"
     }
   ]
 });

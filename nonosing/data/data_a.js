@@ -65,7 +65,19 @@ window.songs.push({
     }
   ]
 });
-
+window.songs.push({
+  id: "songa6",
+  name: "アルテマ",
+  kana: "あるてま",
+  alpha: "",
+  list: [
+    {
+      date: "2025-03-30",
+      time: "0:56:13",
+      url: "https://www.youtube.com/live/V2HB4Cnl3SI?si=gF6ht2XfKEbiccxb&t=3563"
+    }
+  ]
+});
 
 
  

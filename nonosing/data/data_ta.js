@@ -87,6 +87,11 @@ window.songs.push({
       date: "2024-10-19",
       time: "0:32:13",
       url: "https://www.youtube.com/live/fgNWDixmbFo?si=2f_0iX0YM_R4rHGn&t=1933"
+     }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2025-03-30",
+      time: "1:05:26",
+      url: "https://www.youtube.com/live/V2HB4Cnl3SI?si=jaj2pBFvAeo-G4dh&t=3926"
     }
   ]
 });
@@ -164,7 +169,7 @@ window.songs.push({
 });
 window.songs.push({
   id: "songta11",
-  name: " ダーリンダンス" ,
+  name: "ダーリンダンス" ,
   kana: "だーりんだんす",
   alpha: "",
   list: [
@@ -172,6 +177,19 @@ window.songs.push({
       date: "2023-12-29",
       time: "1:00:19",
       url: "https://www.youtube.com/live/q7URvTzczco?si=rQVKO0s_MtPE7LBA&t=3619"
+    }
+  ]
+});
+window.songs.push({
+  id: "songta12",
+  name: "点描の唄" ,
+  kana: "てんびょうのうた",
+  alpha: "",
+  list: [
+    {
+      date: "2025-03-30",
+      time: "0:44:18",
+      url: "https://www.youtube.com/live/V2HB4Cnl3SI?si=GlTqT7ts3YmtYBWn&t=2658"
     }
   ]
 });

@@ -24,3 +24,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songya3",
+  name: "約束",
+  kana: "やくそく",
+  alpha: "",
+  list: [
+    {
+      date: "2025-03-30",
+      time: "0:53:14",
+      url: "https://www.youtube.com/live/V2HB4Cnl3SI?si=2yIJmQKxM4BGRh-S&t=3194"
+    }
+  ]
+});
