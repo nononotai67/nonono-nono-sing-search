@@ -95,3 +95,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songha8",
+  name: "フォニィ",
+  kana: "ふぉにぃ",
+  alpha: "",
+  list: [
+    {
+      date: "2023-12-29",
+      time: "0:06:56",
+      url: "https://www.youtube.com/live/q7URvTzczco?si=niwyaoU47klIvD6A&t=416"
+    }
+  ]
+});

@@ -16,4 +16,16 @@ window.songs.push({
     }
   ]
 });
-
+window.songs.push({
+  id: "songwa2",
+  name: "忘れじの言の葉",
+  kana: "わすれじのことのは",
+  alpha: "",
+  list: [
+    {
+      date: "2023-12-29",
+      time: "1:27:58",
+      url: "https://www.youtube.com/live/q7URvTzczco?si=2jr9x3fLt_tzvKlk&t=5278"
+    }
+  ]
+});

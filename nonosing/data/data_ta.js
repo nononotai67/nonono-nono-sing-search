@@ -26,6 +26,11 @@ window.songs.push({
       date: "2023-07-50",
       time: "0:17:51",
       url: "https://www.youtube.com/live/PMXYFe5t780?si=XZtlvPTig6JOEa9s&t=1071"
+      }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2023-12-29",
+      time: "0:46:49",
+      url: "https://www.youtube.com/live/q7URvTzczco?si=T8pOMCsavCCfaXYi&t=2809"
     }
   ]
 });
@@ -67,6 +72,11 @@ window.songs.push({
       date: "2023-07-30",
       time: "1:51:36",
       url: "https://www.youtube.com/live/PMXYFe5t780?si=34hkG6oZQy9CPTGS&t=6696"
+     }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2023-12-29",
+      time: "1:37:48",
+      url: "https://www.youtube.com/live/q7URvTzczco?si=5egjf_KTKtCjW-Ey&t=5868"
     }
   ]
 });
@@ -135,6 +145,32 @@ window.songs.push({
       date: "2023-07-30",
       time: "1:46:30",
       url: "https://www.youtube.com/live/PMXYFe5t780?si=CMidhfCrhU8hAWBl&t=6390"
+    }
+  ]
+});
+window.songs.push({
+  id: "songta10",
+  name: " ドラマツルギー" ,
+  kana: "どらまたるぎー",
+  alpha: "",
+  list: [
+    {
+      date: "2023-12-29",
+      time: "0:52:31",
+      url: "https://www.youtube.com/live/q7URvTzczco?si=wWMzk66kMX8pAxiv&t=3151"
+    }
+  ]
+});
+window.songs.push({
+  id: "songta11",
+  name: " ダーリンダンス" ,
+  kana: "だーりんだんす",
+  alpha: "",
+  list: [
+    {
+      date: "2023-12-29",
+      time: "1:00:19",
+      url: "https://www.youtube.com/live/q7URvTzczco?si=rQVKO0s_MtPE7LBA&t=3619"
     }
   ]
 });

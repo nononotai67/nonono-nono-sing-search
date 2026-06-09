@@ -37,3 +37,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songma4", // idが被らないように番号を3から4に変更しています
+  name: "妄想疾患■ガール",
+  kana: "もうそうしっかんがーる",
+  alpha: "",
+  list: [
+    {
+      date: "2023-12-29", // 💡もし別の日の場合は、実際の配信日に書き換えてください
+      time: "0:02:01",     // 💡実際の歌い出し時間に書き換えてください
+      url: "https://www.youtube.com/live/q7URvTzczco?si=NT9g6IbgdODCf2dw&t=121" // 💡実際のタイムスタンプ付きURLに書き換えてください
+    }
+  ]
+});

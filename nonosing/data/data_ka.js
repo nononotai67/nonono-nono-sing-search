@@ -22,15 +22,20 @@ window.songs.push({
   kana: "ぎゃっこう",
   alpha: "",
   list: [
-    {
+     {
       date: "2023-06-10",
       time: "0:36:02",
       url: "https://www.youtube.com/live/hMGOsqP8TWY?si=p5RB_MdoK9Y3dzus&t=2162"
+     }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2023-12-29",
+      time: "1:03:45",
+      url: "https://www.youtube.com/live/q7URvTzczco?si=_hcYlvAiskfa3rEd&t=3825"
     }
   ]
 });
 window.songs.push({
-  id: "songka2",
+  id: "songka3",
   name: "キング・オブ・コメディ",
   kana: "きんぐ・おぶ・こめでぃ",
   alpha: "",
@@ -43,7 +48,7 @@ window.songs.push({
   ]
 });
 window.songs.push({
-  id: "songka3",
+  id: "songka4",
   name: "強風オールバック",
   kana: "きょうふおーるばっく",
   alpha: "",
@@ -52,6 +57,19 @@ window.songs.push({
       date: "2023-07-30",
       time: "1:04:27",
       url: "https://www.youtube.com/live/PMXYFe5t780?si=BTDy0WW5arU7jS26&t=3867h"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka5",
+  name: "神っぽいな",
+  kana: "かみっぽいな",
+  alpha: "",
+  list: [
+    {
+      date: "2023-12-29",
+      time: "1:10:35",
+      url: "https://www.youtube.com/live/q7URvTzczco?si=c7NWmoNvz0b2IjxG&t=4235"
     }
   ]
 });

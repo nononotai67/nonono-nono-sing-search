@@ -11,3 +11,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songaa2",
+  name: "Arrietty's Song",
+  kana: "Arrietty's Song",
+  alpha: "Arrietty's Song",
+  list: [
+    {
+      date: "2023-12-29",
+      time: "1:54:04",
+      url: "https://www.youtube.com/live/q7URvTzczco?si=ACg-RdUfKqPHZJ3R&t=5644"
+    }
+  ]
+});

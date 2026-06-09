@@ -39,7 +39,32 @@ window.songs.push({
     }
   ]
 });
-
+window.songs.push({
+  id: "songa4",
+  name: "ウタカタララバイ",
+  kana: "うたかたららばい",
+  alpha: "",
+  list: [
+    {
+      date: "2023-12-29",
+      time: "0:14:16",
+      url: "https://www.youtube.com/live/q7URvTzczco?si=Tl7TWytZPfFgmuas&t=856"
+    }
+  ]
+});
+window.songs.push({
+  id: "songa5",
+  name: "インフェルノ",
+  kana: "いんふぇるの",
+  alpha: "",
+  list: [
+    {
+      date: "2023-12-29",
+      time: "0:53:19",
+      url: "https://www.youtube.com/live/q7URvTzczco?si=i1T2Cc2OPY7hKPT4&t=3199"
+    }
+  ]
+});
 
 
 
