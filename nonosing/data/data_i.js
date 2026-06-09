@@ -11,6 +11,18 @@ window.songs.push({
     }
   ]
 });
-
+window.songs.push({
+  id: "songi2",
+  name: "Insane",
+  kana: "Insane",
+  alpha: "Insane",
+  list: [
+    {
+      date: "2026-06-03",
+      time: "1:31:05",
+      url: "https://www.youtube.com/live/AEbOSvBJOAc?si=wb6u9GUWJA3dxKeR&t=5465"
+    }
+  ]
+});
 
 

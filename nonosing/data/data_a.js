@@ -78,7 +78,19 @@ window.songs.push({
     }
   ]
 });
-
+window.songs.push({
+  id: "songa7",
+  name: "踊",
+  kana: "おど",
+  alpha: "",
+  list: [
+    {
+      date: "2026-06-03",
+      time: "0:45:20",
+      url: "https://www.youtube.com/live/AEbOSvBJOAc?si=TQmYIs7msJ1BqVLG&t=2720"
+    }
+  ]
+});
 
  
 

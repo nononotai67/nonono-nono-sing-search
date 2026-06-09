@@ -58,6 +58,11 @@ window.songs.push({
       date: "2024-10-19",
       time: "0:11:59",
       url: "https://www.youtube.com/live/fgNWDixmbFo?si=3IHxsh4skakmJD0n&t=699"
+     }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2026-06-03",
+      time: "0:08:26",
+      url: "https://www.youtube.com/live/AEbOSvBJOAc?si=clfWKGTwsW7rBSoY&t=506"
     }
   ]
 });
@@ -115,6 +120,32 @@ window.songs.push({
       date: "2023-12-29",
       time: "0:06:56",
       url: "https://www.youtube.com/live/q7URvTzczco?si=niwyaoU47klIvD6A&t=416"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha9",
+  name: "ビビデバ",
+  kana: "びびでば",
+  alpha: "",
+  list: [
+    {
+      date: "2026-06-03",
+      time: "0:16:00",
+      url: "https://www.youtube.com/live/AEbOSvBJOAc?si=YMS7t2XgHHKzZ8dr&t=960"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha10",
+  name: "ブレーメン",
+  kana: "ぶれーめん",
+  alpha: "",
+  list: [
+    {
+      date: "2026-06-03",
+      time: "0:53:47",
+      url: "https://www.youtube.com/live/AEbOSvBJOAc?si=kbT2Mjd2_YF31ybd&t=3227"
     }
   ]
 });

@@ -24,3 +24,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songs5",
+  name: "Stay With Me",
+  kana: "Stay With Me",
+  alpha: "Stay With Me",
+  list: [
+    {
+      date: "2026-06-03",
+      time: "1:21:30",
+      url: "https://www.youtube.com/live/AEbOSvBJOAc?si=CW4ubXRBEaoyhBpO&t=4890"
+    }
+  ]
+});

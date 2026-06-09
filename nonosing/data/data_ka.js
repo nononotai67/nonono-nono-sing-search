@@ -18,6 +18,11 @@ window.songs.push({
       date: "2024-10-19",
       time: "0:01:43",
       url: "https://www.youtube.com/live/fgNWDixmbFo?si=kImqY1RF37h0EfR4&t=103"
+    }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2026-06-03",
+      time: "1:03:53",
+      url: "https://www.youtube.com/live/AEbOSvBJOAc?si=D3IlRlW1rNdGNBW4&t=3833"
     }
   ]
 });

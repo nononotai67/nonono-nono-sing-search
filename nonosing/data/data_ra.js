@@ -48,3 +48,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songra4",
+  name: "リードコントロール",
+  kana: "りーどこんとろーる",
+  alpha: "",
+  list: [
+    {
+      date: "2026-06-03",
+      time: "0:03:10",     // 💡実際の時間に書き換えてください
+      url: "https://www.youtube.com/live/AEbOSvBJOAc?si=g0o2ZJYAMEp28_56&t=190" // 💡実際のURLに書き換えてください
+    }
+  ]
+});
