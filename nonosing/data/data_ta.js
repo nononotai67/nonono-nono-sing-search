@@ -77,6 +77,16 @@ window.songs.push({
       date: "2023-12-29",
       time: "1:37:48",
       url: "https://www.youtube.com/live/q7URvTzczco?si=5egjf_KTKtCjW-Ey&t=5868"
+     }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2024-04-17",
+      time: "1:07:49",
+      url: "https://www.youtube.com/live/Ig6w5qKHfSg?si=RzyjHwj_cGA2wi5L&t=4069"
+     }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2024-10-19",
+      time: "0:32:13",
+      url: "https://www.youtube.com/live/fgNWDixmbFo?si=2f_0iX0YM_R4rHGn&t=1933"
     }
   ]
 });
@@ -91,6 +101,11 @@ window.songs.push({
       date: "2023-06-10",
       time: "1:30:19",
       url: "https://www.youtube.com/live/hMGOsqP8TWY?si=06hlCvAR727IUtyp&t=5419"
+     }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2024-10-19",
+      time: "0:27:04",
+      url: "https://www.youtube.com/live/fgNWDixmbFo?si=GAa8ft9F2NG_mrOw&t=1624"
     }
   ]
 });
@@ -105,20 +120,6 @@ window.songs.push({
       date: "2023-06-13",
       time: "0:42:13",
       url: "https://www.youtube.com/live/1fNsi2TZMaE?si=KVaeTlW8gaH9-53x&t=2533"
-    }
-  ]
-});
-
-window.songs.push({
-  id: "songta7",
-  name: " 絶頂讃歌" ,
-  kana: "ぜつちょうさんか",
-  alpha: "",
-  list: [
-    {
-      date: "2023-06-13",
-      time: "1:15:50",
-      url: "https://www.youtube.com/live/1fNsi2TZMaE?si=H15Eo-dxQtcQKuqE&t=4550"
     }
   ]
 });

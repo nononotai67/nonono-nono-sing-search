@@ -13,6 +13,11 @@ window.songs.push({
       date: "2023-06-13",
       time: "0:55:56",
       url: "https://www.youtube.com/live/1fNsi2TZMaE?si=tJpyEIYzfKw2hnD8&t=2036"
+     }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2024-10-19",
+      time: "0:01:43",
+      url: "https://www.youtube.com/live/fgNWDixmbFo?si=kImqY1RF37h0EfR4&t=103"
     }
   ]
 });
@@ -70,6 +75,32 @@ window.songs.push({
       date: "2023-12-29",
       time: "1:10:35",
       url: "https://www.youtube.com/live/q7URvTzczco?si=c7NWmoNvz0b2IjxG&t=4235"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka6",
+  name: "勘冴えて悔しいわ",
+  kana: "かんさえてくやしいわ",
+  alpha: "",
+  list: [
+    {
+      date: "2024-04-17",
+      time: "0:30:49",
+      url: "https://www.youtube.com/live/Ig6w5qKHfSg?si=td-jkCGUu3X_tWmH&t=1849"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka7",
+  name: "カワキヲアメク",
+  kana: "かわきをあめく",
+  alpha: "",
+  list: [
+    {
+      date: "2024-10-19",
+      time: "0:21:06",
+      url: "https://www.youtube.com/live/fgNWDixmbFo?si=RtrSRxAlCjhqpH7_&t=1266"
     }
   ]
 });

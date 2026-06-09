@@ -53,6 +53,11 @@ window.songs.push({
       date: "2023-06-13",
       time: "0:17:11",
       url: "https://www.youtube.com/live/1fNsi2TZMaE?si=ZZjhlC7tmHoOcVBi&t=1031"
+     }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2024-10-19",
+      time: "0:11:59",
+      url: "https://www.youtube.com/live/fgNWDixmbFo?si=3IHxsh4skakmJD0n&t=699"
     }
   ]
 });
@@ -92,6 +97,11 @@ window.songs.push({
       date: "2023-07-30",
       time: "1:21:34",
       url: "https://www.youtube.com/live/PMXYFe5t780?si=E2MGsG_2sUbGz29P&t=4894"
+     }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2024-10-19",
+      time: "0:07:20",
+      url: "https://www.youtube.com/live/fgNWDixmbFo?si=9YZkK390zwr-8Q7i&t=440"
     }
   ]
 });

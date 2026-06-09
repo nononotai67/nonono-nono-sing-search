@@ -52,6 +52,11 @@ window.songs.push({
       date: "2023-12-29",
       time: "0:24:28",
       url: "https://www.youtube.com/live/q7URvTzczco?si=2iu9jV6m4AzMsAfF&t=1733"
+     }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2024-10-19",
+      time: "0:16:50",
+      url: "https://www.youtube.com/live/fgNWDixmbFo?si=aG3zgqgVfng0TmhV&t=1010"
     }
   ]
 });
@@ -91,6 +96,37 @@ window.songs.push({
       date: "2023-12-29",
       time: "1:16:42",
       url: "https://www.youtube.com/live/q7URvTzczco?si=Cl3Awr68QH_OyCGh&t=4602"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa8",
+  name: " 絶頂讃歌" ,
+  kana: "ぜつちょうさんか",
+  alpha: "",
+  list: [
+    {
+      date: "2023-06-13",
+      time: "1:15:50",
+      url: "https://www.youtube.com/live/1fNsi2TZMaE?si=H15Eo-dxQtcQKuqE&t=4550"
+     },
+    {
+      date: "2024-04-17",
+      time: "0:05:31",
+      url: "https://www.youtube.com/live/Ig6w5qKHfSg?si=UGB1oB56LHlQH5Yh&t=331"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa9",
+  name: "粛清‼︎ロリ神レクイエム⭐",
+  kana: "しゅくせいろりがみれくいえむ",
+  alpha: "",
+  list: [
+    {
+      date: "2024-04-17",
+      time: "0:44:52",
+      url: "https://www.youtube.com/live/Ig6w5qKHfSg?si=uGZw7jPzR25PY20G&t=2692"
     }
   ]
 });

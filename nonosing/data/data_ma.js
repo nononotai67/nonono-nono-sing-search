@@ -50,3 +50,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songma5", // idが被らないように番号を3から4に変更しています
+  name: "マーシャル・マキシマイザー",
+  kana: "まーしゃるまきしまいざー",
+  alpha: "",
+  list: [
+    {
+      date: "2024-04-17", // 💡もし別の日の場合は、実際の配信日に書き換えてください
+      time: "0:54:50",     // 💡実際の歌い出し時間に書き換えてください
+      url: "https://www.youtube.com/live/Ig6w5qKHfSg?si=MSMnPW5u2H703drH&t=3290" // 💡実際のタイムスタンプ付きURLに書き換えてください
+    }
+  ]
+});

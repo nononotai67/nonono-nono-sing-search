@@ -30,3 +30,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songra3",
+  name: "ロキ",
+  kana: "ろき",
+  alpha: "",
+  list: [
+    {
+      date: "2024-04-17",
+      time: "0:18:28",     // 💡実際の時間に書き換えてください
+      url: "https://www.youtube.com/live/Ig6w5qKHfSg?si=E8bA3n3vYIFIvt-W&t=1108" // 💡実際のURLに書き換えてください
+    }
+  ]
+});

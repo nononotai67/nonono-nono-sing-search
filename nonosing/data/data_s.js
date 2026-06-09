@@ -11,3 +11,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songs2",
+  name: "Stellar Stellar",
+  kana: "Stellar Stellar",
+  alpha: "Stellar Stellar",
+  list: [
+    {
+      date: "2024-04-17",
+      time: "0:37:39",
+      url: "https://www.youtube.com/live/Ig6w5qKHfSg?si=DhGMsIqd_XITrbJS&t=2259"
+    }
+  ]
+});
