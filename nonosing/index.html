@@ -629,7 +629,7 @@ function copyFavList() {
     return;
   }
 
-  const resultText = `🎧🤍 音ノ乃のの マイセトリ 🤍🎧\n\n${textList.join('\n')}`;
+  const resultText = `🎧🤍 音ノ乃のの マイセトリ 🎧🤍\n\n${textList.join('\n')}`;
   
   navigator.clipboard.writeText(resultText).then(() => {
     alert("セトリをクリップボードにコピーしました！SNSなどに貼り付けられます。");
@@ -678,7 +678,9 @@ function searchSong() {
   });
 
   showResult(filtered);
+  resEl.scrollIntoView({ behavior: "smooth", block: "start" });
 }
+
 // ★濁点（だ行・べ等）を「た」「へ」に自動変換して先頭文字を判定するグループ化処理
 function getFirstKanaGroup(kanaStr) {
   if (!kanaStr) return "";
@@ -713,44 +715,53 @@ function showResult(result) {
 
   if (result.length === 0) {
     el.innerHTML = "<p class='status-msg' style='color:#92a1b3;text-align:center;margin:10px 0;'>見つからない</p>";
+    
+    // 「見つからない」のときも自動スクロール
+    setTimeout(() => {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 50);
     return;
   }
 
-  // 国際基準の日本語辞書ルールを使い、フルよみがなを完璧な50音順に並び替えます
   const sortedResult = [...result].sort((a, b) => {
     return (a.kana || "").localeCompare((b.kana || ""), 'ja', { numeric: true });
   });
 
   el.innerHTML = sortedResult.map(s => {
-        const singCount = s.list ? s.list.length : 0;
-        const artistInfo = s.artist ? `<span style="font-size:12px;color:#65728a;margin-left:5px;font-weight:normal;">(${s.artist})</span>` : '';
+    const singCount = s.list ? s.list.length : 0;
+    const artistInfo = s.artist ? `<span style="font-size:12px;color:#65728a;margin-left:5px;font-weight:normal;">(${s.artist})</span>` : '';
 
-        return `
-          <h4 onclick="toggleSong('${s.id}')" style="cursor:pointer;">
-            <div>🎤 ${s.name} ${artistInfo}</div>
-            <span class="count-badge">歌唱: ${singCount}回</span>
-          </h4>
-                  <div id="song-${s.id}" class="song-detail-wrap" style="display:none;">
-            ${[...s.list].sort((a, b) => a.date.localeCompare(b.date)).map(item => {
-              const isFav = favorites.includes(makeKey(s.id, item));
-              return `
-                <div class="song-detail-item">
-                  <p style="margin:0;">
-                    🎵 <a href="${item.url}" target="_blank">${item.date} ${item.time}</a>
-                    <span class="star-btn ${isFav ? 'active' : ''}"
-                      onclick="event.stopPropagation(); toggleFav('${s.id}', ${JSON.stringify(item).replace(/"/g,'&quot;')}, this)">
-                      ★
-                    </span>
-                  </p>
-                </div>
-              `;
-            }).join("")}
-            <button class="close-btn" onclick="closeSong('${s.id}')">閉じる</button>
-          </div>
-  
-        `;
-      }).join("");
+    return `
+      <h4 onclick="toggleSong('${s.id}')" style="cursor:pointer;">
+        <div>🎤 ${s.name} ${artistInfo}</div>
+        <span class="count-badge">歌唱: ${singCount}回</span>
+      </h4>
+      <div id="song-${s.id}" class="song-detail-wrap" style="display:none;">
+        ${[...s.list].sort((a, b) => a.date.localeCompare(b.date)).map(item => {
+          const isFav = favorites.includes(makeKey(s.id, item));
+          return `
+            <div class="song-detail-item">
+              <p style="margin:0;">
+                🎵 <a href="${item.url}" target="_blank">${item.date} ${item.time}</a>
+                <span class="star-btn ${isFav ? 'active' : ''}"
+                  onclick="event.stopPropagation(); toggleFav('${s.id}', ${JSON.stringify(item).replace(/"/g,'&quot;')}, this)">
+                  ★
+                </span>
+              </p>
+            </div>
+          `;
+        }).join("")}
+        <button class="close-btn" onclick="closeSong('${s.id}')">閉じる</button>
+      </div>
+    `;
+  }).join("");
+
+  // 【追加】画面に曲の一覧が書き込まれた直後（50ミリ秒後）、結果エリアへぬるっと自動スクロール
+  setTimeout(() => {
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, 50);
 }
+
 
 function toggleSong(id) {
   if (openId && openId !== id) {
