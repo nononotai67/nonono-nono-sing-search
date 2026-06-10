@@ -34,3 +34,21 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songwa3",
+  name: "忘れてください",
+  kana: "わすれてください",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "0:36:20",
+      url: "https://www.youtube.com/live/yncgO9ZuaHo?si=Fvd9AJWbT7AdcEnU&t=2180"
+    },
+    {
+      date: "2026-05-03",
+      time: "0:50:41",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=Mm4B5qq4xmDSi291&t=3041"
+    }
+  ]
+});

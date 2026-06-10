@@ -23,6 +23,11 @@ window.songs.push({
       date: "2026-06-03",
       time: "1:03:53",
       url: "https://www.youtube.com/live/AEbOSvBJOAc?si=D3IlRlW1rNdGNBW4&t=3833"
+    },
+    {
+      date: "2026-05-03",
+      time: "0:38:14",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=-kWLagHNRnjkk87A&t=2294"
     }
   ]
 });
@@ -119,6 +124,63 @@ window.songs.push({
       date: "2026-05-07",
       time: "2:03:15",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=AuQdA2UcUPizkvtQ&t=7395"
+    },
+    {
+      date: "2026-05-04",
+      time: "1:00:11",
+      url: "https://www.youtube.com/live/P5vq4IeOM5c?si=KRV4Xs1lDaaLkjFQ&t=3611"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka9",
+  name: "怪獣",
+  kana: "かいじゅう",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "0:06:40",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=wsw5urjSYGCWRCG3&t=400"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka10",
+  name: "火星人",
+  kana: "かせいじん",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "0:51:40",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=7GrUZ6G3Bg69WtKi&t=3100"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka11",
+  name: "曲名はまだないです",
+  kana: "きょくめいはまだないです",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "1:18:50",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=m1TkATrsPE5gM5_A&t=4730"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka12",
+  name: "心予報",
+  kana: "こころよほう",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "1:21:57",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=grAw0rFVJAKGVAw5&t=4917"
     }
   ]
 });

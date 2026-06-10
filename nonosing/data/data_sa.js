@@ -62,6 +62,11 @@ window.songs.push({
       date: "2024-10-19",
       time: "0:16:50",
       url: "https://www.youtube.com/live/fgNWDixmbFo?si=aG3zgqgVfng0TmhV&t=1010"
+    },
+    {
+      date: "2026-05-03",
+      time: "0:07:35",
+      url: "https://www.youtube.com/live/yncgO9ZuaHo?si=7YeRUwr0oFiz3S-W&t=455"
     }
   ]
 });
@@ -111,6 +116,11 @@ window.songs.push({
       date: "2023-12-29",
       time: "1:16:42",
       url: "https://www.youtube.com/live/q7URvTzczco?si=Cl3Awr68QH_OyCGh&t=4602"
+    },
+    {
+      date: "2026-05-03",
+      time: "1:16:13",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=WLB6kTub-eTSZ3ju&t=4573"
     }
   ]
 });
@@ -168,6 +178,16 @@ window.songs.push({
       date: "2026-05-07",
       time: "0:51:46",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=AHUPYqJivA-43byP&t=3106"
+    },
+    {
+      date: "2026-05-04",
+      time: "0:12:09",
+      url: "https://www.youtube.com/live/P5vq4IeOM5c?si=8w6Lkq8jqERPgxHV&t=729"
+    },
+    {
+      date: "2026-05-03",
+      time: "1:23:25",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=kjOkUSl7iUMw0bt7&t=5005"
     }
   ]
 });
@@ -194,6 +214,97 @@ window.songs.push({
       date: "2026-05-07",
       time: "1:12:38",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=OS8sBFSLor3iwPzw&t=4358"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa14",
+  name: "青春病",
+  kana: "せいしゅんびょう",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-04",
+      time: "0:24:54",
+      url: "https://www.youtube.com/live/P5vq4IeOM5c?si=wCk7BlksPBbsAZFm&t=1494"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa15",
+  name: "シル・ヴ・プレジデント",
+  kana: "しるゔぷれじでんと",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "0:14:50",
+      url: "https://www.youtube.com/live/yncgO9ZuaHo?si=UUkvLoGAJvemQA2E&t=890"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa16",
+  name: "新時代",
+  kana: "しんじだい",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "0:21:00",
+      url: "https://www.youtube.com/live/yncgO9ZuaHo?si=ShBJ_bWDyq8BK4m6&t=1260"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa17",
+  name: "千本桜",
+  kana: "せんぼんざくら",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "0:35:46",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=fT3LiRcStE7Vtw2v&t=2146"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa18",
+  name: "全方向美少女",
+  kana: "ぜんほうこうびしょうじょ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "0:58:03",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=c0pVc46fxRwE0oA2&t=3483"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa19",
+  name: "水平線",
+  kana: "すいへいせん",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "1:14:32",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=b9Cgn0RWZkmgs65Q&t=4472"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa20",
+  name: "シンデレラボーイ",
+  kana: "しんでれらぼーい",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "1:19:25",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=uxlQFc3tq3cDI_3V&t=4765"
     }
   ]
 });

@@ -11,3 +11,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songf2",
+  name: "Fall in Love",
+  kana: "Fall in Love",
+  alpha: "Fall in Love",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "0:40:34",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=GEn2FRwzmIVcuKSe&t=2434"
+    }
+  ]
+});

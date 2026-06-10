@@ -13,7 +13,13 @@ window.songs.push({
       date: "2026-05-07",
       time: "0:34:03",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=H8_6f0kWAtgmueKA&t=2043"
+    },
+    {
+      date: "2026-05-03", 
+      time: "0:02:31",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=bMel-KJsvYfDou7e&t=151"
     }
+
   ]
 });
 window.songs.push({
@@ -88,6 +94,32 @@ window.songs.push({
       date: "2026-05-07",
       time: "2:57:45",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=4FodvbdFB7bJLodH&t=10665"
+    }
+  ]
+});
+window.songs.push({
+  id: "songma7",
+  name: "真夜中のドア〜stay with me",
+  kana: "まよなかのどあすていうぃずみー",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "0:26:33",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=2_La15Kfa5kh_zE_&t=1593"
+    }
+  ]
+});
+window.songs.push({
+  id: "songma8",
+  name: "ムーンライト",
+  kana: "むーんらいと",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "0:29:19",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=L2lJ452iy7smk_fV&t=1759"
     }
   ]
 });

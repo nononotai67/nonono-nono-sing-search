@@ -21,13 +21,18 @@ window.songs = [
 window.songs.push({
   id: "songa2",
   name: "ヴィラン",
-  kana: "うぃらん",
+  kana: "ゔぃらん",
   alpha: "",
   list: [
     {
       date: "2023-06-10",
       time: "0:50:49",
       url: "https://www.youtube.com/live/hMGOsqP8TWY?si=hThq2xH0ytMS75w7&t=3049"
+    },
+    {
+      date: "2026-05-03",
+      time: "1:06:45",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=oQ6PFfMMQzJDELAK&t=4005"
     }
   ]
 });
@@ -54,7 +59,13 @@ window.songs.push({
       date: "2023-12-29",
       time: "0:14:16",
       url: "https://www.youtube.com/live/q7URvTzczco?si=Tl7TWytZPfFgmuas&t=856"
+    },
+    {
+      date: "2026-05-04",
+      time: "0:52:25",
+      url: "https://www.youtube.com/live/P5vq4IeOM5c?si=eSANUctHcawio2Cl&t=3145"
     }
+
   ]
 });
 window.songs.push({
@@ -122,5 +133,69 @@ window.songs.push({
     }
   ]
 });
-
+window.songs.push({
+  id: "songaa10",
+  name: "あなた",
+  kana: "あなた",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-04",
+      time: "1:07:10",
+      url: "https://www.youtube.com/live/P5vq4IeOM5c?si=jnKsPBOqdRQC6K6z&t=4030"
+    }
+  ]
+});
+window.songs.push({
+  id: "songaa11",
+  name: "糸電話",
+  kana: "いとでんわ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-04",
+      time: "1:28:27",
+      url: "https://www.youtube.com/live/P5vq4IeOM5c?si=WWrYt8hkuWwqUfiy&t=5307"
+    }
+  ]
+});
+window.songs.push({
+  id: "songaa12",
+  name: "永遠のあくる日",
+  kana: "えいえんのあくるひ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "0:41:40",
+      url: "https://www.youtube.com/live/yncgO9ZuaHo?si=DZ-2PsyRwM4eeqVV&t=2500"
+    }
+  ]
+});
+window.songs.push({
+  id: "songa13",
+  name: "鬼ノ宴",
+  kana: "おにのうたげ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "1:04:34",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=gMzpCxvShOJG7nVz&t=3874"
+    }
+  ]
+});
+window.songs.push({
+  id: "songaa14",
+  name: "おやすみ泣き声、さよなら歌姫",
+  kana: "おやすみなきごえさよならうたひめ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "1:10:41",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=0KEc7m9W1dtIcILE&t=4241"
+    }
+  ]
+});
 

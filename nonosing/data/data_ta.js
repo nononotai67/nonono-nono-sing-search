@@ -8,6 +8,11 @@ window.songs.push({
       date: "2023-06-10",
       time: "0:1:57",
       url: "https://www.youtube.com/live/hMGOsqP8TWY?si=hBxB8o0CMWuMY0oK&t=117"
+    },
+    {
+      date: "2026-05-03",
+      time: "0:55:32",
+      url: "https://www.youtube.com/live/yncgO9ZuaHo?si=wOzYEcIDtoR4w9kQ&t=3332"
     }
   ]
 });
@@ -97,6 +102,11 @@ window.songs.push({
       date: "2025-03-30",
       time: "1:05:26",
       url: "https://www.youtube.com/live/V2HB4Cnl3SI?si=jaj2pBFvAeo-G4dh&t=3926"
+    },
+    {
+      date: "2026-05-03",
+      time: "1:04:19",
+      url: "https://www.youtube.com/live/yncgO9ZuaHo?si=0Qfy9gLXkjRycJzP&t=3859"
     }
   ]
 });
@@ -182,6 +192,11 @@ window.songs.push({
       date: "2023-12-29",
       time: "1:00:19",
       url: "https://www.youtube.com/live/q7URvTzczco?si=rQVKO0s_MtPE7LBA&t=3619"
+    },
+    {
+      date: "2026-05-04",
+      time: "0:06:11",
+      url: "https://www.youtube.com/live/P5vq4IeOM5c?si=jiLTfVklWKHjXqg4&t=371"
     }
   ]
 });
@@ -234,6 +249,45 @@ window.songs.push({
       date: "2026-05-07",
       time: "2:40:35",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=OCJVFdfelZCj8DcT&t=9635"
+    }
+  ]
+});
+window.songs.push({
+  id: "songta16",
+  name: "月のワルツ",
+  kana: "つきのわるつ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-04",
+      time: "0:36:29",
+      url: "https://www.youtube.com/live/P5vq4IeOM5c?si=aBRnwYWWubR0Gv1e&t=2189"
+    }
+  ]
+});
+window.songs.push({
+  id: "songta17",
+  name: "東京は夜",
+  kana: "とうきょうはよる",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "0:49:23",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=UGRDMhueJc7vAPIN&t=2963"
+    }
+  ]
+});
+window.songs.push({
+  id: "songta18",
+  name: "ドライフラワー",
+  kana: "どらいふらわー",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "0:55:44",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=5pDUUgd5-Z9dN7XC&t=3344"
     }
   ]
 });

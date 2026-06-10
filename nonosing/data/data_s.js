@@ -21,6 +21,11 @@ window.songs.push({
       date: "2024-04-17",
       time: "0:37:39",
       url: "https://www.youtube.com/live/Ig6w5qKHfSg?si=DhGMsIqd_XITrbJS&t=2259"
+    },
+    {
+      date: "2026-05-04",
+      time: "1:21:36",
+      url: "https://www.youtube.com/live/P5vq4IeOM5c?si=xnUW-spmVhma0Q7Q&t=4896"
     }
   ]
 });
@@ -47,6 +52,11 @@ window.songs.push({
       date: "2026-05-07",
       time: "0:01:45",
       url:"https://www.youtube.com/live/SvWYxUE-HHY?si=Hk851vAhenvCZrJw&t=105"
+     },
+    {
+      date: "2026-05-03",
+      time: "0:23:39",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=VexLKnCsAQQAEo29&t=1419"
     }
   ]
 });
@@ -63,3 +73,30 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songs8",
+  name: "SPEED",
+  kana: "SPEED",
+  alpha: "SPEED",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "1:09:56",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=P-nGllTbtSlMXXDe&t=4196"
+    }
+  ]
+});
+window.songs.push({
+  id: "songs9",
+  name: "Shape of You",
+  kana: "Shape of You",
+  alpha: "Shape of You",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "1:25:24",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=5haUKHWBv7cOjebI&t=5124"
+    }
+  ]
+});
+

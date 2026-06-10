@@ -26,6 +26,11 @@ window.songs.push({
       date: "2023-06-13",
       time: "0:09:27",
       url: "https://www.youtube.com/live/1fNsi2TZMaE?si=rpU6v5Jm0el_SM9f&t=567"
+    },
+    {
+      date: "2026-05-04",
+      time: "0:43:41",
+      url: "https://www.youtube.com/live/P5vq4IeOM5c?si=fnKMH_DUwIiiIMo5&t=2621"
     }
   ]
 });
@@ -107,6 +112,11 @@ window.songs.push({
       date: "2024-10-19",
       time: "0:07:20",
       url: "https://www.youtube.com/live/fgNWDixmbFo?si=9YZkK390zwr-8Q7i&t=440"
+    },
+    {
+      date: "2026-05-03",
+      time: "1:09:24",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=4MTZQ59qWoZ0lUTJ&t=4164"
     }
   ]
 });
@@ -146,6 +156,11 @@ window.songs.push({
       date: "2026-06-03",
       time: "0:53:47",
       url: "https://www.youtube.com/live/AEbOSvBJOAc?si=kbT2Mjd2_YF31ybd&t=3227"
+    },
+    {
+      date: "2026-05-04",
+      time: "1:15:12",
+      url: "https://www.youtube.com/live/P5vq4IeOM5c?si=cNJEdXMc_sl2sio1&t=4512"
     }
   ]
 });
@@ -198,6 +213,16 @@ window.songs.push({
       date: "2026-05-07",
       time: "1:39:25",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=O97irWP6mEinA83H&t=5965"
+    },
+    {
+      date: "2026-05-03",
+      time: "0:10:39",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=NdkLSXYKJUJ91ewS&t=639"
+    },
+    {
+      date: "2026-05-03",
+      time: "1:12:36",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=VA98v7WkYRskCt5T&t=4356"
     }
   ]
 });
@@ -214,3 +239,95 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songha16",
+  name: "ブリキノダンス",
+  kana: "ぶりきのだんす",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-04",
+      time: "0:47:34",
+      url: "https://www.youtube.com/live/P5vq4IeOM5c?si=noeUrT2vIju1K1Zc&t=2854"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha17",
+  name: "はいよろこんで",
+  kana: "はいよろこんで",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-04",
+      time: "0:57:00",
+      url: "https://www.youtube.com/live/P5vq4IeOM5c?si=EMEIMwAJkU5SMfK3&t=3420"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha18",
+  name: "ハイド・アンド・シーク",
+  kana: "はいどあんどしーく",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "0:02:30",
+      url: "https://www.youtube.com/live/yncgO9ZuaHo?si=DG_uubj9q70yqCjS&t=150"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha19",
+  name: "ハッピーバースデー！",
+  kana: "はっぴーばーすでー",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "0:59:40",
+      url: "https://www.youtube.com/live/yncgO9ZuaHo?si=pvmDkC4frwUd5_rK&t=3580"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha20",
+  name: "不可幸力",
+  kana: "ふかこうりょく",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "0:19:01",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=OmEZtDiBmjW7WFre&t=1141"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha21",
+  name: "ヒカリへ",
+  kana: "ひかりへ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "0:46:03",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=Bh7FTu8V7SqAtOj-&t=2763"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha22",
+  name: "春泥棒",
+  kana: "はるどろぼう",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "1:00:18",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=QtuiNq1OdTjnB7a2&t=3618"
+    }
+  ]
+});
+
