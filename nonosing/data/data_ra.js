@@ -58,6 +58,37 @@ window.songs.push({
       date: "2026-06-03",
       time: "0:03:10",     // 💡実際の時間に書き換えてください
       url: "https://www.youtube.com/live/AEbOSvBJOAc?si=g0o2ZJYAMEp28_56&t=190" // 💡実際のURLに書き換えてください
+    },
+    {
+      date: "2026-05-07",
+      time: "1:42:55",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=bsIB-xmptJXFeR6V&t=6175"
+    }
+  ]
+});
+window.songs.push({
+  id: "songra5",
+  name: "ロミオとシンデレラ",
+  kana: "ろみおとしんでれら",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "1:16:32",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=JkXmLLQTojL_R9PF&t=4592"
+    }
+  ]
+});
+window.songs.push({
+  id: "songra6",
+  name: "ラヴィ",
+  kana: "らゔぃ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "1:30:33",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=5UfzGy485dSB1kkS&t=5433"
     }
   ]
 });

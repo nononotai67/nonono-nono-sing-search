@@ -37,3 +37,29 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songs6",
+  name: "SUMMER SONG",
+  kana: "SUMMER SONG",
+  alpha: "SUMMER SONG",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "0:01:45",
+      url:"https://www.youtube.com/live/SvWYxUE-HHY?si=Hk851vAhenvCZrJw&t=105"
+    }
+  ]
+});
+window.songs.push({
+  id: "songs7",
+  name: "STAY TUNE",
+  kana: "STAY TUNE",
+  alpha: "STAY TUNE",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "0:39:29",
+      url:"https://www.youtube.com/live/SvWYxUE-HHY?si=Q63kTVaXW2qNgcHo&t=2369"
+    }
+  ]
+});

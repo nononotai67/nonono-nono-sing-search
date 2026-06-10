@@ -149,3 +149,68 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songha11",
+  name: "花火",
+  kana: "はなび",
+  alpha: "",
+  list: [
+    {
+      date: "2025-05-07",
+      time: "0:03:51",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=ciSEoFIfCrXy2XFa&t=231"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha12",
+  name: "白日",
+  kana: "はくじつ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-05-07",
+      time: "0:16:03",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=yJS--7pLlfK77Y_D&t=963"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha13",
+  name: "ヒバナ",
+  kana: "ひばな",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "1:24:14",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=uBJe1xwx2MkE9Os7&t=5054"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha14",
+  name: "プロポーズ",
+  kana: "ぷろぽーず",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "1:39:25",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=O97irWP6mEinA83H&t=5965"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha15",
+  name: "ベイビー・アイラブユー",
+  kana: "べいびーあいらぶゆー",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "2:45:25",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=4NlbzJD6fX4d0tLe&t=9925"
+    }
+  ]
+});

@@ -109,3 +109,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songka8",
+  name: "きゅうくらりん",
+  kana: "きゅうくらりん",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "2:03:15",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=AuQdA2UcUPizkvtQ&t=7395"
+    }
+  ]
+});

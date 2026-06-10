@@ -8,6 +8,11 @@ window.songs.push({
       date: "2023-06-10",
       time: "0:54:35",
       url: "https://www.youtube.com/live/hMGOsqP8TWY?si=ZBEuGPp0KvyQKFYK&t=3275"
+      }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2026-05-07",
+      time: "0:34:03",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=H8_6f0kWAtgmueKA&t=2043"
     }
   ]
 });
@@ -65,6 +70,24 @@ window.songs.push({
       date: "2025-03-50",
       time: "0:11:03",
       url: "https://www.youtube.com/live/V2HB4Cnl3SI?si=grzDZujdLdp9H4wB&t=663"
+    }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2026-05-07",
+      time: "1:07:09",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=dD1wlP65ezcoavHj&t=4029"
+    }
+  ]
+});
+window.songs.push({
+  id: "songma6",
+  name: "モエチャッカファイア",
+  kana: "もえちゃっかふぁいあ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "2:57:45",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=4FodvbdFB7bJLodH&t=10665"
     }
   ]
 });

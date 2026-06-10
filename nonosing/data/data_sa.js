@@ -8,6 +8,11 @@ window.songs.push({
       date: "2023-06-10",
       time: "0:38:48",
       url: "https://www.youtube.com/live/hMGOsqP8TWY?si=smpVr8S2B2mbMVU4&t=2328"
+      }, // 👈 ここにカンマ「,」を追加しました！
+    {
+      date: "2025-05-07",
+      time: "0:29:25",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=1QH3oKEKR7gEaEzW&t=1765"
     }
   ]
 });
@@ -88,6 +93,11 @@ window.songs.push({
       date: "2025-03-30",
       time: "0:35:02",
       url: "https://www.youtube.com/live/V2HB4Cnl3SI?si=_pPlcVmSbaQnz-YS&t=2102"
+     },
+    {
+      date: "2026-06-03",
+      time: "0:21:05",
+      url: "https://www.youtube.com/live/AEbOSvBJOAc?si=K5eZDuVpbc-j3DB7&t=1265"
     }
   ]
 });
@@ -132,6 +142,58 @@ window.songs.push({
       date: "2024-04-17",
       time: "0:44:52",
       url: "https://www.youtube.com/live/Ig6w5qKHfSg?si=uGZw7jPzR25PY20G&t=2692"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa10",
+  name: "接吻",
+  kana: "せっぷん",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "0:44:34",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=J1cnt6P-nsthA_dn&t=2674"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa11",
+  name: "セレナーデ",
+  kana: "せれなーで",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "0:51:46",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=AHUPYqJivA-43byP&t=3106"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa12",
+  name: "すずめ",
+  kana: "すずめ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "1:01:46",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=cJbv4vDcFjcYi2oX&t=3706"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa13",
+  name: "スキスキ絶頂症",
+  kana: "すきすきぜっちょうしょう",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "1:12:38",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=OS8sBFSLor3iwPzw&t=4358"
     }
   ]
 });

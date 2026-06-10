@@ -14,7 +14,7 @@ window.songs.push({
 window.songs.push({
   id: "songtata2",
   name: "トウキョウ・シャンデイ・ランデヴ",
-  kana: "とうきょう・しゃんでい・らんでぶ",
+  kana: "とうきょう・しゃんでい・らんでゔ",
   alpha: "",
   list: [
     {
@@ -195,6 +195,45 @@ window.songs.push({
       date: "2025-03-30",
       time: "0:44:18",
       url: "https://www.youtube.com/live/V2HB4Cnl3SI?si=GlTqT7ts3YmtYBWn&t=2658"
+    }
+  ]
+});
+window.songs.push({
+  id: "songta13",
+  name: "2002",
+  kana: "とぅーさうざんどつー",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "1:52:50",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=bwBfk40Ma2gfWDTB&t=6770"
+    }
+  ]
+});
+window.songs.push({
+  id: "songta14",
+  name: "月が綺麗ねと言われたい",
+  kana: "つきがきれいねといわれたい",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "2:38:00",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=T21wktoLZGfSQZZz&t=9480"
+    }
+  ]
+});
+window.songs.push({
+  id: "songta15",
+  name: "トリコ",
+  kana: "とりこ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "2:40:35",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=OCJVFdfelZCj8DcT&t=9635"
     }
   ]
 });

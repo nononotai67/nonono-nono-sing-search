@@ -37,3 +37,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songya4",
+  name: "寄り添い",
+  kana: "よりそい",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "0:24:44",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=K4ypUPsDtS47QZ0Y&t=1484"
+    }
+  ]
+});

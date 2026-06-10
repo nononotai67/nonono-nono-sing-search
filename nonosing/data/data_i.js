@@ -21,8 +21,38 @@ window.songs.push({
       date: "2026-06-03",
       time: "1:31:05",
       url: "https://www.youtube.com/live/AEbOSvBJOAc?si=wb6u9GUWJA3dxKeR&t=5465"
+    },
+    {
+      date: "2026-05-07",
+      time: "1:47:57",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=wVxq3CorCDFzyju4&t=6477"
     }
   ]
 });
-
+window.songs.push({
+  id: "songi3",
+  name: "I LOVE",
+  kana:  "I LOVE",
+  alpha: "I LOVE",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "0:19:43",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=cMKxiap_rG-RYju8&t=1183"
+    }
+  ]
+});
+window.songs.push({
+  id: "songi4",
+  name: "IRIS OUT",
+  kana: "IRIS OUT",
+  alpha: "IRIS OUT",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "1:34:32",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=APVnoliS5_xIgY1h&t=5672"
+    }
+  ]
+});
 

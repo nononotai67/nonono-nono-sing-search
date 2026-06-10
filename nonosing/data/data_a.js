@@ -9,7 +9,12 @@ window.songs = [
         date: "2026-07-30",
         time: "1:15:22",
         url: "https://www.youtube.com/live/PMXYFe5t780?si=aGBUmD7ce_i9-fht&t=4522"
-      }
+      },
+    {
+      date: "2026-05-07",
+      time: "1:57:48",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=kVyr5XVPsQPHDs5r&t=7068"
+    }
     ]
   }
 ];
@@ -91,6 +96,31 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songa8",
+  name: "愛を伝えたいだとか",
+  kana: "あいをつたえたいだとか",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "0:10:49",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=iIjEObnkEzdFMKc6&t=649"
+    }
+  ]
+});
+ window.songs.push({
+  id: "songaa9",
+  name: "愛のけだもの",
+  kana: "あいのけだもの",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-07",
+      time: "2:12:20",
+      url: "https://www.youtube.com/live/SvWYxUE-HHY?si=OWn_8kBBEy0ozsBL&t=7940"
+    }
+  ]
+});
 
- 
 
