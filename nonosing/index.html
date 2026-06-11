@@ -376,6 +376,52 @@ a:hover { text-decoration: underline; color: #0077cc; }
     font-size: 15px !important;
   }
 }
+/* ❌ いま一番下にある @media から </style> までの部分を、これに丸ごと置き換えてください */
+
+/* ⚙️ 【PC専用】画面の横幅が768px以上のときだけ見た目を変える設定 */
+@media screen and (min-width: 768px) {
+  
+  /* 五十音ボタンをPCで横10個並べる */
+  .grid {
+    display: grid !important;
+    grid-template-columns: repeat(10, 1fr) !important;
+    gap: 12px !important;
+    text-align: left !important;
+    max-width: 750px !important;
+    margin: 20px auto !important;
+  }
+  
+  /* PCのときだけボタンを押しやすく少し大きくする */
+  .btn {
+    padding: 14px 4px !important;
+    font-size: 17px !important;
+  }
+
+  /* オリ曲とガチャのボタンをPCで横並びにする */
+  div[style*="margin-top: 25px"] {
+    max-width: 600px !important;
+    margin: 25px auto 0 auto !important;
+  }
+  div[style*="justify-content: center"] {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 16px !important;
+    width: 100% !important;
+    max-width: 600px !important;
+  }
+  div[style*="justify-content: center"] .btn {
+    flex: 1 !important;
+    width: 260px !important;
+    max-width: 260px !important;
+    padding: 12px 16px !important;
+    font-size: 15px !important;
+  }
+
+} /* 👈 これがPC用設定を終わらせる大事なカッコです！ */
+
+</style>
+
 
 </style>
 </head>
