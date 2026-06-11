@@ -328,16 +328,6 @@ a:hover { text-decoration: underline; color: #0077cc; }
 }
 .star-btn:hover { transform: scale(1.2); }
 .star-btn.active { color: #ffcc00; text-shadow: 0 0 8px rgba(255, 204, 0, 0.7); }
-/* ⚙️ 【追加デザイン】スマホは今のまま、PC（画面の横幅が768px以上）のときだけ見た目を変える設定 */
-@media screen and (min-width: 768px) {
-  .grid {
-    /* 1行に最大10個のマス目（ボタン）を同じ幅でピシッと自動で並べる魔法の設定 */
-    grid-template-columns: repeat(10, 1fr) !important;
-    gap: 12px;
-    text-align: left;
-  }
-}
-
 </style>
 </head>
 <body>
@@ -382,9 +372,6 @@ a:hover { text-decoration: underline; color: #0077cc; }
    <!-- 🛠️ 便利ボタンとオリジナル曲アコーディオンの配置エリア -->
   <div style="margin-top: 25px; display: flex; flex-direction: column; gap: 12px; align-items: center;">
     
-     <!-- 🛠️ 便利ボタンとオリジナル曲アコーディオンの配置エリア -->
-  <div style="margin-top: 25px; display: flex; flex-direction: column; gap: 12px; align-items: center;">
-    
     <!-- ガチャとオリ曲ボタンを横並び（スマホでは縦並び）にする枠 -->
     <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; width: 100%;">
       <!-- 📢 オリジナル曲特設アコーディオンボタン -->
@@ -409,8 +396,6 @@ a:hover { text-decoration: underline; color: #0077cc; }
     </div>
 
   </div>
-
-
   <h3>JAPANESE</h3>
   <div class="grid">
     <a class="btn" href="javascript:void(0);" onclick="filterKana('あ')">あ<span id="badge-あ" class="badge">0</span></a>
@@ -852,19 +837,31 @@ function countAndRenderBadges() {
   }
 }
 
-// ⚙️ 【追加機能】オリジナル曲アコーディオンの開閉をコントロールする処理
-function toggleOriginalAccordion() {
-  const accordion = document.getElementById("originalAccordion");
-  // もし今閉じている（none）ならブロック表示（block）にし、開いているなら非表示にする
-  if (accordion.style.display === "none") {
-    accordion.style.display = "block";
-    // 開いた瞬間に、見やすい位置まで画面をぬるっと自動スクロールさせる
-    accordion.scrollIntoView({ behavior: "smooth", block: "nearest" });
+function jumpToLatestSong() {
+  const songsData = getSongsData();
+  if (!songsData.length) return;
+
+  let latestItem = null;
+
+  songsData.forEach(s => {
+    if (s.list && s.list.length) {
+      s.list.forEach(item => {
+        if (!latestItem || item.date > latestItem.date) {
+          latestItem = item;
+        }
+      });
+    }
+  });
+
+  if (latestItem && latestItem.url) {
+    let rawUrl = latestItem.url;
+    const parts = rawUrl.split(/[?&]t=/);
+    let targetUrl = parts[0];
+    window.open(targetUrl, '_blank');
   } else {
-    accordion.style.display = "none";
+    alert("歌枠データが見つかりませんでした。");
   }
 }
-
 
 renderFav();
 countAndRenderBadges();
