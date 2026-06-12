@@ -526,11 +526,16 @@ body.dark-mode #originalAccordion div div span {
 </head>
 <body>
 
-<!-- 🔍 隠し検索バーパネル -->
-<div id="searchPanel" class="search-panel">
-  <input id="searchInput" type="search" placeholder="曲名、ひらがな（例：アイドル / あいどる）">
-  <button onclick="searchSong()">検索</button>
+<!-- 🔍 隠し検索バーパネル（予測変換サジェスト対応版） -->
+<div id="searchPanel" class="search-panel" style="flex-direction: column; align-items: center; gap: 10px;">
+  <div style="display: flex; width: 100%; max-width: 450px; gap: 8px; justify-content: center;">
+    <input id="searchInput" type="search" placeholder="曲名、ひらがな（例：アイドル / あいどる）">
+    <button onclick="searchSong()">検索</button>
+  </div>
+  <!-- 💡 ここに検索窓のすぐ真下に候補を表示する特別な部屋を作ります -->
+  <div id="searchSuggestWrap" style="display: none; width: 100%; max-width: 450px; background: #ffffff; border-radius: 14px; border: 2px solid #b3f0ff; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 8px; box-sizing: border-box; text-align: left; max-height: 200px; overflow-y: auto;"></div>
 </div>
+
 
 
 <!-- 🔵 ページ最上部へ戻るフローティングボタン -->
@@ -845,6 +850,67 @@ function renderFav() {
   if (isSelectDeleteMode) {
     updateDeleteCount();
   }
+}
+// 🔍 検索窓に文字が入力されるたびに、すぐ真下に予測変換（候補）を爆速で出す処理
+document.getElementById("searchInput").addEventListener("input", function() {
+  const keyword = this.value.trim().toLowerCase();
+  const suggestEl = document.getElementById("searchSuggestWrap");
+  const songsData = getSongsData();
+
+  // 文字が空っぽになったら予測変換の部屋をシュッと閉じる
+  if (!keyword) {
+    suggestEl.innerHTML = "";
+    suggestEl.style.display = "none";
+    return;
+  }
+
+  // キーワードに一致する曲を絞り込む
+  const filtered = songsData.filter(s => {
+    const nameMatch = s.name && s.name.toLowerCase().includes(keyword);
+    const kanaMatch = s.kana && s.kana.toLowerCase().includes(keyword);
+    const artistMatch = s.artist && s.artist.toLowerCase().includes(keyword);
+    return nameMatch || kanaMatch || artistMatch;
+  });
+
+  if (filtered.length === 0) {
+    suggestEl.innerHTML = "<p style='color:#92a1b3; text-align:center; margin:5px 0; font-size:13px;'>候補が見つかりません</p>";
+    suggestEl.style.display = "block";
+    return;
+  }
+
+  // 予測変換用に、コンパクトなリスト（最大5曲）を作って真下に表示する
+  const displaySongs = filtered.slice(0, 5); 
+  suggestEl.innerHTML = displaySongs.map(s => {
+    const artistInfo = s.artist ? `<span style="font-size:11px; color:#788699; font-weight:normal; margin-left:4px;">(${s.artist})</span>` : '';
+    return `
+      <div onclick="selectSuggestSong('${s.id}')" style="padding: 10px 12px; border-bottom: 1px dashed #eaf2f5; cursor: pointer; font-weight: bold; color: #ff3b9d; font-size: 14px; transition: 0.2s;" onmouseover="this.style.background='#fff5fa'" onmouseout="this.style.background='transparent'">
+        🎤 ${s.name}${artistInfo}
+      </div>
+    `;
+  }).join("");
+
+  // 最後の行の点線を消す調整
+  if (suggestEl.lastElementChild) {
+    suggestEl.lastElementChild.style.borderBottom = "none";
+  }
+
+  suggestEl.style.display = "block";
+});
+
+// 💡 予測変換の曲名をタップしたときに、その曲を自動で開いて下にぬるっとスクロールする処理
+function selectSuggestSong(id) {
+  // 1. 検索バーを閉じる
+  document.getElementById("searchPanel").classList.remove("open");
+  
+  // 2. 既存の検索結果エリア（大元の表示）にその曲をセットして展開する
+  const songsData = getSongsData();
+  const targetSong = songsData.filter(s => s.id === id);
+  showResult(targetSong);
+  
+  // 3. 自動でその曲の詳細を開いた状態（オープン）にする
+  setTimeout(() => {
+    toggleSong(id);
+  }, 100);
 }
 
 
