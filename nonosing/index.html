@@ -370,6 +370,117 @@ a:hover { text-decoration: underline; color: #0077cc; }
 }
 .star-btn:hover { transform: scale(1.2); }
 .star-btn.active { color: #ffcc00; text-shadow: 0 0 8px rgba(255, 204, 0, 0.7); }
+
+/* 🍏 iOS/アプリ風の丸型カスタムチェックボックス */
+.fav-delete-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px !important;       /* 少し大きめにして押しやすく */
+  height: 22px !important;
+  border: 2px solid #b3f0ff;    /* 初期状態は爽やかな水色 */
+  border-radius: 50% !important;/* 完璧な丸型に */
+  background: #ffffff;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  vertical-align: middle;
+  margin-left: 10px !important;
+}
+
+/* チェックが入ったときの「ののさんピンク」状態 */
+.fav-delete-checkbox:checked {
+  background: #ff3b9d;
+  border-color: #ff3b9d;
+  box-shadow: 0 0 8px rgba(255, 59, 157, 0.4);
+}
+
+/* チェックマークの内側の白い「✓」マーク */
+.fav-delete-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* ボタン切り替え時のフェードイン効果 */
+#fav-normal-actions, #fav-delete-menu, #fav-select-actions {
+  animation: favFadeIn 0.3s ease-out forwards;
+}
+@keyframes favFadeIn {
+  from { opacity: 0; transform: translateY(3px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🎧🤍 音ノ乃ののさんイメージの近未来ネオン・ライブステージ配色 */
+body.dark-mode {
+  background: #110914; /* ののさんの髪色や衣装の深い影をイメージした深紫 */
+  color: #f5f9fc;      /* 透明感のある輝く白 */
+}
+
+/* ライブのレーザー光が飛び交うようなネオンヘッダー */
+body.dark-mode .header {
+  background: linear-gradient(135deg, #1f0b24 0%, #3d142d 50%, #0c1a2b 100%);
+  border-bottom: 4px solid #ff3b9d; /* ののさんピンク */
+  box-shadow: 0 6px 25px rgba(255, 59, 157, 0.35); /* ピンクの光が漏れるエフェクト */
+  text-shadow: 2px 2px 0px #110914, 0 0 15px rgba(255, 59, 157, 0.6);
+}
+
+/* 各エリア（検索・結果・お気に入り）をクリアなダークアメジスト風に */
+body.dark-mode .modal-content, 
+body.dark-mode #searchPanel, 
+body.dark-mode #result, 
+body.dark-mode #fav-list, 
+body.dark-mode .song-detail-wrap {
+  background: #1c1122 !important; /* 透き通る深紫のベース */
+  border-color: #331f3d !important; /* 綺麗な紫の境界線 */
+  color: #f5f9fc !important;
+}
+
+/* 検索結果内の曲名見出し：ののさんのオリジナル曲のクールさを再現 */
+body.dark-mode #result h4 {
+  background: linear-gradient(90deg, #3d142d 0%, #1c1122 100%);
+  border-left: 5px solid #00c3ff; /* ピンクの対比として映える綺麗な水色 */
+  box-shadow: 0 4px 12px rgba(255, 59, 157, 0.1);
+}
+
+/* バッジやポップアップの文字調整 */
+body.dark-mode .modal-content h4 { color: #ff5cae; border-color: #ff3b9d; }
+body.dark-mode .modal-close-btn { background: #26182e; border-color: #3d254a; color: #bcccdf; }
+body.dark-mode .disclaimer { color: #9a88a3; }
+
+/* 五十音・アルファベットボタン：サイバー衣装のキーボード風 */
+body.dark-mode .grid .btn {
+  background: linear-gradient(to bottom, #26182e, #1c1122);
+  border-color: #3d254a;
+  color: #00c3ff; /* 文字をネオンブルーに */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+/* ボタンにホバーした瞬間、ののさんピンクに点灯するエフェクト */
+body.dark-mode .grid .btn:hover {
+  background: linear-gradient(to bottom, #3d142d, #59163f);
+  border-color: #ff3b9d;
+  color: #ff5cae;
+  box-shadow: 0 0 12px rgba(255, 59, 157, 0.5);
+}
+
+/* 閉じるボタン */
+body.dark-mode .close-btn { background: #26182e; border-color: #3d254a; color: #bcccdf; }
+body.dark-mode .close-btn:hover { background: #3d142d; border-color: #ff3b9d; color: #ff5cae; }
+body.dark-mode #fav-list { color: #f5f9fc; }
+
+/* 画面左下の切り替えスイッチ自体の夜モードデザイン */
+body.dark-mode #darkModeWidget {
+  background: rgba(28, 17, 34, 0.95) !important;
+  border-color: #ff3b9d !important; /* スイッチの枠線をピンクにして特別感アップ */
+  box-shadow: 0 4px 15px rgba(255, 59, 157, 0.3) !important;
+}
+
+
 </style>
 </head>
 <body>
@@ -530,11 +641,28 @@ a:hover { text-decoration: underline; color: #0077cc; }
   <h3>⭐ お気に入り</h3>
   <div id="fav-list"></div>
 
-  <!-- 一括コピーとクリアボタン -->
-  <div style="margin-top: 15px; display: flex; gap: 10px; justify-content: center;">
+  <!-- 一括コピーとクリアボタン（選択削除対応版） -->
+<div style="margin-top: 15px; display: flex; flex-direction: column; gap: 10px; align-items: center;">
+  <!-- パターンA: 通常時のボタン -->
+  <div id="fav-normal-actions" style="display: flex; gap: 10px; justify-content: center;">
     <button class="close-btn" onclick="copyFavList()" style="background: #fff5fa; border-color: #ffbfe8; color: #ff3b9d;">📋 セトリを一括コピー</button>
-    <button class="close-btn" onclick="clearFavList()" style="background: #fdf2f2; border-color: #f8b4b4; color: #e53e3e;">🗑️ リストを空にする</button>
+    <button class="close-btn" onclick="showDeleteMenu()" style="background: #fdf2f2; border-color: #f8b4b4; color: #e53e3e;">🗑️ リストを空にする</button>
   </div>
+  
+  <!-- パターンB: 削除メニュー選択時のボタン（最初は非表示） -->
+  <div id="fav-delete-menu" style="display: none; gap: 10px; justify-content: center;">
+    <button class="close-btn" onclick="clearFavList()" style="background: #fdf2f2; border-color: #f8b4b4; color: #e53e3e;">💥 すべて削除</button>
+    <button class="close-btn" onclick="startSelectDelete()" style="background: #fffafa; border-color: #ffbfe8; color: #ff3b9d;">☑️ 選択して削除</button>
+    <button class="close-btn" onclick="resetDeleteState()" style="background: #ffffff; border-color: #e2f0f7; color: #65728a;">キャンセル</button>
+  </div>
+
+  <!-- パターンC: 選択削除を実行する時のボタン（最初は非表示） -->
+  <div id="fav-select-actions" style="display: none; gap: 10px; justify-content: center;">
+    <button id="submit-select-delete-btn" class="close-btn" onclick="executeSelectDelete()" style="background: #fdf2f2; border-color: #f8b4b4; color: #e53e3e;" disabled>0件を削除</button>
+    <button class="close-btn" onclick="resetDeleteState()" style="background: #ffffff; border-color: #e2f0f7; color: #65728a;">キャンセル</button>
+  </div>
+</div>
+
 <!-- 外部データの読み込み -->
 <script src="data/data_a.js"></script>
 <script src="data/data_ka.js"></script>
@@ -601,6 +729,9 @@ function toggleFav(songId, item, el) {
   localStorage.setItem("favDates", JSON.stringify(favorites));
   renderFav();
 }
+// 選択削除モードを管理するフラグ
+let isSelectDeleteMode = false;
+
 function renderFav() {
   const el = document.getElementById("fav-list");
   let list = [];
@@ -611,14 +742,39 @@ function renderFav() {
       s.list.forEach(item => {
         const key = makeKey(s.id, item);
         if (favorites.includes(key)) {
-          list.push(`⭐ <a href="${item.url}" target="_blank">${s.name}（${item.date} ${item.time}）</a>`);
+          // 元のリンク部分
+          let itemHtml = `⭐ <a href="${item.url}" target="_blank">${s.name}（${item.date} ${item.time}）</a>`;
+          
+          // 💡 選択削除モードなら「）」の右側に分かりやすいチェックマークを出す
+          if (isSelectDeleteMode) {
+           itemHtml += ` <input type="checkbox" class="fav-delete-checkbox" value="${key}" onchange="updateDeleteCount()">`;
+
+          }
+          list.push(itemHtml);
         }
       });
     });
   }
 
-  el.innerHTML = list.length ? list.join("<br>") : "<p style='color:#92a1b3;text-align:center;'>お気に入りなし</p>";
+ if (list.length) {
+  el.innerHTML = list.join("<br>");
+} else {
+  el.innerHTML = `
+    <div style="text-align:center; padding: 20px 0; color:#92a1b3; position:relative;">
+      <div style="font-size: 40px; color:#e2e8f0; margin-bottom: 5px; user-select:none;">⭐</div>
+      <p style="margin:0; font-size:14px; font-weight:normal;">お気に入りはまだありません</p>
+      <p style="margin:4px 0 0 0; font-size:12px; color:#b3c3d6; font-weight:normal;">歌枠を開いて「★」をタップして追加してね！</p>
+    </div>
+  `;
 }
+
+  
+  // モードONの状態でリストを再表示したときは、カウントボタンも同時にリセットする
+  if (isSelectDeleteMode) {
+    updateDeleteCount();
+  }
+}
+
 
 // 隠し検索バーの開閉
 function toggleSearchPanel() {
@@ -704,13 +860,84 @@ function copyFavList() {
   });
 }
 
-// お気に入りの一括削除機能
+// 1. 「リストを空にする」を押したときに、メニューを切り替える
+function showDeleteMenu() {
+  if (favorites.length === 0) {
+    alert("お気に入りに曲が登録されていません。");
+    return;
+  }
+  document.getElementById("fav-normal-actions").style.display = "none";
+  document.getElementById("fav-delete-menu").style.display = "flex";
+}
+
+// 2. 「選択して削除」を選んだときにチェックボックスを出現させる
+function startSelectDelete() {
+  isSelectDeleteMode = true;
+  document.getElementById("fav-delete-menu").style.display = "none";
+  document.getElementById("fav-select-actions").style.display = "flex";
+  renderFav(); // 画面を再描画してチェックマークを出す
+}
+
+// 3. チェックボックスが押されるたびに「〇件を削除」の文字をリアルタイム更新する
+function updateDeleteCount() {
+  const checkboxes = document.querySelectorAll(".fav-delete-checkbox");
+  let checkedCount = 0;
+  checkboxes.forEach(cb => {
+    if (cb.checked) checkedCount++;
+  });
+
+  const btn = document.getElementById("submit-select-delete-btn");
+  btn.innerText = `${checkedCount}件を削除`;
+  
+  // 1件以上選ばれていないとボタンを押せないようにロックする
+  btn.disabled = (checkedCount === 0);
+}
+
+// 4. チェックを入れた曲だけを特定してLocal Storageから削除する
+function executeSelectDelete() {
+  const checkboxes = document.querySelectorAll(".fav-delete-checkbox");
+  let keysToDelete = [];
+  
+  checkboxes.forEach(cb => {
+    if (cb.checked) {
+      keysToDelete.push(cb.value);
+    }
+  });
+
+  if (keysToDelete.length === 0) return;
+
+  if (confirm(`選択した ${keysToDelete.length} 件のお気に入りを削除してもよろしいですか？`)) {
+    // 選ばれたキーを除外して配列を上書き
+    favorites = favorites.filter(key => !keysToDelete.includes(key));
+    localStorage.setItem("favDates", JSON.stringify(favorites));
+    
+    alert("選択した曲を削除しました。");
+    resetDeleteState(); // 画面を元に戻す
+    
+    // 検索結果の画面に出ている「★」の色も即座に消灯させる
+    const activeKeyword = document.getElementById("searchInput").value.trim();
+    if (activeKeyword) {
+      searchSong();
+    }
+  }
+}
+
+// 5. すべての状態を通常の最初のモードに戻す（キャンセル時・削除完了時など）
+function resetDeleteState() {
+  isSelectDeleteMode = false;
+  document.getElementById("fav-delete-menu").style.display = "none";
+  document.getElementById("fav-select-actions").style.display = "none";
+  document.getElementById("fav-normal-actions").style.display = "flex";
+  renderFav(); // 通常の表示に戻して再描画
+}
+
+// 6. 「すべて削除」の処理（終了時にボタンの状態をリセットするように調整したもの）
 function clearFavList() {
   if (favorites.length === 0) return;
   if (confirm("お気に入りリストをすべて空にしてもよろしいですか？")) {
     favorites = [];
     localStorage.removeItem("favDates");
-    renderFav();
+    resetDeleteState(); // 通常のボタン表示に戻す
     const activeKeyword = document.getElementById("searchInput").value.trim();
     if (activeKeyword) {
       searchSong();
@@ -917,7 +1144,29 @@ function toggleOriginalAccordion() {
   const accordion = document.getElementById("originalAccordion");
   accordion.style.display = accordion.style.display === "none" ? "block" : "none";
 }
+
+
+// 🌙 ダークモードのスイッチを切り替える安全ロジック
+function toggleDarkModeStyle() {
+  const body = document.body;
+  const widget = document.getElementById("darkModeWidget");
+  
+  // bodyに dark-mode クラスをつけ外しする
+  body.classList.toggle("dark-mode");
+  
+  // スイッチのアイコンを夜は太陽（☀️）、昼は月（🌙）に変える
+  if (body.classList.contains("dark-mode")) {
+    widget.innerText = "☀️";
+  } else {
+    widget.innerText = "🌙";
+  }
+}
+
 </script>
+
+<!-- 🌙 画面左下のダークモード切り替えスイッチ -->
+<div id="darkModeWidget" onclick="toggleDarkModeStyle()" title="テーマを切り替え" style="position: fixed; bottom: 20px; left: 20px; width: 44px; height: 44px; border-radius: 50%; background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(4px); border: 2px solid #e2f0f7; box-shadow: 0 4px 12px rgba(163,191,207,0.3); font-size: 18px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 150; transition: all 0.2s; user-select: none;">🌙</div>
+
 
 </body>
 </html>
