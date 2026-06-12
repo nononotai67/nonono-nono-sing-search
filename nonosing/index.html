@@ -521,6 +521,32 @@ body.dark-mode #originalAccordion div div span {
   color: #9a88a3 !important; 
 }
 
+/* 🏆 総合ランキングカードの夜モード対応（追加） */
+body.dark-mode #rankingCard {
+  background: #1c1122 !important; /* 透き通る深紫のベース */
+  border-color: #331f3d !important; /* 綺麗な紫の境界線 */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* ランキング内の各順位の背景とテキスト色調整 */
+body.dark-mode #rankingList div {
+  background: #26182e !important; /* 順位の枠を少し明るい紫紺に */
+}
+body.dark-mode #rankingList div:hover {
+  background: #3d142d !important; /* 指で触れた時はエモいピンクに点灯 */
+}
+body.dark-mode #rankingList div span {
+  color: #edf4f7 !important; /* 曲名などの白文字化 */
+}
+body.dark-mode #rankingList div div:last-child {
+  background: #1c1122 !important; /* 〇〇回のバッジの背景を暗く */
+  border-color: #331f3d !important;
+}
+
+
+
+
+
 
 </style>
 </head>
@@ -626,6 +652,17 @@ body.dark-mode #originalAccordion div div span {
     </div>
 
   </div>
+
+  <!-- 🏆 総合ランキングトップ3の自動表示システム -->
+  <div style="background: #ffffff; padding: 16px; border-radius: 20px; border: 2px solid #edf4f7; box-shadow: 0 6px 16px rgba(163, 191, 207, 0.12); text-align: left; width: 100%; max-width: 530px; margin: 25px auto 15px auto; box-sizing: border-box;" id="rankingCard">
+    <div style="font-size: 13px; font-weight: bold; color: #ff3b9d; margin-bottom: 10px; border-bottom: 2px solid #fff2f9; padding-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+      <span>👑</span> 総合歌唱回数トップ3（自動集計）
+    </div>
+    <!-- ランキングの中身がここに自動で並びます -->
+    <div id="rankingList" style="display: flex; flex-direction: column; gap: 8px;"></div>
+  </div>
+
+
   <h3>JAPANESE</h3>
   <div class="grid">
     <a class="btn" href="javascript:void(0);" onclick="filterKana('あ')">あ<span id="badge-あ" class="badge">0</span></a>
@@ -1367,6 +1404,45 @@ function shareToX() {
     }, 50);
   }
 })();
+
+// 📊 歌枠データから自動で計算してトップ3を画面に描き出すロジック
+(function() {
+  const songsData = getSongsData();
+  if (!songsData.length) return;
+
+  // 1. すべての曲の歌唱回数を計算して多い順に並び替える
+  const sorted = [...songsData].sort((a, b) => {
+    const countA = a.list ? a.list.length : 0;
+    const countB = b.list ? b.list.length : 0;
+    return countB - countA;
+  });
+
+  // 2. 上位3曲を抽出
+  const top3 = sorted.slice(0, 3);
+  const rankingListEl = document.getElementById("rankingList");
+  const medals = ["🥇", "🥈", "🥉"];
+  const colors = ["#ff3b9d", "#0099ff", "#65728a"];
+
+  if (rankingListEl) {
+    rankingListEl.innerHTML = top3.map((s, index) => {
+      const count = s.list ? s.list.length : 0;
+      const artist = s.artist ? `<span style="font-size:11px; color:#788699; font-weight:normal; margin-left:4px;">(${s.artist})</span>` : '';
+      return `
+        <div onclick="selectSuggestSong('${s.id}')" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #f2f7fa; border-radius: 12px; cursor: pointer; font-weight: bold; transition: 0.2s;" onmouseover="this.style.background='#fff5fa'" onmouseout="this.style.background='#f2f7fa'">
+          <div style="font-size: 14px; color: ${colors[index]}; display: flex; align-items: center; gap: 6px; min-width: 0;">
+            <span style="font-size: 16px;">${medals[index]}</span>
+            <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #4f5866;">${s.name}${artist}</span>
+          </div>
+          <div style="font-size: 12px; background: #ffffff; color: ${colors[index]}; border: 1px solid #edf4f7; padding: 2px 8px; border-radius: 20px; white-space: nowrap;">
+            ${count}回
+          </div>
+        </div>
+      `;
+    }).join("");
+  }
+})();
+
+
 </script>
 
 
