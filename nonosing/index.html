@@ -473,12 +473,32 @@ body.dark-mode .close-btn { background: #26182e; border-color: #3d254a; color: #
 body.dark-mode .close-btn:hover { background: #3d142d; border-color: #ff3b9d; color: #ff5cae; }
 body.dark-mode #fav-list { color: #f5f9fc; }
 
-/* 画面左下の切り替えスイッチ自体の夜モードデザイン */
-body.dark-mode #darkModeWidget {
-  background: rgba(28, 17, 34, 0.95) !important;
-  border-color: #ff3b9d !important; /* スイッチの枠線をピンクにして特別感アップ */
-  box-shadow: 0 4px 15px rgba(255, 59, 157, 0.3) !important;
+/* 🌙 スイッチON（body.dark-mode時）の左上メニュー調整 */
+body.dark-mode .menu-circle-btn {
+  background: linear-gradient(to bottom, #26182e, #1c1122) !important;
+  border-color: #3d254a !important;
+  color: #00c3ff !important;
 }
+
+body.dark-mode #sideMenuContent {
+  background: #1c1122 !important;
+  box-shadow: 4px 0 20px rgba(0,0,0,0.4) !important;
+}
+
+body.dark-mode #sideMenuContent h4 {
+  color: #ff5cae !important;
+  border-color: #ff3b9d !important;
+}
+
+body.dark-mode #sideMenuContent div div {
+  background: #26182e !important;
+  color: #00c3ff !important;
+}
+body.dark-mode #sideMenuContent div div:hover {
+  background: #3d142d !important;
+  color: #ff5cae !important;
+}
+
 
 
 </style>
@@ -507,6 +527,35 @@ body.dark-mode #darkModeWidget {
     <div class="menu-circle-btn" onclick="toggleHelpModal(true)" title="使い方">❓</div>
   </div>
 </div>
+
+<!-- 🍔 左上のハンバーガーボタン -->
+<div class="menu-circle-btn" onclick="toggleSideMenu()" style="position: absolute; top: 15px; left: 15px; z-index: 250; font-weight: bold;" title="メニュー">☰</div>
+
+<!-- 📂 左から出てくるサイドメニュー本体 -->
+<div id="sideMenuOverlay" onclick="toggleSideMenu()" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4); backdrop-filter: blur(4px); z-index: 300; opacity: 0; pointer-events: none; transition: opacity 0.3s ease;">
+  <div id="sideMenuContent" onclick="event.stopPropagation()" style="position: fixed; top: 0; left: -280px; width: 260px; height: 100%; background: #ffffff; box-shadow: 4px 0 20px rgba(0,0,0,0.1); padding: 25px 20px; box-sizing: border-box; transition: left 0.3s cubic-bezier(0.1, 0.8, 0.3, 1); display: flex; flex-direction: column; gap: 20px;">
+    
+    <!-- メニューのタイトル（ののさんカラー） -->
+    <h4 style="margin: 0; color: #ff3b9d; border-bottom: 2px solid #ffbfe8; padding-bottom: 10px; font-size: 18px; display: flex; justify-content: space-between; align-items: center;">
+      📁 メニュー
+      <span onclick="toggleSideMenu()" style="cursor: pointer; color: #788699; font-size: 16px;">×</span>
+    </h4>
+    
+    <!-- 項目リスト（ここに今後いろいろ追加していけます！） -->
+    <div style="display: flex; flex-direction: column; gap: 15px;">
+      <!-- ダークモード切り替え項目 -->
+      <div onclick="toggleDarkModeStyle()" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: #f2f7fa; border-radius: 12px; cursor: pointer; font-weight: bold; color: #65728a; transition: 0.2s;" onmouseover="this.style.background='#fff5fa'; this.style.color='#ff3b9d'" onmouseout="this.style.background='#f2f7fa'; this.style.color='#65728a'">
+        <span>🌙 ダークモード</span>
+        <span id="darkModeWidget" style="font-size: 16px;">OFF</span>
+      </div>
+      
+      <!-- 💡 今後ここに「こんごめ挨拶」などを同じ形で追加していけます -->
+    </div>
+    
+  </div>
+</div>
+
+
 
 <!-- 📖 使い方解説ポップアップ本体 -->
 <div id="helpModal" class="modal-overlay" onclick="toggleHelpModal(false)">
@@ -1146,30 +1195,67 @@ function toggleOriginalAccordion() {
 }
 
 
-// 🌙 ダークモードのスイッチを切り替える安全ロジック
+// 🍔 左上サイドメニューの開閉コントロール
+function toggleSideMenu() {
+  const overlay = document.getElementById("sideMenuOverlay");
+  const content = document.getElementById("sideMenuContent");
+  const isOpen = overlay.style.opacity === "1";
+
+  if (isOpen) {
+    overlay.style.opacity = "0";
+    overlay.style.pointerEvents = "none";
+    content.style.left = "-280px";
+  } else {
+    overlay.style.opacity = "1";
+    overlay.style.pointerEvents = "auto";
+    content.style.left = "0px";
+  }
+}
+
+
+// 🌙 メニュー内の項目を押した時のダークモード切り替え（データを保存する機能付き）
 function toggleDarkModeStyle() {
   const body = document.body;
   const widget = document.getElementById("darkModeWidget");
   
-  // bodyに dark-mode クラスをつけ外しする
   body.classList.toggle("dark-mode");
   
-  // スイッチのアイコンを夜は太陽（☀️）、昼は月（🌙）に変える
   if (body.classList.contains("dark-mode")) {
-    widget.innerText = "☀️";
+    widget.innerText = "ON ☀️";
+    widget.style.color = "#ff3b9d";
+    localStorage.setItem("themeMode", "dark");  // 💡 ここでブラウザに「夜」と記憶させます
   } else {
-    widget.innerText = "🌙";
+    widget.innerText = "OFF 🌙";
+    widget.style.color = "#65728a";
+    localStorage.setItem("themeMode", "light"); // 💡 ここでブラウザに「昼」と記憶させます
   }
 }
 
+
+</script>
+<!-- 🔄 ページを開いた瞬間に、前回保存されたダークモードの設定を自動で復元する処理 -->
+<script>
+(function() {
+  const savedTheme = localStorage.getItem("themeMode");
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+    // メニュー内の文字もON状態にしておく（数ミリ秒後に動かすためのタイマー処理）
+    setTimeout(() => {
+      const widget = document.getElementById("darkModeWidget");
+      if (widget) {
+        widget.innerText = "ON ☀️";
+        widget.style.color = "#ff3b9d";
+      }
+    }, 50);
+  }
+})();
 </script>
 
-<!-- 🌙 画面左下のダークモード切り替えスイッチ -->
-<div id="darkModeWidget" onclick="toggleDarkModeStyle()" title="テーマを切り替え" style="position: fixed; bottom: 20px; left: 20px; width: 44px; height: 44px; border-radius: 50%; background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(4px); border: 2px solid #e2f0f7; box-shadow: 0 4px 12px rgba(163,191,207,0.3); font-size: 18px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 150; transition: all 0.2s; user-select: none;">🌙</div>
 
 
 </body>
 </html>
+
 
 
 
