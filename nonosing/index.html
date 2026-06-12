@@ -499,6 +499,27 @@ body.dark-mode #sideMenuContent div div:hover {
   color: #ff5cae !important;
 }
 
+/* 🎧 オリジナル曲アコーディオンの夜モード対応（追加） */
+body.dark-mode #originalAccordion {
+  background: #1c1122 !important; 
+  border-color: #331f3d !important; 
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4) !important;
+}
+
+body.dark-mode #originalAccordion div:first-child {
+  color: #9a88a3 !important;
+  border-bottom-color: #331f3d !important;
+}
+
+body.dark-mode #originalAccordion div div:nth-child(odd) {
+  background: #2b1f2a !important; 
+}
+body.dark-mode #originalAccordion div div:nth-child(even) {
+  background: #121926 !important; 
+}
+body.dark-mode #originalAccordion div div span {
+  color: #9a88a3 !important; 
+}
 
 
 </style>
@@ -549,7 +570,7 @@ body.dark-mode #sideMenuContent div div:hover {
         <span id="darkModeWidget" style="font-size: 16px;">OFF</span>
       </div>
       
-      <!-- 💡 今後ここに「こんごめ挨拶」などを同じ形で追加していけます -->
+      <!-- 💡 今後ここに同じ形で追加していけます -->
     </div>
     
   </div>
