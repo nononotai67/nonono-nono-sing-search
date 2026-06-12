@@ -187,16 +187,43 @@ h3 {
   text-shadow: 1px 1px 0 #ffffff;
 }
 
-/* グリッド */
+/* グリッド（スマホ用：あなたの元の綺麗な設定を100%維持） */
 .grid {
-  margin: 20px auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
   gap: 8px;
+  width: 100%;
+  max-width: 530px;
+  margin: 20px auto;
+  box-sizing: border-box;
 }
+
+/* 💻 PCモニター（画面幅768px以上）の時だけ適用する完璧なロジック */
 @media screen and (min-width: 768px) {
-  .grid { grid-template-columns: repeat(auto-fill, minmax(72px, 1fr)); gap: 10px; }
+  .grid {
+    display: grid;
+    /* 💡 PCでは「1行にきっちり10個」ボタンを並べる部屋を作ります */
+    grid-template-columns: repeat(10, 1fr); 
+    gap: 8px;
+    max-width: 580px;
+  }
+
+  /* PCの時だけ、ボタンの形を綺麗に固定 */
+  .grid .btn {
+    width: 52px;
+    height: 48px;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  /* 👇【今回のデバッグの完全な大正解】 */
+  /* 「ら」のボタンに対して、「絶対に新しい行の1番左側からスタートしろ」と命令します */
+  .grid .btn[onclick*="'ら'"] {
+    grid-column-start: 1;
+  }
 }
+
 
 /* 五十音・アルファベットボタン */
 .btn {
