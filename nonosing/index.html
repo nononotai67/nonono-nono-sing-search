@@ -555,6 +555,44 @@ body.dark-mode #rankingList div div:last-child {
 }
 
 
+/* 👥 メンバー個別のイメージカラー設定（昼モード） */
+.member-color-konomi { color: #5c3a21 !important; font-weight: bold; }
+.member-color-akubi { color: #d6001c !important; font-weight: bold; }
+.member-color-rako    { color: #d9a300; font-weight: bold; }
+.member-color-yura    { color: #00a3a3; font-weight: bold; }
+.member-color-koma    { color: #ff6600; font-weight: bold; } /* ⛩️ こま：キツネオレンジ */
+.member-color-tsukuri { color: #00b4d8; font-weight: bold; } /* ☁ ツクリ：雲のスカイブルー */
+.member-color-liz     { color: #0055ff; font-weight: bold; } /* 🌂 リズ：雨夜ブルー */
+.member-color-nufu    { color: #d53f8c; font-weight: bold; }
+.member-color-ray     { color: #4a5568; font-weight: bold; }
+.member-color-line    { color: #1e293b; font-weight: bold; }
+
+/* 🌙 ダークモード（夜モード）の時はネオンカラーに自動切り替え */
+body.dark-mode .member-color-konomi { color: #e6b89c !important; }
+body.dark-mode .member-color-akubi { color: #ff4d66 !important; }
+body.dark-mode .member-color-rako    { color: #ffcc33 !important; }
+body.dark-mode .member-color-yura    { color: #33cccc !important; }
+body.dark-mode .member-color-koma    { color: #ff8833 !important; } /* ⛩️ 夜：明るいオレンジ */
+body.dark-mode .member-color-tsukuri { color: #90e0ef !important; } /* ☁ 夜：光る雲のライトブルー */
+body.dark-mode .member-color-liz     { color: #3388ff !important; } /* 🌂 夜：輝くスカイブルー */
+body.dark-mode .member-color-nufu    { color: #f665b6 !important; }
+body.dark-mode .member-color-ray     { color: #cbd5e1 !important; }
+body.dark-mode .member-color-line    { color: #38bdf8 !important; }
+
+/* 🌙 夜モードのとき、メンバー別タブ内のリンク文字をパッと見やすくする */
+body.dark-mode #memberMenuAccordion a {
+  color: #00c3ff !important; /* ネオンブルーに点灯 */
+}
+
+/* 🌙 夜モードのとき、メンバー別タブ内の「×」ボタンの背景と文字を調整 */
+body.dark-mode #memberMenuAccordion span[onclick*="none"] {
+  background: #26182e !important;
+  border-color: #331f3d !important;
+  color: #ff5cae !important;
+}
+
+/* 💡 白枠(sub-box)が開いていない時は×マークを隠し、開いた時だけ自動で出現させる正しい命令 */
+div[id^="sub-box-"]:not([style*="block"]):not([style*="flex"]) span[onclick*="none"] { display: none !important; }
 
 
 
@@ -607,7 +645,7 @@ body.dark-mode #rankingList div div:last-child {
       <span onclick="toggleSideMenu()" style="cursor: pointer; color: #788699; font-size: 16px;">×</span>
     </h4>
     
-       <!-- 項目リスト（ご指定の順番：グッズショップ ➔ ガイドライン ➔ ダークモード） -->
+       <!-- 項目リスト（グッズ ➔ ガイドライン ➔ 他メンバー ➔ ダークモード一番下固定） -->
     <div style="display: flex; flex-direction: column; gap: 15px;">
       
       <!-- 1. 🛒 公式グッズショップ（最新のミリプロオフィシャルショップURLに対応） -->
@@ -620,7 +658,126 @@ body.dark-mode #rankingList div div:last-child {
         <span>📖 二次創作ガイドライン</span>
       </div>
 
-      <!-- 3. 🌙 ダークモード切り替え項目（元のロジックを100%維持） -->
+      <!-- 3. 👥 他のメンバー（クリックすると下の名前一覧の部屋が開閉します） -->
+      <div onclick="const menu = document.getElementById('memberMenuAccordion'); menu.style.display = menu.style.display === 'none' ? 'flex' : 'none';" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: #f2f7fa; border-radius: 12px; cursor: pointer; font-weight: bold; color: #65728a; transition: 0.2s;" onmouseover="this.style.background='#fff5fa'; this.style.color='#ff3b9d'" onmouseout="this.style.background='#f2f7fa'; this.style.color='#65728a'">
+        <span>👥 他のメンバー</span>
+        <span style="font-size: 12px; color: #92a1b3;">▼</span>
+      </div>
+
+      <!-- 💡 【名前一覧の部屋】最大4人分の高さで固定。それ以上は枠内スクロールします -->
+      <div id="memberMenuAccordion" style="display: none; flex-direction: column; gap: 8px; padding: 4px 10px; box-sizing: border-box; max-height: 176px; overflow-y: auto;">
+        
+<!-- 🐺 甘狼このみ -->
+<div style="display: flex; flex-direction: column; gap: 4px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <span class="member-color-konomi" style="cursor: pointer;" onclick="document.getElementById('sub-box-konomi').style.display = 'flex'">甘狼このみ🐺🍫</span>
+    <span onclick="document.getElementById('sub-box-konomi').style.display = 'none'" style="cursor: pointer; color: #ff3b9d; font-weight: bold; font-size: 13px; padding: 0 6px; background: #fff5fa; border: 1px solid #ffbfe8; border-radius: 50%; user-select: none;">×</span>
+  </div>
+  <div id="sub-box-konomi" style="display: none; flex-direction: column; gap: 4px; padding: 6px 10px; background: #ffffff; border: 1px dashed #edf4f7; border-radius: 8px;">
+    <a href="https://x.com/amakamikonomi" target="_blank" style="color: #1e1e1e; font-size: 12px; text-align: left;">公式ツイッター</a>
+    <a href="https://www.youtube.com/channel/UCbntVBSebvO5zT3cQYIxbWQ" target="_blank" style="color: #ff0000; font-size: 12px; text-align: left;">公式YouTube</a>
+  </div>
+</div>
+
+<!-- 🃏 あくび・でもんすぺーど -->
+<div style="display: flex; flex-direction: column; gap: 4px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <span class="member-color-akubi" style="cursor: pointer;" onclick="document.getElementById('sub-box-akubi').style.display = 'flex'">あくび・でもんすぺーど</span>
+    <span onclick="document.getElementById('sub-box-akubi').style.display = 'none'" style="cursor: pointer; color: #ff3b9d; font-weight: bold; font-size: 13px; padding: 0 6px; background: #fff5fa; border: 1px solid #ffbfe8; border-radius: 50%; user-select: none;">×</span>
+  </div>
+  <div id="sub-box-akubi" style="display: none; flex-direction: column; gap: 4px; padding: 6px 10px; background: #ffffff; border: 1px dashed #edf4f7; border-radius: 8px;">
+    <a href="https://x.com/AkubiU_Uzz" target="_blank" style="color: #1e1e1e; font-size: 12px; text-align: left;">公式ツイッター</a>
+    <a href="https://www.youtube.com/@Akubi.demonspade" target="_blank" style="color: #ff0000; font-size: 12px; text-align: left;">公式YouTube</a>
+  </div>
+</div>
+
+<!-- 🦦 音ノ瀬らこ -->
+<div style="display: flex; flex-direction: column; gap: 4px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <span class="member-color-rako" style="cursor: pointer;" onclick="document.getElementById('sub-box-rako').style.display = 'flex'">音ノ瀬らこ🦦💛</span>
+    <span onclick="document.getElementById('sub-box-rako').style.display = 'none'" style="cursor: pointer; color: #ff3b9d; font-weight: bold; font-size: 13px; padding: 0 6px; background: #fff5fa; border: 1px solid #ffbfe8; border-radius: 50%; user-select: none;">×</span>
+  </div>
+  <div id="sub-box-rako" style="display: none; flex-direction: column; gap: 4px; padding: 6px 10px; background: #ffffff; border: 1px dashed #edf4f7; border-radius: 8px;">
+    <a href="https://x.com/OtonoseRaco" target="_blank" style="color: #1e1e1e; font-size: 12px; text-align: left;">公式ツイッター</a>
+    <a href="https://www.youtube.com/@OtonoseRaco" target="_blank" style="color: #ff0000; font-size: 12px; text-align: left;">公式YouTube</a>
+  </div>
+</div>
+<!-- 🌙 ゆらぎゆら -->
+<div style="display: flex; flex-direction: column; gap: 4px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <span class="member-color-yura" style="cursor: pointer;" onclick="document.getElementById('sub-box-yura').style.display = 'flex'">ゆらぎゆら🌙🫧</span>
+    <span onclick="document.getElementById('sub-box-yura').style.display = 'none'" style="cursor: pointer; color: #ff3b9d; font-weight: bold; font-size: 13px; padding: 0 6px; background: #fff5fa; border: 1px solid #ffbfe8; border-radius: 50%; user-select: none;">×</span>
+  </div>
+  <div id="sub-box-yura" style="display: none; flex-direction: column; gap: 4px; padding: 6px 10px; background: #ffffff; border: 1px dashed #edf4f7; border-radius: 8px;">
+    <a href="https://x.com/_YuraYuragi" target="_blank" style="color: #1e1e1e; font-size: 12px; text-align: left;">公式ツイッター</a>
+    <a href="https://www.youtube.com/@_YuraYuragi" target="_blank" style="color: #ff0000; font-size: 12px; text-align: left;">公式YouTube</a>
+  </div>
+</div>
+
+<!-- ⛩️ 小廻こま -->
+<div style="display: flex; flex-direction: column; gap: 4px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <span class="member-color-koma" style="cursor: pointer;" onclick="document.getElementById('sub-box-koma').style.display = 'flex'">小廻こま⛩️🔅</span>
+    <span onclick="document.getElementById('sub-box-koma').style.display = 'none'" style="cursor: pointer; color: #ff3b9d; font-weight: bold; font-size: 13px; padding: 0 6px; background: #fff5fa; border: 1px solid #ffbfe8; border-radius: 50%; user-select: none;">×</span>
+  </div>
+  <div id="sub-box-koma" style="display: none; flex-direction: column; gap: 4px; padding: 6px 10px; background: #ffffff; border: 1px dashed #edf4f7; border-radius: 8px;">
+    <a href="https://x.com/komawarikoma" target="_blank" style="color: #1e1e1e; font-size: 12px; text-align: left;">公式ツイッター</a>
+    <a href="https://www.youtube.com/@komawarikoma" target="_blank" style="color: #ff0000; font-size: 12px; text-align: left;">公式YouTube</a>
+  </div>
+</div>
+
+<!-- ☁ 眠雲ツクリ -->
+<div style="display: flex; flex-direction: column; gap: 4px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <span class="member-color-tsukuri" style="cursor: pointer;" onclick="document.getElementById('sub-box-tsukuri').style.display = 'flex'">眠雲ツクリ☁🔧</span>
+    <span onclick="document.getElementById('sub-box-tsukuri').style.display = 'none'" style="cursor: pointer; color: #ff3b9d; font-weight: bold; font-size: 13px; padding: 0 6px; background: #fff5fa; border: 1px solid #ffbfe8; border-radius: 50%; user-select: none;">×</span>
+  </div>
+  <div id="sub-box-tsukuri" style="display: none; flex-direction: column; gap: 4px; padding: 6px 10px; background: #ffffff; border: 1px dashed #edf4f7; border-radius: 8px;">
+    <a href="https://x.com/nemukumotsukuri" target="_blank" style="color: #1e1e1e; font-size: 12px; text-align: left;">公式ツイッター</a>
+    <a href="https://www.youtube.com/@nemukumotsukuri" target="_blank" style="color: #ff0000; font-size: 12px; text-align: left;">公式YouTube</a>
+  </div>
+</div>
+<!-- 🌂 雨夜リズ -->
+<div style="display: flex; flex-direction: column; gap: 4px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <span class="member-color-liz" style="cursor: pointer;" onclick="document.getElementById('sub-box-liz').style.display = 'flex'">雨夜リズ🌂🖤</span>
+    <span onclick="document.getElementById('sub-box-liz').style.display = 'none'" style="cursor: pointer; color: #ff3b9d; font-weight: bold; font-size: 13px; padding: 0 6px; background: #fff5fa; border: 1px solid #ffbfe8; border-radius: 50%; user-select: none;">×</span>
+  </div>
+  <div id="sub-box-liz" style="display: none; flex-direction: column; gap: 4px; padding: 6px 10px; background: #ffffff; border: 1px dashed #edf4f7; border-radius: 8px;">
+    <a href="https://x.com/amayoliz_" target="_blank" style="color: #1e1e1e; font-size: 12px; text-align: left;">公式ツイッター</a>
+    <a href="https://www.youtube.com/@Amayo_liz" target="_blank" style="color: #ff0000; font-size: 12px; text-align: left;">公式YouTube</a>
+  </div>
+</div>
+
+<!-- 🌈 虹深°ぬふ -->
+<div style="display: flex; flex-direction: column; gap: 4px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <span class="member-color-nufu" style="cursor: pointer;" onclick="document.getElementById('sub-box-nufu').style.display = 'flex'">虹深°ぬふ🌈🖍</span>
+    <span onclick="document.getElementById('sub-box-nufu').style.display = 'none'" style="cursor: pointer; color: #ff3b9d; font-weight: bold; font-size: 13px; padding: 0 6px; background: #fff5fa; border: 1px solid #ffbfe8; border-radius: 50%; user-select: none;">×</span>
+  </div>
+  <div id="sub-box-nufu" style="display: none; flex-direction: column; gap: 4px; padding: 6px 10px; background: #ffffff; border: 1px dashed #edf4f7; border-radius: 8px;">
+    <a href="https://x.com/nijipukanuhu" target="_blank" style="color: #1e1e1e; font-size: 12px; text-align: left;">公式ツイッター</a>
+    <a href="https://www.youtube.com/@NijipukaNuhu" target="_blank" style="color: #ff0000; font-size: 12px; text-align: left;">公式YouTube</a>
+  </div>
+</div>
+
+<!-- 🩵 夕霧レイ -->
+<div style="display: flex; flex-direction: column; gap: 4px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+    <span class="member-color-ray" style="cursor: pointer;" onclick="document.getElementById('sub-box-ray').style.display = 'flex'">夕霧レイ🩵🥽</span>
+    <span onclick="document.getElementById('sub-box-ray').style.display = 'none'" style="cursor: pointer; color: #ff3b9d; font-weight: bold; font-size: 13px; padding: 0 6px; background: #fff5fa; border: 1px solid #ffbfe8; border-radius: 50%; user-select: none;">×</span>
+  </div>
+  <div id="sub-box-ray" style="display: none; flex-direction: column; gap: 4px; padding: 6px 10px; background: #ffffff; border: 1px dashed #edf4f7; border-radius: 8px;">
+    <a href="https://x.com/YugiriRay" target="_blank" style="color: #1e1e1e; font-size: 12px; text-align: left;">公式ツイッター</a>
+    <a href="https://www.youtube.com/@yugiriray" target="_blank" style="color: #ff0000; font-size: 12px; text-align: left;">公式YouTube</a>
+  </div>
+</div>
+
+</div> <!-- 👈 10人のお部屋(memberMenuAccordion)のフタを閉じる -->
+
+
+
+  <!-- 3. 🌙 ダークモード切り替え項目（元のロジックを100%維持） -->
       <div onclick="toggleDarkModeStyle()" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: #f2f7fa; border-radius: 12px; cursor: pointer; font-weight: bold; color: #65728a; transition: 0.2s;" onmouseover="this.style.background='#fff5fa'; this.style.color='#ff3b9d'" onmouseout="this.style.background='#f2f7fa'; this.style.color='#65728a'">
         <span>🌙 ダークモード</span>
         <span id="darkModeWidget" style="font-size: 16px;">OFF</span>
