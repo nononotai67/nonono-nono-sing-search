@@ -57,7 +57,9 @@ body {
 }
 .search-panel.open {
   top: 0;
+  z-index: 400; /* 降りてきたとき、丸アイコンより手前に出す */
 }
+
 .search-panel input {
   flex: 1;
   max-width: 450px;
@@ -561,10 +563,13 @@ body.dark-mode #rankingList div div:last-child {
 
 <!-- 🔍 隠し検索バーパネル（予測変換サジェスト対応版） -->
 <div id="searchPanel" class="search-panel" style="flex-direction: column; align-items: center; gap: 10px;">
-  <div style="display: flex; width: 100%; max-width: 450px; gap: 8px; justify-content: center;">
+  <div style="display: flex; width: 100%; max-width: 450px; gap: 8px; justify-content: center; align-items: center;">
     <input id="searchInput" type="search" placeholder="曲名、ひらがな（例：アイドル / あいどる）">
     <button onclick="searchSong()">検索</button>
+    <!-- 💡 いつでも閉じられる×ボタンを追加（丸アイコンと同じ押し心地のデザイン） -->
+    <div onclick="closeSearchPanelOnly()" style="width: 40px; height: 40px; border-radius: 50%; background: #fff5fa; border: 1px solid #ffbfe8; color: #ff3b9d; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: bold; cursor: pointer; user-select: none; flex-shrink: 0;" title="閉じる">×</div>
   </div>
+
   <!-- 💡 ここに検索窓のすぐ真下に候補を表示する特別な部屋を作ります -->
   <div id="searchSuggestWrap" style="display: none; width: 100%; max-width: 450px; background: #ffffff; border-radius: 14px; border: 2px solid #b3f0ff; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 8px; box-sizing: border-box; text-align: left; max-height: 200px; overflow-y: auto;"></div>
 </div>
@@ -975,6 +980,15 @@ function toggleSearchPanel() {
     document.getElementById("searchInput").focus();
   }
 }
+
+// 💡 検索窓の「×」ボタンを押したとき、文字を消して予測変換も閉じつつ、パネルを上に隠す処理
+function closeSearchPanelOnly() {
+  document.getElementById("searchPanel").classList.remove("open");
+  document.getElementById("searchInput").value = "";
+  document.getElementById("searchSuggestWrap").innerHTML = "";
+  document.getElementById("searchSuggestWrap").style.display = "none";
+}
+
 
 // 使い方ポップアップの開閉
 function toggleHelpModal(show) {
