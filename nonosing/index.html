@@ -946,6 +946,14 @@ function selectSuggestSong(id) {
   // 1. 検索バーを閉じる
   document.getElementById("searchPanel").classList.remove("open");
   
+  // 1.2 検索窓に入力された文字を自動で消す（クリア）
+  document.getElementById("searchInput").value = "";
+  
+  // 1.5 予測変換の候補枠を完全に消して非表示にする（バグ修正）
+  document.getElementById("searchSuggestWrap").innerHTML = "";
+  document.getElementById("searchSuggestWrap").style.display = "none";
+
+  
   // 2. 既存の検索結果エリア（大元の表示）にその曲をセットして展開する
   const songsData = getSongsData();
   const targetSong = songsData.filter(s => s.id === id);
@@ -956,6 +964,7 @@ function selectSuggestSong(id) {
     toggleSong(id);
   }, 100);
 }
+
 
 
 // 隠し検索バーの開閉
