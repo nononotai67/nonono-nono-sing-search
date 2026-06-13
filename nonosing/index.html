@@ -198,6 +198,13 @@ h3 {
   box-sizing: border-box;
 }
 
+/* 📱 スマホでも「ら」を新しい行の左端からスタートさせる */
+.grid .btn[onclick*="'ら'"] {
+  grid-column-start: 1;
+}
+
+
+
 /* 💻 PCモニター（画面幅768px以上）の時だけ適用する完璧なロジック */
 @media screen and (min-width: 768px) {
   .grid {
