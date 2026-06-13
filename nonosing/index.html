@@ -607,15 +607,26 @@ body.dark-mode #rankingList div div:last-child {
       <span onclick="toggleSideMenu()" style="cursor: pointer; color: #788699; font-size: 16px;">×</span>
     </h4>
     
-    <!-- 項目リスト（ここに今後いろいろ追加していけます！） -->
+       <!-- 項目リスト（ご指定の順番：グッズショップ ➔ ガイドライン ➔ ダークモード） -->
     <div style="display: flex; flex-direction: column; gap: 15px;">
-      <!-- ダークモード切り替え項目 -->
+      
+      <!-- 1. 🛒 公式グッズショップ（最新のミリプロオフィシャルショップURLに対応） -->
+      <div onclick="window.open('https://shop.milpr.com/', '_blank')" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: #f2f7fa; border-radius: 12px; cursor: pointer; font-weight: bold; color: #65728a; transition: 0.2s;" onmouseover="this.style.background='#fff5fa'; this.style.color='#ff3b9d'" onmouseout="this.style.background='#f2f7fa'; this.style.color='#65728a'">
+        <span>🛒 公式グッズショップ</span>
+      </div>
+
+      <!-- 2. 📖 二次創作ガイドライン（公式の最新規約URLに対応） -->
+      <div onclick="window.open('https://milpr.com/guideline', '_blank')" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: #f2f7fa; border-radius: 12px; cursor: pointer; font-weight: bold; color: #65728a; transition: 0.2s;" onmouseover="this.style.background='#fff5fa'; this.style.color='#ff3b9d'" onmouseout="this.style.background='#f2f7fa'; this.style.color='#65728a'">
+        <span>📖 二次創作ガイドライン</span>
+      </div>
+
+      <!-- 3. 🌙 ダークモード切り替え項目（元のロジックを100%維持） -->
       <div onclick="toggleDarkModeStyle()" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: #f2f7fa; border-radius: 12px; cursor: pointer; font-weight: bold; color: #65728a; transition: 0.2s;" onmouseover="this.style.background='#fff5fa'; this.style.color='#ff3b9d'" onmouseout="this.style.background='#f2f7fa'; this.style.color='#65728a'">
         <span>🌙 ダークモード</span>
         <span id="darkModeWidget" style="font-size: 16px;">OFF</span>
       </div>
       
-      <!-- 💡 今後ここに同じ形で追加していけます -->
+      <!-- 💡 今後ここに同じ形で追加していけます（安全な部屋の内側に残しました） -->
     </div>
     
   </div>
