@@ -1574,35 +1574,6 @@ function toggleDarkModeStyle() {
     localStorage.setItem("themeMode", "light"); // 💡 ここでブラウザに「昼」と記憶させます
   }
 }
-// 𝕏（旧Twitter）にログイン中のアカウントでセトリをシェアする機能
-function shareToX() {
-  const songsData = getSongsData();
-  let textList = [];
-
-  if (songsData.length) {
-    songsData.forEach(s => {
-      s.list.forEach(item => {
-        const key = makeKey(s.id, item);
-        if (favorites.includes(key)) {
-          textList.push(`・${s.name}`);
-        }
-      });
-    });
-  }
-
-  if (textList.length === 0) {
-    alert("お気に入りに曲が登録されていません。");
-    return;
-  }
-
-  const baseText = `🎧🤍 音ノ乃のの マイセトリ 🎧🤍\n\n${textList.join('\n')}\n\n`;
-  const hashtags = "音ノ乃のの,ののの歌枠"; 
-  const shareUrl = window.location.href;
-
-  // 💡 【修正点】アプリ自動起動＆ダイレクト投稿画面を開くための正しいフルURLです！
-  const xUrl = `https://x.com{encodeURIComponent(baseText)}&hashtags=${encodeURIComponent(hashtags)}&url=${encodeURIComponent(shareUrl)}`;
-  window.open(xUrl, '_blank');
-}
 
 
 </script>

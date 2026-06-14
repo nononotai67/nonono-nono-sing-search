@@ -148,6 +148,11 @@ window.songs.push({
       date: "2026-05-01",
       time: "0:13:28",
       url: "https://www.youtube.com/live/2pQyGxegG4k?si=4TTg5Kfsv9L56RI3&t=808"
+    },
+    {
+      date: "2026-04-26",
+      time: "1:02:03",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=VLAH4yXqXHu-feXC&t=3723"
     }
   ]
 });

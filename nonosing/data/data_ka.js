@@ -238,3 +238,29 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songka16",
+  name: "グリズリーに襲われたら♡",
+  kana: "ぐりずりーにおそわれたら",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-26",
+      time: "1:06:11",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=OXwe4YbXkHsxhUC-&t=3971"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka17",
+  name: "海馬成長痛",
+  kana: "かいばせいちょうつう",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-26",
+      time: "1:23:40",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=HOoBSnZTDN6GDJ_0&t=5020"
+    }
+  ]
+});

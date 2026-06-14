@@ -383,4 +383,17 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songsa26",
+  name: "スピカ",
+  kana: "すぴか",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-26",
+      time: "1:27:16",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=AOeuG1sggn_odkDf&t=5236"
+    }
+  ]
+});
 

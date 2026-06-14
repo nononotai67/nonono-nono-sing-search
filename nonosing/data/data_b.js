@@ -11,3 +11,21 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songb2",
+  name: "Bling-Bang-Bang-Born",
+  kana: "Bling-Bang-Bang-Born",
+  alpha: "Bling-Bang-Bang-Born",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "0:16:09",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=A2jG7VAsf5bDXwHW&t=969"
+    },
+    {
+      date: "2026-04-26",
+      time: "0:50:41",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=LiwtBNVvURAefJCN&t=3041"
+    }
+  ]
+});

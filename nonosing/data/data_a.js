@@ -64,8 +64,12 @@ window.songs.push({
       date: "2026-05-04",
       time: "0:52:25",
       url: "https://www.youtube.com/live/P5vq4IeOM5c?si=eSANUctHcawio2Cl&t=3145"
+    },
+    {
+      date: "2026-04-26",
+      time: "0:54:06",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=UP-zfzR8FIA-8D82&t=3246"
     }
-
   ]
 });
 window.songs.push({
@@ -186,7 +190,7 @@ window.songs.push({
   ]
 });
 window.songs.push({
-  id: "songaa14",
+  id: "songa14",
   name: "おやすみ泣き声、さよなら歌姫",
   kana: "おやすみなきごえさよならうたひめ",
   alpha: "",
@@ -195,6 +199,58 @@ window.songs.push({
       date: "2026-05-03",
       time: "1:10:41",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=0KEc7m9W1dtIcILE&t=4241"
+    }
+  ]
+});
+window.songs.push({
+  id: "songa15",
+  name: "オトノケ",
+  kana: "おとのけ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-26",
+      time: "0:47:45",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=wmjN1VOAtigYJrnc&t=2865"
+    }
+  ]
+});
+window.songs.push({
+  id: "songa16",
+  name: "お勉強しといてよ",
+  kana: "おべんきょうしといてよ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-26",
+      time: "1:08:17",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=eFHWTEEgMqDndlNQ&t=4097"
+    }
+  ]
+});
+window.songs.push({
+  id: "songaa17",
+  name: "あいつら全員同窓会",
+  kana: "あいつらぜんいんどうそうかい",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-26",
+      time: "1:17:36",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=flc52lga2YOLaKbP&t=4656"
+    }
+  ]
+});
+window.songs.push({
+  id: "songaa18",
+  name: "いますぐ輪廻",
+  kana: "いますぐりんね",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-26",
+      time: "1:28:50",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=tQxPTNaLqQADr02n&t=5330"
     }
   ]
 });
