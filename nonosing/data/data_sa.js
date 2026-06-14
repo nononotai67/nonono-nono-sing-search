@@ -331,3 +331,56 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songsa22,",
+  name: "春雷",
+  kana: "しゅんらい",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-26",
+      time: "0:07:02",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=m3B_8NFYddg0PPSO&t=422"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa23",
+  name: "ずうっといっしょ！",
+  kana: "ずうっといっしょ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-26",
+      time: "0:23:06",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=n7ESHvtdLMKzlc-h&t=1386"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa24",
+  name: "深海",
+  kana: "しんかい",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-26",
+      time: "0:45:14",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=m1-FojkYPw1zGQ9D&t=2714"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa25",
+  name: "失礼しますが、RIP♡",
+  kana: "しつれいしますがrip",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-26",
+      time: "0:46:38",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=tIUL0UyOUW6wfepU&t=2798"
+    }
+  ]
+});
+

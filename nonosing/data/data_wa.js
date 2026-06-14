@@ -18,6 +18,11 @@ window.songs.push({
       date: "2024-04-17",
       time: "0:18:28",
       url: "https://www.youtube.com/live/Ig6w5qKHfSg?si=vAWCQYTbdI0O-1U5&t=1108"
+    },
+    {
+      date: "2026-04-26",
+      time: "0:38:56",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=89HoPmecPVilMF3V&t=2336"
     }
   ]
 });

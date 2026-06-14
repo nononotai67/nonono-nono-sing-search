@@ -287,7 +287,13 @@ h3 {
   border-radius: 20px;
   border: 2px solid #edf4f7;
   box-shadow: 0 6px 16px rgba(163, 191, 207, 0.12);
+  
+  /* 💡 6曲分（h4の高さ＋隙間）を超えたら枠内スクロールさせる設定 */
+  max-height: 435px;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
+
 
 #fav-list {
   margin-top: 25px;
@@ -1395,7 +1401,8 @@ function showResult(result) {
     return (a.kana || "").localeCompare((b.kana || ""), 'ja', { numeric: true });
   });
 
-  el.innerHTML = sortedResult.map(s => {
+   // 💡 曲のリスト部分を生成
+  const songListHtml = sortedResult.map(s => {
     const singCount = s.list ? s.list.length : 0;
     const artistInfo = s.artist ? `<span style="font-size:12px;color:#65728a;margin-left:5px;font-weight:normal;">(${s.artist})</span>` : '';
 
@@ -1423,6 +1430,17 @@ function showResult(result) {
       </div>
     `;
   }).join("");
+
+  // 💡 左下に配置する「閉じる」ボタン部分（押すと非表示にして上へ戻る）
+  const areaCloseBtnHtml = `
+    <div style="text-align: left; margin-top: 15px;">
+      <button class="close-btn" onclick="document.getElementById('result').style.display='none'; window.scrollTo({top: 350, behavior: 'smooth'});" style="margin: 0;">閉じる</button>
+    </div>
+  `;
+
+  // 💡 リストとボタンをくっつけて画面に表示
+  el.innerHTML = songListHtml + areaCloseBtnHtml;
+
 
   // 【追加】画面に曲の一覧が書き込まれた直後（50ミリ秒後）、結果エリアへぬるっと自動スクロール
   setTimeout(() => {

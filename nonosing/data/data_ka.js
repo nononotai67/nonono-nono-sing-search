@@ -191,6 +191,50 @@ window.songs.push({
       date: "2026-05-03",
       time: "1:21:57",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=grAw0rFVJAKGVAw5&t=4917"
+    },
+    {
+      date: "2026-04-26",
+      time: "0:17:11",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=Rkai-6eldQQLWhkh&t=1031"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka13",
+  name: "感電",
+  kana: "かんでん",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-26",
+      time: "0:02:19",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=tLpjRFPT9fZd-L_O&t=139"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka14",
+  name: "君じゃなきゃダメみたい",
+  kana: "きみじゃなきゃだめみたい",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-26",
+      time: "0:29:50",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=ohqjEZbRb6MDuZYM&t=1790"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka15",
+  name: "君と電波塔の交信",
+  kana: "きみとでんぱとうのこうしん",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-26",
+      time: "0:45:00",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=fH5G0J9RjozvGGHs&t=2700"
     }
   ]
 });

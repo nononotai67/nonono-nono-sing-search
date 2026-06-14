@@ -197,6 +197,11 @@ window.songs.push({
       date: "2025-05-07",
       time: "0:16:03",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=yJS--7pLlfK77Y_D&t=963"
+    },
+    {
+      date: "2026-04-26",
+      time: "0:33:49",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=iAqh9023SeLcVgA1&t=2029"
     }
   ]
 });
@@ -350,6 +355,45 @@ window.songs.push({
       date: "2026-05-01",
       time: "1:04:56",
       url: "https://www.youtube.com/live/2pQyGxegG4k?si=y2eCl4IfNNsTcs59&t=3896"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha24",
+  name: "フライデー・ナイト",
+  kana: "ふらいでーないと",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-26",
+      time: "0:19:49",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=48iCwxw128WQWSLc&t=1189"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha25",
+  name: "星降る海",
+  kana: "ほしふるうみ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-26",
+      time: "0:24:03",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=LspLM4_T445K5MqZ&t=1443"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha26",
+  name: "フィナーレ。",
+  kana: "ふぃなーれ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-26",
+      time: "0:25:07",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=juCnpyvrZWC7eBoK&t=1507"
     }
   ]
 });
