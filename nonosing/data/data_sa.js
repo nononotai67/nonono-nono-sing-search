@@ -72,6 +72,11 @@ window.songs.push({
       date: "2026-05-03",
       time: "0:07:35",
       url: "https://www.youtube.com/live/yncgO9ZuaHo?si=7YeRUwr0oFiz3S-W&t=455"
+        },
+    {
+      date: "2026-04-12",
+      time: "0:01:15",
+      url: "https://www.youtube.com/live/K8hZ-YJk07w?si=C0TmLinKDxhAPxUx&t=75"
     }
   ]
 });
@@ -198,6 +203,11 @@ window.songs.push({
       date: "2026-05-03",
       time: "1:23:25",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=kjOkUSl7iUMw0bt7&t=5005"
+        },
+    {
+      date: "2026-04-12",
+      time: "0:28:49",
+      url: "https://www.youtube.com/live/K8hZ-YJk07w?si=h0jurPuI0XHVISGE&t=1729"
     }
   ]
 });
@@ -328,6 +338,11 @@ window.songs.push({
       date: "2026-05-01",
       time: "0:34:07",
       url: "https://www.youtube.com/live/2pQyGxegG4k?si=44DVDdLsaC-YNoGC&t=2047"
+        },
+    {
+      date: "2026-04-25",
+      time: "0:28:38",
+      url: "https://www.youtube.com/live/Yhat0riYxYY?si=WUa2ExF2jZNbkwXg&t=1718"
     }
   ]
 });
@@ -341,6 +356,11 @@ window.songs.push({
       date: "2026-04-26",
       time: "0:07:02",
       url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=m3B_8NFYddg0PPSO&t=422"
+        },
+    {
+      date: "2026-04-12",
+      time: "0:14:07",
+      url: "https://www.youtube.com/live/K8hZ-YJk07w?si=1ObFcEmWFqRwbhNk&t=847"
     }
   ]
 });
@@ -393,6 +413,19 @@ window.songs.push({
       date: "2026-04-26",
       time: "1:27:16",
       url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=AOeuG1sggn_odkDf&t=5236"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa27",
+  name: "しわあわせ",
+  kana: "しわあわせ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-25",
+      time: "0:23:34",
+      url: "https://www.youtube.com/live/Yhat0riYxYY?si=tO5rIu7b2bw0m5pf&t=1414"
     }
   ]
 });

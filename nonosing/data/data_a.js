@@ -254,4 +254,73 @@ window.songs.push({
     }
   ]
 });
-
+window.songs.push({
+  id: "songa19", 
+  name: "置き手紙",
+  kana: "おきてがみ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-25",
+      time: "0:17:02",
+      url: "https://www.youtube.com/live/Yhat0riYxYY?si=zjkRXud0oleQv911&t=1022"
+    }
+  ]
+});
+window.songs.push({
+  id: "songa20",
+  name: "踊り子",
+  kana: "おどりこ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-25",
+      time: "0:24:08",
+      url: "https://www.youtube.com/live/Yhat0riYxYY?si=gVM7w__d1OlDPSZp&t=1448"
+    }
+  ]
+});
+window.songs.push({
+  id: "songaa21",
+  name: "あの娘シークレット",
+  kana: "あのこしーくれっと",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-12",
+      time: "0:09:14",
+      url: "https://www.youtube.com/live/K8hZ-YJk07w?si=7UDkETknnwQQDeYC&t=554"
+        },
+    {
+      date: "2026-04-04",
+      time: "0:24:46",
+      url: "https://www.youtube.com/live/CIGspkqU2YU?si=sNE1MECTT7V4HAnc&t=1486"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka22",
+  name: "貴方の恋人になりたい",
+  kana: "あなたのこいびとになりたい",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-12",
+      time: "0:35:34",
+      url: "https://www.youtube.com/live/K8hZ-YJk07w?si=pShKn8d9Hyj0m-s0&t=2134"
+    }
+  ]
+});
+window.songs.push({
+  id: "songaa23",
+  name: "お気に召すまま",
+  kana: "おきにめすまま",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-04",
+      time: "0:13:22",
+      url: "https://www.youtube.com/live/CIGspkqU2YU?si=sSjTuWs-kE63rlJD&t=802"
+    }
+  ]
+});

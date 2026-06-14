@@ -68,6 +68,11 @@ window.songs.push({
       date: "2026-06-03",
       time: "0:08:26",
       url: "https://www.youtube.com/live/AEbOSvBJOAc?si=clfWKGTwsW7rBSoY&t=506"
+        },
+    {
+      date: "2026-04-04",
+      time: "0:05:39",
+      url: "https://www.youtube.com/live/CIGspkqU2YU?si=QHsAvpey5HmBdtOB&t=339"
     }
   ]
 });
@@ -81,6 +86,11 @@ window.songs.push({
       date: "2023-07-30",
       time: "0:17:11",
       url: "https://www.youtube.com/live/1fNsi2TZMaE?si=ZZjhlC7tmHoOcVBi&t=1031"
+        },
+    {
+      date: "2026-04-25",
+      time: "0:54:45",
+      url: "https://www.youtube.com/live/Yhat0riYxYY?si=_9lxw57NptCtA_PX&t=3285"
     }
   ]
 });
@@ -94,6 +104,16 @@ window.songs.push({
       date: "2023-07-30",
       time: "0:24:54",
       url: "https://www.youtube.com/live/PMXYFe5t780?si=QGeLq0kYW3yC-vgm&t=1494"
+     },
+     {
+      date: "2026-05-03",
+      time: "0:19:01",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=OmEZtDiBmjW7WFre&t=1141"
+     },
+    {
+      date: "2026-04-25",
+      time: "0:02:11",
+      url: "https://www.youtube.com/live/Yhat0riYxYY?si=bfFiXsoXmS9evg5V&t=131"
     }
   ]
 });
@@ -117,6 +137,11 @@ window.songs.push({
       date: "2026-05-03",
       time: "1:09:24",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=4MTZQ59qWoZ0lUTJ&t=4164"
+        },
+    {
+      date: "2026-04-12",
+      time: "0:18:36",
+      url: "https://www.youtube.com/live/K8hZ-YJk07w?si=U1_w-CPHxz02Q_P1&t=1116"
     }
   ]
 });
@@ -207,6 +232,11 @@ window.songs.push({
       date: "2026-04-26",
       time: "0:33:49",
       url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=iAqh9023SeLcVgA1&t=2029"
+        },
+    {
+      date: "2026-04-25",
+      time: "0:46:40",
+      url: "https://www.youtube.com/live/Yhat0riYxYY?si=djRt0WbCQjTLkzAM&t=2800"
     }
   ]
 });
@@ -243,6 +273,11 @@ window.songs.push({
       date: "2026-05-03",
       time: "1:12:36",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=VA98v7WkYRskCt5T&t=4356"
+        },
+    {
+      date: "2026-04-04",
+      time: "0:17:42",
+      url: "https://www.youtube.com/live/CIGspkqU2YU?si=6VsxYPSMU1GbehFU&t=1062"
     }
   ]
 });
@@ -312,20 +347,7 @@ window.songs.push({
   ]
 });
 window.songs.push({
-  id: "songha20",
-  name: "不可幸力",
-  kana: "ふかこうりょく",
-  alpha: "",
-  list: [
-    {
-      date: "2026-05-03",
-      time: "0:19:01",
-      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=OmEZtDiBmjW7WFre&t=1141"
-    }
-  ]
-});
-window.songs.push({
-  id: "songha21",
+  id: "songha220",
   name: "ヒカリへ",
   kana: "ひかりへ",
   alpha: "",
@@ -338,7 +360,7 @@ window.songs.push({
   ]
 });
 window.songs.push({
-  id: "songha22",
+  id: "songha21",
   name: "春泥棒",
   kana: "はるどろぼう",
   alpha: "",
@@ -351,7 +373,7 @@ window.songs.push({
   ]
 });
 window.songs.push({
-  id: "songha23",
+  id: "songha22",
   name: "ひゅるりらぱっぱ",
   kana: "ひゅるりらぱっぱ",
   alpha: "",
@@ -364,7 +386,7 @@ window.songs.push({
   ]
 });
 window.songs.push({
-  id: "songha24",
+  id: "songha23",
   name: "フライデー・ナイト",
   kana: "ふらいでーないと",
   alpha: "",
@@ -377,7 +399,7 @@ window.songs.push({
   ]
 });
 window.songs.push({
-  id: "songha25",
+  id: "songha24",
   name: "星降る海",
   kana: "ほしふるうみ",
   alpha: "",
@@ -390,7 +412,7 @@ window.songs.push({
   ]
 });
 window.songs.push({
-  id: "songha26",
+  id: "songha25",
   name: "フィナーレ。",
   kana: "ふぃなーれ",
   alpha: "",
@@ -399,6 +421,58 @@ window.songs.push({
       date: "2026-04-26",
       time: "0:25:07",
       url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=juCnpyvrZWC7eBoK&t=1507"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha26", 
+  name: "瞳惚れ",
+  kana: "ひとみぼれ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-25",
+      time: "0:17:53",
+      url: "https://www.youtube.com/live/Yhat0riYxYY?si=qzws0ieqYbrPlgSE&t=1073"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha27",
+  name: "百花繚乱",
+  kana: "ひゃっかりょうらん",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-12",
+      time: "0:30:36",
+      url: "https://www.youtube.com/live/K8hZ-YJk07w?si=c1Z9MFifCFqQrK2S&t=1836"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha28",
+  name: "飛行艇",
+  kana: "ひこうてい",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-04",
+      time: "0:00:56",
+      url: "https://www.youtube.com/live/CIGspkqU2YU?si=lHIzqgN3xqLPkXaO&t=56"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha29",
+  name: "ハミング",
+  kana: "はみんぐ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-04",
+      time: "0:29:22",
+      url: "https://www.youtube.com/live/CIGspkqU2YU?si=ePfNgqyd22jkytsE&t=1762"
     }
   ]
 });

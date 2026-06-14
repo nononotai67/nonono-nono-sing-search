@@ -315,3 +315,29 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songta20",
+  name: "東京フラッシュ",
+  kana: "とうきょうふらっしゅ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-25",
+      time: "0:11:51",
+      url: "https://www.youtube.com/live/Yhat0riYxYY?si=cIy0eJWXYkZtUloj&t=711"
+    }
+  ]
+});
+window.songs.push({
+  id: "songta21",
+  name: "灯火",
+  kana: "ともしび",
+  alpha: "",
+  list: [
+    {
+      date: "2026-04-25",
+      time: "0:47:44",
+      url: "https://www.youtube.com/live/Yhat0riYxYY?si=tlsiMLIFlB_uCL02&t=2864"
+    }
+  ]
+});

@@ -24,3 +24,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songaa3",
+  name: "APT.",
+  kana: "APT.",
+  alpha: "APT.",
+  list: [
+    {
+      date: "2026-04-12",
+      time: "0:41:07",
+      url: "https://www.youtube.com/live/K8hZ-YJk07w?si=ssjCgfs5vxajWwQV&t=2467"
+    }
+  ]
+});

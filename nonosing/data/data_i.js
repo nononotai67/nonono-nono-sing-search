@@ -26,6 +26,11 @@ window.songs.push({
       date: "2026-05-07",
       time: "1:47:57",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=wVxq3CorCDFzyju4&t=6477"
+        },
+    {
+      date: "2026-04-04",
+      time: "0:09:26",
+      url: "https://www.youtube.com/live/CIGspkqU2YU?si=ihB3SNd5d5-v1KSG&t=566"
     }
   ]
 });
@@ -52,6 +57,11 @@ window.songs.push({
       date: "2026-05-07",
       time: "1:34:32",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=APVnoliS5_xIgY1h&t=5672"
+    },
+    {
+      date: "2026-04-26",
+      time: "0:11:03",
+      url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=NObM6iydN895VrbB&t=663"
     }
   ]
 });

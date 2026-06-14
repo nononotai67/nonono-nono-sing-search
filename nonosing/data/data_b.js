@@ -29,3 +29,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songb3",
+  name: "bad guy",
+  kana: "bad guy",
+  alpha: "bad guy",
+  list: [
+    {
+      date: "2026-04-12",
+      time: "0:44:26",
+      url: "https://www.youtube.com/live/K8hZ-YJk07w?si=IwbsYrF9WyOosvQn&t=2666"
+    }
+  ]
+});
