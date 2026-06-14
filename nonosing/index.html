@@ -591,8 +591,12 @@ body.dark-mode #memberMenuAccordion span[onclick*="none"] {
   color: #ff5cae !important;
 }
 
-/* 💡 白枠(sub-box)が開いていない時は×マークを隠し、開いた時だけ自動で出現させる正しい命令 */
-div[id^="sub-box-"]:not([style*="block"]):not([style*="flex"]) span[onclick*="none"] { display: none !important; }
+/* 💡 sub-boxが「display: none（初期状態）」または「スタイル指定なし」の時は、その上にある×ボタンを完全に隠す */
+div:has(> div[id^="sub-box-"][style*="none"]) span[onclick*="none"],
+div:has(> div[id^="sub-box-"]:not([style*="display"])) span[onclick*="none"] {
+  display: none !important;
+}
+
 
 
 
