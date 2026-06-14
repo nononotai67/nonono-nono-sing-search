@@ -143,6 +143,11 @@ window.songs.push({
       date: "2026-06-03",
       time: "0:16:00",
       url: "https://www.youtube.com/live/AEbOSvBJOAc?si=YMS7t2XgHHKzZ8dr&t=960"
+    },
+    {
+      date: "2026-05-01",
+      time: "0:13:28",
+      url: "https://www.youtube.com/live/2pQyGxegG4k?si=4TTg5Kfsv9L56RI3&t=808"
     }
   ]
 });
@@ -161,6 +166,11 @@ window.songs.push({
       date: "2026-05-04",
       time: "1:15:12",
       url: "https://www.youtube.com/live/P5vq4IeOM5c?si=cNJEdXMc_sl2sio1&t=4512"
+    },
+    {
+      date: "2026-05-01",
+      time: "0:29:30",
+      url: "https://www.youtube.com/live/2pQyGxegG4k?si=vpvPod-ZKkoi4uml&t=1770"
     }
   ]
 });
@@ -327,6 +337,19 @@ window.songs.push({
       date: "2026-05-03",
       time: "1:00:18",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=QtuiNq1OdTjnB7a2&t=3618"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha23",
+  name: "ひゅるりらぱっぱ",
+  kana: "ひゅるりらぱっぱ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-01",
+      time: "1:04:56",
+      url: "https://www.youtube.com/live/2pQyGxegG4k?si=y2eCl4IfNNsTcs59&t=3896"
     }
   ]
 });

@@ -39,6 +39,11 @@ window.songs.push({
       date: "2023-07-30",
       time: "0:48:43",
       url: "https://www.youtube.com/live/PMXYFe5t780?si=YWj3hAmKIxxmN7Dj&t=2923"
+    },
+    {
+      date: "2026-05-01",
+      time: "0:56:38",
+      url: "https://www.youtube.com/live/2pQyGxegG4k?si=j5Ne2NewpiFt402L&t=3398"
     }
   ]
 });
@@ -80,6 +85,11 @@ window.songs.push({
       date: "2023-12-29",
       time: "0:28:53",
       url: "https://www.youtube.com/live/q7URvTzczco?si=uxkKnh8Qzl1FVkTh&t=1733"
+    },
+    {
+      date: "2026-05-01",
+      time: "0:20:21",
+      url: "https://www.youtube.com/live/2pQyGxegG4k?si=2txbB_BSDTCWPtMt&t=1221"
     }
   ]
 });
@@ -305,6 +315,19 @@ window.songs.push({
       date: "2026-05-03",
       time: "1:19:25",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=uxlQFc3tq3cDI_3V&t=4765"
+    }
+  ]
+});
+window.songs.push({
+  id: "songs21",
+  name: "世界の秘密",
+  kana: "せかいのひみつ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-01",
+      time: "0:34:07",
+      url: "https://www.youtube.com/live/2pQyGxegG4k?si=44DVDdLsaC-YNoGC&t=2047"
     }
   ]
 });

@@ -32,6 +32,11 @@ window.songs.push({
       date: "2023-06-13",
       time: "1:05:37",
       url: "https://www.youtube.com/live/1fNsi2TZMaE?si=Xj0LE5c08lMjhxNa&t=3937"
+    },
+    {
+      date: "2026-05-01",
+      time: "0:05:28",
+      url: "https://www.youtube.com/live/2pQyGxegG4k?si=1IzJk-A0Yc_Gv2BT&t=328"
     }
   ]
 });
@@ -123,3 +128,43 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songta9",
+  name: "都落ち",
+  kana: "みやこおち",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "0:53:28",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=Sv7Nv-XpaDKK5OPA&t=3208"
+    }
+  ]
+});
+window.songs.push({
+  id: "songma6",
+  name: "妄想感傷代償連盟",
+  kana: "もうそうかんしょうだいしょうれんめい",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "1:02:33",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=klyRC5bnsfLtXOy4&t=3753"
+    }
+  ]
+});
+window.songs.push({
+  id: "songma7",
+  name: "満ちてゆく",
+  kana: "みちてゆく",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-01",
+      time: "0:42:52",
+      url: "https://www.youtube.com/live/2pQyGxegG4k?si=qHxTQ2jNjp0qoqB_&t=2572"
+    }
+  ]
+});
+

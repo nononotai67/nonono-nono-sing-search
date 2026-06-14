@@ -98,6 +98,11 @@ window.songs.push({
       date: "2024-04-17",
       time: "0:30:49",
       url: "https://www.youtube.com/live/Ig6w5qKHfSg?si=td-jkCGUu3X_tWmH&t=1849"
+    },
+    {
+      date: "2026-05-01",
+      time: "0:09:32",
+      url: "https://www.youtube.com/live/2pQyGxegG4k?si=YK8JFv9lEV8XDkAT&t=572"
     }
   ]
 });
@@ -111,6 +116,11 @@ window.songs.push({
       date: "2024-10-19",
       time: "0:21:06",
       url: "https://www.youtube.com/live/fgNWDixmbFo?si=RtrSRxAlCjhqpH7_&t=1266"
+    },
+    {
+      date: "2026-05-01",
+      time: "0:25:10",
+      url: "https://www.youtube.com/live/2pQyGxegG4k?si=djQ1S_kDEYMvTGAr&t=1510"
     }
   ]
 });

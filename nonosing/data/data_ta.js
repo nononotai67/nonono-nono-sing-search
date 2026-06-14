@@ -13,8 +13,14 @@ window.songs.push({
       date: "2026-05-03",
       time: "0:55:32",
       url: "https://www.youtube.com/live/yncgO9ZuaHo?si=wOzYEcIDtoR4w9kQ&t=3332"
+    },
+    {
+      date: "2026-05-01",
+      time: "0:02:03",
+      url: "https://www.youtube.com/live/2pQyGxegG4k?si=EglKp8th2o9c24pa&t=123"
     }
   ]
+
 });
 window.songs.push({
   id: "songtata2",
@@ -59,6 +65,11 @@ window.songs.push({
       date: "2023-06-13",
       time: "0:46:12",
       url: "https://www.youtube.com/live/1fNsi2TZMaE?si=Xj0LE5c08lMjhxNa&t=2772"
+    },
+    {
+      date: "2026-05-01",
+      time: "0:52:30",
+      url: "https://www.youtube.com/live/2pQyGxegG4k?si=HJnM7hBbJ_Af8YNa&t=3150"
     }
   ]
 });
@@ -288,6 +299,19 @@ window.songs.push({
       date: "2026-05-03",
       time: "0:55:44",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=5pDUUgd5-Z9dN7XC&t=3344"
+    }
+  ]
+});
+window.songs.push({
+  id: "songta19",
+  name: "旅路",
+  kana: "たびじ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-01",
+      time: "0:37:50",
+      url: "https://www.youtube.com/live/2pQyGxegG4k?si=JO4jj-58csTZlbVi&t=2270"
     }
   ]
 });

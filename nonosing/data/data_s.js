@@ -99,4 +99,17 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songsa10",
+  name: "SUN",
+  kana: "SUN",
+  alpha: "SUN",
+  list: [
+    {
+      date: "2026-05-01",
+      time: "0:48:20",
+      url: "https://www.youtube.com/live/2pQyGxegG4k?si=ZsysWi2eHJw7dAyz&t=2900"
+    }
+  ]
+});
 

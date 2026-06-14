@@ -1272,7 +1272,7 @@ function updateDeleteCount() {
   btn.disabled = (checkedCount === 0);
 }
 
-// 4. チェックを入れた曲だけを特定してLocal Storageから削除する
+// 4. チェックを入れた曲だけを特定してLocal Storageから削除する（ポップアップ一切なし）
 function executeSelectDelete() {
   const checkboxes = document.querySelectorAll(".fav-delete-checkbox");
   let keysToDelete = [];
@@ -1285,19 +1285,16 @@ function executeSelectDelete() {
 
   if (keysToDelete.length === 0) return;
 
-  if (confirm(`選択した ${keysToDelete.length} 件のお気に入りを削除してもよろしいですか？`)) {
-    // 選ばれたキーを除外して配列を上書き
-    favorites = favorites.filter(key => !keysToDelete.includes(key));
-    localStorage.setItem("favDates", JSON.stringify(favorites));
-    
-    alert("選択した曲を削除しました。");
-    resetDeleteState(); // 画面を元に戻す
-    
-    // 検索結果の画面に出ている「★」の色も即座に消灯させる
-    const activeKeyword = document.getElementById("searchInput").value.trim();
-    if (activeKeyword) {
-      searchSong();
-    }
+  // 選ばれたキーを除外して配列を上書き
+  favorites = favorites.filter(key => !keysToDelete.includes(key));
+  localStorage.setItem("favDates", JSON.stringify(favorites));
+  
+  resetDeleteState(); // 画面を元に戻す
+  
+  // 検索結果の画面に出ている「★」の色も即座に消灯させる
+  const activeKeyword = document.getElementById("searchInput").value.trim();
+  if (activeKeyword) {
+    searchSong();
   }
 }
 
@@ -1310,23 +1307,22 @@ function resetDeleteState() {
   renderFav(); // 通常の表示に戻して再描画
 }
 
-// 6. 「すべて削除」の処理（終了時にボタンの状態をリセットするように調整したもの）
+// 6. 「すべて削除」の処理（ポップアップ一切なし）
 function clearFavList() {
   if (favorites.length === 0) return;
-  if (confirm("お気に入りリストをすべて空にしてもよろしいですか？")) {
-    favorites = [];
-    localStorage.removeItem("favDates");
-    resetDeleteState(); // 通常のボタン表示に戻す
-    const activeKeyword = document.getElementById("searchInput").value.trim();
-    if (activeKeyword) {
-      searchSong();
-    } else {
-      document.getElementById("result").innerHTML = "";
-      document.getElementById("result").style.display = "none";
-    }
-    alert("お気に入りをすべて削除しました。");
+
+  favorites = [];
+  localStorage.removeItem("favDates");
+  resetDeleteState(); // 通常のボタン表示に戻す
+  const activeKeyword = document.getElementById("searchInput").value.trim();
+  if (activeKeyword) {
+    searchSong();
+  } else {
+    document.getElementById("result").innerHTML = "";
+    document.getElementById("result").style.display = "none";
   }
 }
+
 
 // ひらがな・アーティスト名同時検索
 function searchSong() {
