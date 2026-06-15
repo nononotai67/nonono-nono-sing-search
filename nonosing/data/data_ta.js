@@ -151,6 +151,11 @@ window.songs.push({
       date: "2023-06-13",
       time: "0:42:13",
       url: "https://www.youtube.com/live/1fNsi2TZMaE?si=KVaeTlW8gaH9-53x&t=2533"
+        },
+    {
+      date: "2024-04-01",
+      time: "0:42:54",
+      url: "https://www.youtube.com/live/H9qbNFRaRtk?si=aVmFIZypDMxCWu1a&t=2574"
     }
   ]
 });
@@ -208,6 +213,11 @@ window.songs.push({
       date: "2026-05-04",
       time: "0:06:11",
       url: "https://www.youtube.com/live/P5vq4IeOM5c?si=jiLTfVklWKHjXqg4&t=371"
+        },
+    {
+      date: "2024-04-01",
+      time: "0:46:14",
+      url: "https://www.youtube.com/live/H9qbNFRaRtk?si=Vn5CLMVPYa9XU6DO&t=2774"
     }
   ]
 });
@@ -286,6 +296,11 @@ window.songs.push({
       date: "2026-05-03",
       time: "0:49:23",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=UGRDMhueJc7vAPIN&t=2963"
+        },
+    {
+      date: "2025-12-23",
+      time: "1:48:36",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=53ojsnxm_DwcSIIV&t=6516"
     }
   ]
 });
@@ -338,6 +353,24 @@ window.songs.push({
       date: "2026-04-25",
       time: "0:47:44",
       url: "https://www.youtube.com/live/Yhat0riYxYY?si=tlsiMLIFlB_uCL02&t=2864"
+    }
+  ]
+});
+window.songs.push({
+  id: "songta22",
+  name: "月陽 ツキアカリ",
+  kana: "つきあかり",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-23",
+      time: "0:20:06",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=NZLJKTrLtBe2FFVr&t=1206"
+        },
+    {
+      date: "2025-12-23",
+      time: "1:46:04",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=_pgd-Qhb8kj2I7zJ&t=6364"
     }
   ]
 });

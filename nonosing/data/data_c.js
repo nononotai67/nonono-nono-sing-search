@@ -11,3 +11,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songc2",
+  name: "Call Me Maybe",
+  kana: "Call Me Maybe",
+  alpha: "Call Me Maybe",
+  list: [
+    {
+      date: "2025-12-23",
+      time: "0:42:09",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=cy65im7gUyo8DjAc&t=2529"
+    }
+  ]
+});

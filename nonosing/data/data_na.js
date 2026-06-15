@@ -26,7 +26,7 @@ window.songs.push({
 });
 window.songs.push({
   id: "songna3",
-  name: "ののの音々ネ",
+  name: "ののの音々ネ！",
   kana: "のののねねね",
   alpha: "",
   list: [
@@ -34,7 +34,17 @@ window.songs.push({
       date: "2026-05-07",
       time: "2:51:45",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=Sv5NmYsF78V6b1nv&t=10305"
-    }
+     },
+    {
+      date: "2025-08-24",
+      time: "0:45:11",
+      url: "https://www.youtube.com/live/rzr98IwzCAI?si=Q55xDrGBh0eAdbdh&t=2711"
+    },
+     {
+      date: "2025-12-23",
+      time: "1:27:12",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=AXhZE2AKe3PJeqH3&t=5232"
+      }
   ]
 });
 window.songs.push({
@@ -47,6 +57,11 @@ window.songs.push({
       date: "2026-05-04",
       time: "0:30:48",
       url: "https://www.youtube.com/live/P5vq4IeOM5c?si=fWH6PiMXdKswt20q&t=1848"
+        },
+    {
+      date: "2024-04-01",
+      time: "0:21:50",
+      url: "https://www.youtube.com/live/H9qbNFRaRtk?si=1bztQk6SpQASVbTJ&t=1310"
     }
   ]
 });
@@ -86,6 +101,19 @@ window.songs.push({
       date: "2026-05-03",
       time: "1:20:27",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=O_WLFkBicHz5RVOP&t=4827"
+    }
+  ]
+});
+window.songs.push({
+  id: "songna8",
+  name: "何なんw",
+  kana: "なんなん",
+  alpha: "",
+  list: [
+    {
+      date: "2024-04-01",
+      time: "0:00:57",
+      url: "https://www.youtube.com/live/H9qbNFRaRtk?si=y2iT3gd5VAvlpoVR&t=57"
     }
   ]
 });

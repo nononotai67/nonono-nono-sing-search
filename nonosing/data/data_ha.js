@@ -8,6 +8,11 @@ window.songs.push({
       date: "2023-06-10",
       time: "0:7:40",
       url: "https://www.youtube.com/live/hMGOsqP8TWY?si=G7Y6OMzH4O7Hf0FZ&t=460"
+        },
+    {
+      date: "2025-09-26",
+      time: "0:07:23",
+      url: "https://www.youtube.com/live/aOGcpivxUB8?si=B6VeTTXyTwvyQ4sb&t=443"
     }
   ]
 });
@@ -38,7 +43,7 @@ window.songs.push({
 window.songs.push({
   id: "songha3",
   name: "ひまわりの約束",
-  kana: "ひ",
+  kana: "ひまわりのやくそく",
   alpha: "",
   list: [
     {
@@ -73,6 +78,16 @@ window.songs.push({
       date: "2026-04-04",
       time: "0:05:39",
       url: "https://www.youtube.com/live/CIGspkqU2YU?si=QHsAvpey5HmBdtOB&t=339"
+        },
+    {
+      date: "2025-10-19",
+      time: "0:05:55",
+      url: "https://www.youtube.com/live/6kBy393P-zM?si=rqrrLDCjrQbbSm5z&t=355"
+        },
+    {
+      date: "2025-08-24",
+      time: "0:04:47",
+      url: "https://www.youtube.com/live/rzr98IwzCAI?si=CcZk7K03hYH-3oCO&t=287"
     }
   ]
 });
@@ -91,6 +106,11 @@ window.songs.push({
       date: "2026-04-25",
       time: "0:54:45",
       url: "https://www.youtube.com/live/Yhat0riYxYY?si=_9lxw57NptCtA_PX&t=3285"
+        },
+    {
+      date: "2025-07-20",
+      time: "0:19:10",
+      url: "https://www.youtube.com/live/WEA3g8rQsr4?si=K3_TLHxQYA6Ry9g_&t=1150"
     }
   ]
 });
@@ -178,6 +198,16 @@ window.songs.push({
       date: "2026-04-26",
       time: "1:02:03",
       url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=VLAH4yXqXHu-feXC&t=3723"
+        },
+    {
+      date: "2025-12-23",
+      time: "1:23:04",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=2ZyXLfi6YQzsqGYr&t=4984"
+        },
+    {
+      date: "2025-10-19",
+      time: "0:03:06",
+      url: "https://www.youtube.com/live/6kBy393P-zM?si=IP8cj1bF4Dr1jyFf&t=186"
     }
   ]
 });
@@ -278,6 +308,16 @@ window.songs.push({
       date: "2026-04-04",
       time: "0:17:42",
       url: "https://www.youtube.com/live/CIGspkqU2YU?si=6VsxYPSMU1GbehFU&t=1062"
+        },
+    {
+      date: "2025-12-23",
+      time: "0:18:47",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=hL8Wtn9I1dJxDqY4&t=1127"
+        },
+    {
+      date: "2025-12-23",
+      time: "0:30:21",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=nCJyImoMq550ZjUA&t=1821"
     }
   ]
 });
@@ -382,6 +422,11 @@ window.songs.push({
       date: "2026-05-01",
       time: "1:04:56",
       url: "https://www.youtube.com/live/2pQyGxegG4k?si=y2eCl4IfNNsTcs59&t=3896"
+        },
+    {
+      date: "2025-08-24",
+      time: "0:15:07",
+      url: "https://www.youtube.com/live/rzr98IwzCAI?si=qc5_0lv01qHjMBkj&t=907"
     }
   ]
 });
@@ -421,6 +466,11 @@ window.songs.push({
       date: "2026-04-26",
       time: "0:25:07",
       url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=juCnpyvrZWC7eBoK&t=1507"
+        },
+    {
+      date: "2025-08-24",
+      time: "0:10:14",
+      url: "https://www.youtube.com/live/rzr98IwzCAI?si=8HOAr89vV21lQeHK&t=614"
     }
   ]
 });
@@ -447,6 +497,16 @@ window.songs.push({
       date: "2026-04-12",
       time: "0:30:36",
       url: "https://www.youtube.com/live/K8hZ-YJk07w?si=c1Z9MFifCFqQrK2S&t=1836"
+        },
+    {
+      date: "2025-12-23",
+      time: "1:05:49",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=7d7uxcp1l3ryEQTt&t=3949"
+        },
+    {
+      date: "2025-12-23",
+      time: "1:07:25",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=9bVTKdEiloxSpFzJ&t=4045"
     }
   ]
 });
@@ -473,6 +533,45 @@ window.songs.push({
       date: "2026-04-04",
       time: "0:29:22",
       url: "https://www.youtube.com/live/CIGspkqU2YU?si=ePfNgqyd22jkytsE&t=1762"
+    }
+  ]
+});
+window.songs.push({
+  id: "songba30",
+  name: "僕のこと",
+  kana: "ぼくのこと",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-23",
+      time: "0:02:06",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=xYnJ2QSA8rAaCwgX&t=126"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha31",
+  name: "本能",
+  kana: "ほんのう",
+  alpha: "",
+  list: [
+    {
+      date: "2024-04-01",
+      time: "0:07:12",
+      url: "https://www.youtube.com/live/H9qbNFRaRtk?si=XiBNREJqa14wetSq&t=432"
+    }
+  ]
+});
+window.songs.push({
+  id: "songba32",
+  name: "晩餐歌",
+  kana: "ばんさんか",
+  alpha: "",
+  list: [
+    {
+      date: "2025-09-26",
+      time: "0:01:39",
+      url: "https://www.youtube.com/live/aOGcpivxUB8?si=jHSr_Fnhd6ZlRi0k&t=99"
     }
   ]
 });

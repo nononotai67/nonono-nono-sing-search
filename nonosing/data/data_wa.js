@@ -23,6 +23,16 @@ window.songs.push({
       date: "2026-04-26",
       time: "0:38:56",
       url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=89HoPmecPVilMF3V&t=2336"
+        },
+    {
+      date: "2025-12-23",
+      time: "0:24:22",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=QPvCdfsDxThiHGou&t=1462"
+        },
+    {
+      date: "2025-06-09",
+      time: "0:34:05",
+      url: "https://www.youtube.com/live/fJr5cfLu77A?si=ZZHG9Exa_EU6OyvZ&t=2045"
     }
   ]
 });

@@ -18,6 +18,11 @@ window.songs.push({
       date: "2025-03-30",
       time: "0:4:32",
       url: "https://www.youtube.com/live/V2HB4Cnl3SI?si=apuk-0xfQAiFte4y&t=272"
+        },
+    {
+      date: "2025-09-26",
+      time: "0:30:14",
+      url: "https://www.youtube.com/live/aOGcpivxUB8?si=aKTIBRlqCLy-3OxZ&t=1814"
     }
   ]
 });
@@ -63,6 +68,11 @@ window.songs.push({
       date: "2026-05-07",
       time: "1:42:55",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=bsIB-xmptJXFeR6V&t=6175"
+        },
+    {
+      date: "2025-06-09",
+      time: "0:15:20",
+      url: "https://www.youtube.com/live/fJr5cfLu77A?si=_tq9laYWupaBOR-s&t=920"
     }
   ]
 });
@@ -89,6 +99,32 @@ window.songs.push({
       date: "2026-05-07",
       time: "1:30:33",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=5UfzGy485dSB1kkS&t=5433"
+    }
+  ]
+});
+window.songs.push({
+  id: "songra7",
+  name: "ルビーの指環",
+  kana: "るびーのゆびわ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-05-03",
+      time: "1:01:37",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=mxViP6WT8U8GePXr&t=3697"
+    }
+  ]
+});
+window.songs.push({
+  id: "songra8",
+  name: "ロクデナシテンシ",
+  kana: "ろくでなしてんし",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-23",
+      time: "1:31:03",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=J-td86QoXGYvaE70&t=5463"
     }
   ]
 });

@@ -47,6 +47,11 @@ window.songs.push({
       date: "2026-05-07",
       time: "0:24:44",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=K4ypUPsDtS47QZ0Y&t=1484"
+        },
+    {
+      date: "2025-08-24",
+      time: "0:28:50",
+      url: "https://www.youtube.com/live/rzr98IwzCAI?si=sKLy-tFni3iwc4GM&t=1730"
     }
   ]
 });
@@ -91,6 +96,32 @@ window.songs.push({
       date: "2026-05-03",
       time: "0:32:28",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=3bq6p-2x3uPWdW4Z&t=1948"
+    }
+  ]
+});
+window.songs.push({
+  id: "songya8",
+  name: "雪の華",
+  kana: "ゆきのはな",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-23",
+      time: "0:59:40",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=5h-rfGuzah9XyFcM&t=3580"
+    }
+  ]
+});
+window.songs.push({
+  id: "songya9",
+  name: "夜行",
+  kana: "やこう",
+  alpha: "",
+  list: [
+    {
+      date: "2025-10-19",
+      time: "0:01:14",
+      url: "https://www.youtube.com/live/6kBy393P-zM?si=rGFBZmi40i1QRkx_&t=74"
     }
   ]
 });

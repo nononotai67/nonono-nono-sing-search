@@ -103,6 +103,21 @@ window.songs.push({
       date: "2026-05-01",
       time: "0:09:32",
       url: "https://www.youtube.com/live/2pQyGxegG4k?si=YK8JFv9lEV8XDkAT&t=572"
+    },
+    {
+      date: "2025-12-23",
+      time: "0:13:06",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=t-MfxjwELYQPw6BW&t=786"
+        },
+    {
+      date: "2025-12-23",
+      time: "0:17:41",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=S8tH33h13J2k2BBw&t=1061"
+        },
+    {
+      date: "2025-10-19",
+      time: "0:21:23",
+      url: "https://www.youtube.com/live/6kBy393P-zM?si=aRySSVKFReQ41kRQ&t=1283"
     }
   ]
 });
@@ -214,6 +229,11 @@ window.songs.push({
       date: "2026-04-26",
       time: "0:02:19",
       url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=tLpjRFPT9fZd-L_O&t=139"
+        },
+    {
+      date: "2025-07-20",
+      time: "0:07:45",
+      url: "https://www.youtube.com/live/WEA3g8rQsr4?si=EHDmzPxO-yQdE3zm&t=465"
     }
   ]
 });
@@ -276,6 +296,104 @@ window.songs.push({
       date: "2026-04-04",
       time: "0:20:47",
       url: "https://www.youtube.com/live/CIGspkqU2YU?si=ury-OuAMVf22XXVe&t=1247"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka18",
+  name: "歌舞伎町の女王",
+  kana: "かぶきちょうのじょおう",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-23",
+      time: "0:55:20",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=pAi_KRS2qxhvjMOE&t=3320"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka19",
+  name: "ケセラセラ",
+  kana: "けせらせら",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-23",
+      time: "1:00:29",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=Y9VtHnKI66Pq8SxG&t=3629"
+        },
+    {
+      date: "2025-12-23",
+      time: "1:01:52",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=hkocyew-fA1hDKSI&t=3712"
+        },
+    {
+      date: "2025-07-20",
+      time: "0:23:50",
+      url: "https://www.youtube.com/live/WEA3g8rQsr4?si=tRJG4zzyE0ITvHWr&t=1430"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka20",
+  name: "小悪魔だってかまわない！",
+  kana: "こあくまだってかまわない",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-23",
+      time: "1:56:06",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=dIsR3ivJOl5k_IaV&t=6966"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka21",
+  name: "クスシキ",
+  kana: "くすしき",
+  alpha: "",
+  list: [
+    {
+      date: "2025-10-19",
+      time: "0:17:24",
+      url: "https://www.youtube.com/live/6kBy393P-zM?si=VIrjbkE2I6Cs25zW&t=1044"
+        },
+    {
+      date: "2025-08-24",
+      time: "0:24:26",
+      url: "https://www.youtube.com/live/rzr98IwzCAI?si=6W4gV9yLZwAML61c&t=1466"
+        },
+    {
+      date: "2025-09-26",
+      time: "0:34:09",
+      url: "https://www.youtube.com/live/aOGcpivxUB8?si=aNJogxdPPd-j3a-q&t=2049"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka22",
+  name: "グッバイ宣言",
+  kana: "ぐっばいせんげん",
+  alpha: "",
+  list: [
+    {
+      date: "2025-06-09",
+      time: "0:11:14",
+      url: "https://www.youtube.com/live/fJr5cfLu77A?si=ZtRyTJ6MQ8WSHPvw&t=674"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka23",
+  name: "怪物さん",
+  kana: "かいぶつさん",
+  alpha: "",
+  list: [
+    {
+      date: "2024-04-01",
+      time: "0:17:22",
+      url: "https://www.youtube.com/live/H9qbNFRaRtk?si=MdAKDb2SPwX7lc0u&t=1042"
     }
   ]
 });

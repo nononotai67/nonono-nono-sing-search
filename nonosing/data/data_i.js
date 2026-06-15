@@ -44,6 +44,11 @@ window.songs.push({
       date: "2026-05-07",
       time: "0:19:43",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=cMKxiap_rG-RYju8&t=1183"
+        },
+    {
+      date: "2025-07-20",
+      time: "0:01:41",
+      url: "https://www.youtube.com/live/WEA3g8rQsr4?si=XV5SBDuXUOBB8U2F&t=101"
     }
   ]
 });
@@ -62,6 +67,26 @@ window.songs.push({
       date: "2026-04-26",
       time: "0:11:03",
       url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=NObM6iydN895VrbB&t=663"
+        },
+    {
+      date: "2025-12-23",
+      time: "0:20:31",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=JyCMfB4yeKwk_PIM&t=1231"
+    },
+    {
+      date: "2025-12-23",
+      time: "0:23:24",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=yU0P1ArGTeUQNgks&t=1404"
+        },
+    {
+      date: "2025-12-23",
+      time: "1:06:58",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=RLFN6g75QP2B_br8&t=4018"
+        },
+    {
+      date: "2025-09-26",
+      time: "0:17:15",
+      url: "https://www.youtube.com/live/aOGcpivxUB8?si=EavJsdSo_bLNzrtA&t=1035"
     }
   ]
 });

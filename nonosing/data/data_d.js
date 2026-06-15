@@ -11,3 +11,29 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songd2",
+  name: "Dangerously",
+  kana: "Dangerously",
+  alpha: "Dangerously",
+  list: [
+    {
+      date: "2025-12-23",
+      time: "0:40:49",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=L930A53n1cTHedcu&t=2449"
+    }
+  ]
+});
+window.songs.push({
+  id: "songd3",
+  name: "Dragon Night",
+  kana: "Dragon Night",
+  alpha: "Dragon Night",
+  list: [
+    {
+      date: "2025-12-23",
+      time: "1:22:48",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=yptvFtoTFjMFc_wb&t=4968"
+    }
+  ]
+});

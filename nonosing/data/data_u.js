@@ -11,3 +11,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songu2",
+  name: "UNDEAD",
+  kana: "UNDEAD",
+  alpha: "UNDEAD",
+  list: [
+    {
+      date: "2025-06-09",
+      time: "0:29:57",
+      url: "https://www.youtube.com/live/fJr5cfLu77A?si=A-HYLqLHWnQsCwhU&t=1797"
+    }
+  ]
+});

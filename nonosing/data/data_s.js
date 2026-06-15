@@ -96,11 +96,16 @@ window.songs.push({
       date: "2026-05-03",
       time: "1:25:24",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=5haUKHWBv7cOjebI&t=5124"
+        },
+    {
+      date: "2025-12-23",
+      time: "0:41:52",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=bYamzxV3YrZ61X-q&t=2512"
     }
   ]
 });
 window.songs.push({
-  id: "songsa10",
+  id: "songs10",
   name: "SUN",
   kana: "SUN",
   alpha: "SUN",
@@ -109,6 +114,24 @@ window.songs.push({
       date: "2026-05-01",
       time: "0:48:20",
       url: "https://www.youtube.com/live/2pQyGxegG4k?si=ZsysWi2eHJw7dAyz&t=2900"
+        },
+    {
+      date: "2025-07-20",
+      time: "0:13:40",
+      url: "https://www.youtube.com/live/WEA3g8rQsr4?si=j-lv91SFwlHjh8Rt&t=820"
+    }
+  ]
+});
+window.songs.push({
+  id: "songs11",
+  name: "Santa Tell Me",
+  kana: "Santa Tell Me",
+  alpha: "Santa Tell Me",
+  list: [
+    {
+      date: "2025-12-23",
+      time: "0:44:42",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=yuuDWgRU65WednQ0&t=2682"
     }
   ]
 });

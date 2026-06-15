@@ -8,6 +8,11 @@ window.songs.push({
       date: "2026-06-03",
       time: "1:13:23",
       url: "https://www.youtube.com/live/AEbOSvBJOAc?si=bDmHAyiFcpLv64eT&t=4403"
+        },
+    {
+      date: "2025-12-23",
+      time: "0:29:50",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=LQqv6q-qwrqF43Gk&t=1790"
     }
   ]
 });

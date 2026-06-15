@@ -24,3 +24,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songn3",
+  name: "NO",
+  kana: "NO",
+  alpha: "NO",
+  list: [
+    {
+      date: "2025-12-23",
+      time: "1:26:21",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=915LeYoU8hn-0zwS&t=5181"
+    }
+  ]
+});

@@ -26,6 +26,11 @@ window.songs.push({
       date: "2023-06-13",
       time: "0:02:49",
       url: "https://www.youtube.com/live/1fNsi2TZMaE?si=Ux2BUs-zrxRFXg3i&t=169"
+        },
+    {
+      date: "2025-09-26",
+      time: "0:25:34",
+      url: "https://www.youtube.com/live/aOGcpivxUB8?si=1NqsQvUQRnigRwcx&t=1534"
     }
   ]
 });
@@ -44,6 +49,11 @@ window.songs.push({
       date: "2026-05-01",
       time: "0:56:38",
       url: "https://www.youtube.com/live/2pQyGxegG4k?si=j5Ne2NewpiFt402L&t=3398"
+        },
+    {
+      date: "2025-10-19",
+      time: "0:25:50",
+      url: "https://www.youtube.com/live/6kBy393P-zM?si=df_UcyLV5s-wOg5Q&t=1550"
     }
   ]
 });
@@ -77,6 +87,16 @@ window.songs.push({
       date: "2026-04-12",
       time: "0:01:15",
       url: "https://www.youtube.com/live/K8hZ-YJk07w?si=C0TmLinKDxhAPxUx&t=75"
+        },
+    {
+      date: "2025-06-09",
+      time: "0:22:23",
+      url: "https://www.youtube.com/live/fJr5cfLu77A?si=EcIxQpX82-xRvCLN&t=1343"
+        },
+    {
+      date: "2024-04-01",
+      time: "0:37:11",
+      url: "https://www.youtube.com/live/H9qbNFRaRtk?si=BJPDWPpmkXopek02&t=2231"
     }
   ]
 });
@@ -95,6 +115,11 @@ window.songs.push({
       date: "2026-05-01",
       time: "0:20:21",
       url: "https://www.youtube.com/live/2pQyGxegG4k?si=2txbB_BSDTCWPtMt&t=1221"
+        },
+    {
+      date: "2025-08-24",
+      time: "0:18:37",
+      url: "https://www.youtube.com/live/rzr98IwzCAI?si=REsqSPgH3WR9TXrY&t=1117"
     }
   ]
 });
@@ -154,6 +179,21 @@ window.songs.push({
       date: "2024-04-17",
       time: "0:05:31",
       url: "https://www.youtube.com/live/Ig6w5qKHfSg?si=UGB1oB56LHlQH5Yh&t=331"
+        },
+    {
+      date: "2025-12-23",
+      time: "0:58:36",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=MOE-K3tuEMeXafh8&t=3516"
+        },
+    {
+      date: "2025-10-19",
+      time: "0:11:08",
+      url: "https://www.youtube.com/live/6kBy393P-zM?si=S96x9KTfFwrkSrhj&t=668"
+        },
+    {
+      date: "2025-08-24",
+      time: "0:38:33",
+      url: "https://www.youtube.com/live/rzr98IwzCAI?si=nQhbMrOAjHcAPu5t&t=2313"
     }
   ]
 });
@@ -260,6 +300,11 @@ window.songs.push({
       date: "2026-05-03",
       time: "0:14:50",
       url: "https://www.youtube.com/live/yncgO9ZuaHo?si=UUkvLoGAJvemQA2E&t=890"
+    },
+     {
+      date: "2025-12-23",
+      time: "1:52:36",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=wK3peTtoQnFe0LsA&t=6756"
     }
   ]
 });
@@ -286,6 +331,11 @@ window.songs.push({
       date: "2026-05-03",
       time: "0:35:46",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=fT3LiRcStE7Vtw2v&t=2146"
+        },
+    {
+      date: "2025-12-23",
+      time: "1:14:35",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=wogDpTI2DURGe_F6&t=4475"
     }
   ]
 });
@@ -374,6 +424,11 @@ window.songs.push({
       date: "2026-04-26",
       time: "0:23:06",
       url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=n7ESHvtdLMKzlc-h&t=1386"
+        },
+    {
+      date: "2025-06-09",
+      time: "0:02:37",
+      url: "https://www.youtube.com/live/fJr5cfLu77A?si=F9qFLu0K6Tqf7uUI&t=157"
     }
   ]
 });
@@ -429,4 +484,57 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songza28",
+  name: "残響散歌",
+  kana: "ざんきょうさんか",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-23",
+      time: "1:19:06",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=-MDdw9VSYp2uIsrr&t=4746"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa29",
+  name: "サインはB",
+  kana: "さいんはびー",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-23",
+      time: "1:34:27",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=HUnzf32yz6oIle8W&t=5667"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa30",
+  name: "空も飛べるはず",
+  kana: "そらもとべるはず",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-23",
+      time: "2:02:10",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=Kc5ycrx3fyilxW77&t=7330"
+    }
+  ]
+});
+window.songs.push({
+  id: "songza31",
+  name: "前前前世",
+  kana: "ぜんぜんぜんせ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-08-24",
+      time: "0:00:15",
+      url: "https://www.youtube.com/live/rzr98IwzCAI?si=h8DsI99C84sWZ7H1&t=15"
+    }
+  ]
+});
+
 

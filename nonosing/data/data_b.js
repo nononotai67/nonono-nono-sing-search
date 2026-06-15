@@ -42,3 +42,69 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songb4",
+  name: "Baby",
+  kana: "Baby",
+  alpha: "Baby",
+  list: [
+    {
+      date: "2025-12-23",
+      time: "0:45:18",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=jTrEgEQ9wlgoFdUo&t=2718"
+    }
+  ]
+});
+window.songs.push({
+  id: "songb5",
+  name: "Bunny Girl",
+  kana: "Bunny Girl",
+  alpha: "Bunny Girl",
+  list: [
+    {
+      date: "2025-12-23",
+      time: "0:51:33",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=z0RawFcfEb13FgJL&t=3093"
+    }
+  ]
+});
+window.songs.push({
+  id: "songb6",
+  name: "BONBON GiRL",
+  kana: "BONBON GiRL",
+  alpha: "BONBON GiRL",
+  list: [
+    {
+      date: "2025-12-23",
+      time: "0:55:43",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=RPKz94YobH-sOrdi&t=3343"
+    }
+  ]
+});
+window.songs.push({
+  id: "songb7",
+  name: "Booo!",
+  kana: "Booo!",
+  alpha: "Booo!",
+  list: [
+    {
+      date: "2025-10-19",
+      time: "0:14:16",
+      url: "https://www.youtube.com/live/6kBy393P-zM?si=ITTpk9tdTkMt4f05&t=856"
+    }
+  ]
+});
+window.songs.push({
+  id: "songb8",
+  name: "Bang Bang",
+  kana: "Bang Bang",
+  alpha: "Bang Bang",
+  list: [
+    {
+      date: "2025-09-26",
+      time: "0:45:43",
+      url: "https://www.youtube.com/live/aOGcpivxUB8?si=Oe5rngy6igY14bPS&t=2743"
+    }
+  ]
+});
+

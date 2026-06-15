@@ -37,6 +37,11 @@ window.songs.push({
       date: "2026-05-01",
       time: "0:05:28",
       url: "https://www.youtube.com/live/2pQyGxegG4k?si=1IzJk-A0Yc_Gv2BT&t=328"
+        },
+    {
+      date: "2025-09-26",
+      time: "0:21:09",
+      url: "https://www.youtube.com/live/aOGcpivxUB8?si=-SQM_OttfIzF6d23&t=1269"
     }
   ]
 });
@@ -138,6 +143,11 @@ window.songs.push({
       date: "2026-05-03",
       time: "0:53:28",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=Sv7Nv-XpaDKK5OPA&t=3208"
+        },
+    {
+      date: "2024-04-01",
+      time: "0:12:20",
+      url: "https://www.youtube.com/live/H9qbNFRaRtk?si=uO5Fa3OZoIDlQpoD&t=740"
     }
   ]
 });
@@ -164,6 +174,37 @@ window.songs.push({
       date: "2026-05-01",
       time: "0:42:52",
       url: "https://www.youtube.com/live/2pQyGxegG4k?si=qHxTQ2jNjp0qoqB_&t=2572"
+    }
+  ]
+});
+window.songs.push({
+  id: "songma8",
+  name: "まつり",
+  kana: "まつり",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-23",
+      time: "0:00:07",
+      url: "https://youtube.com"
+        },
+    {
+      date: "2025-12-23",
+      time: "0:04:43",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=YFhXMoiEeo1LY5LM&t=283"
+    }
+  ]
+});
+window.songs.push({
+  id: "songma9",
+  name: "モニタニング",
+  kana: "もにたにんぐ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-06-09",
+      time: "0:06:01",
+      url: "https://www.youtube.com/live/fJr5cfLu77A?si=tDpDz09YzQfSfVve&t=361"
     }
   ]
 });

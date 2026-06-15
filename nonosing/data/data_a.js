@@ -14,6 +14,11 @@ window.songs = [
       date: "2026-05-07",
       time: "1:57:48",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=kVyr5XVPsQPHDs5r&t=7068"
+        },
+    {
+      date: "2025-09-26",
+      time: "0:37:41",
+      url: "https://www.youtube.com/live/aOGcpivxUB8?si=iCEpKjdZ38vt4GYQ&t=2261"
     }
     ]
   }
@@ -69,6 +74,11 @@ window.songs.push({
       date: "2026-04-26",
       time: "0:54:06",
       url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=UP-zfzR8FIA-8D82&t=3246"
+        },
+    {
+      date: "2025-06-09",
+      time: "0:26:11",
+      url: "https://www.youtube.com/live/fJr5cfLu77A?si=cVjFOe5amApvEV83&t=1571"
     }
   ]
 });
@@ -108,6 +118,16 @@ window.songs.push({
       date: "2026-06-03",
       time: "0:45:20",
       url: "https://www.youtube.com/live/AEbOSvBJOAc?si=TQmYIs7msJ1BqVLG&t=2720"
+        },
+    {
+      date: "2025-06-09",
+      time: "0:18:04",
+      url: "https://www.youtube.com/live/fJr5cfLu77A?si=o4Q66oJhIQ3PK0w9&t=1084"
+        },
+    {
+      date: "2025-09-26",
+      time: "0:53:14",
+      url: "https://www.youtube.com/live/aOGcpivxUB8?si=imCxngPBcQgYol1M&t=3194"
     }
   ]
 });
@@ -238,6 +258,11 @@ window.songs.push({
       date: "2026-04-26",
       time: "1:17:36",
       url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=flc52lga2YOLaKbP&t=4656"
+        },
+    {
+      date: "2025-12-23",
+      time: "1:11:36",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=SUL3ffIQFzVf2O2T&t=4296"
     }
   ]
 });
@@ -290,7 +315,7 @@ window.songs.push({
       date: "2026-04-12",
       time: "0:09:14",
       url: "https://www.youtube.com/live/K8hZ-YJk07w?si=7UDkETknnwQQDeYC&t=554"
-        },
+     },
     {
       date: "2026-04-04",
       time: "0:24:46",
@@ -321,6 +346,32 @@ window.songs.push({
       date: "2026-04-04",
       time: "0:13:22",
       url: "https://www.youtube.com/live/CIGspkqU2YU?si=sSjTuWs-kE63rlJD&t=802"
+    }
+  ]
+});
+window.songs.push({
+  id: "songua34",
+  name: "打上花火",
+  kana: "うちあげはなび",
+  alpha: "",
+  list: [
+    {
+      date: "2025-08-24",
+      time: "0:33:18",
+      url: "https://www.youtube.com/live/rzr98IwzCAI?si=d5WWa4zmCgxJKNPB&t=1998"
+    }
+  ]
+});
+window.songs.push({
+  id: "songba25",
+  name: "ヴァンパイア",
+  kana: "ゔぁんぱいあ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-06-09",
+      time: "0:09:41",
+      url: "https://www.youtube.com/live/fJr5cfLu77A?si=autS4GQ3DjO0c6Sq&t=581"
     }
   ]
 });
