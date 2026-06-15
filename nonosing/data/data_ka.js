@@ -378,6 +378,11 @@ window.songs.push({
       date: "2025-09-28",
       time: "0:05:56",
       url: "https://www.youtube.com/live/H6E30GSx1Sk?si=tQ9QrKCHvTqBOT3m&t=356"
+     },
+    {
+      date: "2025-08-07",
+      time: "0:12:58",
+      url: "https://www.youtube.com/live/hCgFEkzusxs?si=zQFnFDx6TdgI6mor&t=778"
     }
   ]
 });

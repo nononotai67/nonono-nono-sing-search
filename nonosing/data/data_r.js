@@ -16,3 +16,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songr2",
+  name: "Retake",
+  kana: "Retake",
+  alpha: "Retake",
+  list: [
+    {
+      date: "2025-08-07",
+      time: "0:57:44",
+      url: "https://www.youtube.com/live/hCgFEkzusxs?si=vjqXUXPkDky9CeA7&t=3464"
+    }
+  ]
+});

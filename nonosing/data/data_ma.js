@@ -42,6 +42,11 @@ window.songs.push({
       date: "2025-09-26",
       time: "0:21:09",
       url: "https://www.youtube.com/live/aOGcpivxUB8?si=-SQM_OttfIzF6d23&t=1269"
+     },
+    {
+      date: "2025-08-07",
+      time: "0:16:49",
+      url: "https://www.youtube.com/live/hCgFEkzusxs?si=jDhT27ucdewgeP6o&t=1009"
     }
   ]
 });

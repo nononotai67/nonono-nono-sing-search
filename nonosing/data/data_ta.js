@@ -237,6 +237,11 @@ window.songs.push({
       date: "2025-09-28",
       time: "0:19:46",
       url: "https://www.youtube.com/live/H6E30GSx1Sk?si=fXWrqg0YyqzXObE5&t=1186"
+     },
+    {
+      date: "2025-08-07",
+      time: "0:53:46",
+      url: "https://www.youtube.com/live/hCgFEkzusxs?si=bVAcLJk8y46y1EDI&t=3226"
     }
   ]
 });
@@ -307,6 +312,11 @@ window.songs.push({
       date: "2026-05-04",
       time: "0:36:29",
       url: "https://www.youtube.com/live/P5vq4IeOM5c?si=aBRnwYWWubR0Gv1e&t=2189"
+     },
+    {
+      date: "2025-08-07",
+      time: "0:21:09",
+      url: "https://www.youtube.com/live/hCgFEkzusxs?si=l69MGdqcvi-P62sj&t=1269"
     }
   ]
 });
@@ -408,6 +418,19 @@ window.songs.push({
       date: "2025-10-19",
       time: "0:49:58",
       url: "https://www.youtube.com/live/XupOA8OZLf4?si=ZOYuDHE5YberU3o-&t=2998"
+    }
+  ]
+});
+window.songs.push({
+  id: "songda24",
+  name: "どうにかなっちゃいそう！",
+  kana: "どうにかなっちゃいそう！",
+  alpha: "",
+  list: [
+    {
+      date: "2025-08-07",
+      time: "0:09:43",
+      url: "https://www.youtube.com/live/hCgFEkzusxs?si=wrMNXx3_Ge_dSnPq&t=583"
     }
   ]
 });

@@ -16,3 +16,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songm2",
+  name: "My Dearest",
+  kana: "My Dearest",
+  alpha: "My Dearest",
+  list: [
+    {
+      date: "2025-08-07",
+      time: "0:01:27",
+      url: "https://www.youtube.com/live/hCgFEkzusxs?si=OGhsOxuVXo_MmcJf&t=87"
+    }
+  ]
+});

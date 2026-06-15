@@ -274,6 +274,11 @@ window.songs.push({
       date: "2026-05-07",
       time: "1:12:38",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=OS8sBFSLor3iwPzw&t=4358"
+     },
+    {
+      date: "2025-08-07",
+      time: "0:05:37",
+      url: "https://www.youtube.com/live/hCgFEkzusxs?si=qujIWGHqMoLUukrF&t=337"
     }
   ]
 });
@@ -582,6 +587,19 @@ window.songs.push({
       date: "2025-10-19",
       time: "1:07:22",
       url: "https://www.youtube.com/live/XupOA8OZLf4?si=V8aGLS-i31pN0BF7&t=4042"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa35",
+  name: "ジャンキーナイトタウンオーケストラ",
+  kana: "じゃんきーないとたうんおーけすとら",
+  alpha: "",
+  list: [
+    {
+      date: "2025-08-07",
+      time: "0:49:12",
+      url: "https://www.youtube.com/live/hCgFEkzusxs?si=7ByXJTVL51Dy-07m&t=2952"
     }
   ]
 });

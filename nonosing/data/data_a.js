@@ -105,6 +105,11 @@ window.songs.push({
       date: "2025-03-30",
       time: "0:56:13",
       url: "https://www.youtube.com/live/V2HB4Cnl3SI?si=gF6ht2XfKEbiccxb&t=3563"
+     },
+    {
+      date: "2025-08-07",
+      time: "1:17:55",
+      url: "https://www.youtube.com/live/hCgFEkzusxs?si=m_NHwtxcT5JWfmCX&t=4675"
     }
   ]
 });
@@ -263,6 +268,11 @@ window.songs.push({
       date: "2025-12-23",
       time: "1:11:36",
       url: "https://www.youtube.com/live/k-iAfbx2qbs?si=SUL3ffIQFzVf2O2T&t=4296"
+     },
+    {
+      date: "2025-08-07",
+      time: "0:59:19",
+      url: "https://www.youtube.com/live/hCgFEkzusxs?si=79ruAFM9OSTl4x-T&t=3559"
     }
   ]
 });
@@ -359,6 +369,11 @@ window.songs.push({
       date: "2025-08-24",
       time: "0:33:18",
       url: "https://www.youtube.com/live/rzr98IwzCAI?si=d5WWa4zmCgxJKNPB&t=1998"
+     },
+    {
+      date: "2025-08-07",
+      time: "0:25:59",
+      url: "https://www.youtube.com/live/hCgFEkzusxs?si=rZwN81ErTRAq6t-q&t=1559"
     }
   ]
 });
@@ -372,6 +387,19 @@ window.songs.push({
       date: "2025-06-09",
       time: "0:09:41",
       url: "https://www.youtube.com/live/fJr5cfLu77A?si=autS4GQ3DjO0c6Sq&t=581"
+    }
+  ]
+});
+window.songs.push({
+  id: "songa26",
+  name: "オーバードーズ",
+  kana: "おーばーどーず",
+  alpha: "",
+  list: [
+    {
+      date: "2025-08-07",
+      time: "0:44:38",
+      url: "https://www.youtube.com/live/hCgFEkzusxs?si=ofBmuzyvMYISnX5x&t=2678"
     }
   ]
 });

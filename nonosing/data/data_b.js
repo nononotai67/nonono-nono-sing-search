@@ -91,6 +91,11 @@ window.songs.push({
       date: "2025-10-19",
       time: "0:14:16",
       url: "https://www.youtube.com/live/6kBy393P-zM?si=ITTpk9tdTkMt4f05&t=856"
+     },
+    {
+      date: "2025-08-07",
+      time: "1:05:09",
+      url: "https://www.youtube.com/live/hCgFEkzusxs?si=Abvq5p0B5cqStt6t&t=3909"
     }
   ]
 });
@@ -117,6 +122,19 @@ window.songs.push({
       date: "2025-08-14",
       time: "1:07:02",
       url: "https://www.youtube.com/live/m5NfRqEDCZs?si=LrORJG2J_pr_egMd&t=4022"
+    }
+  ]
+});
+window.songs.push({
+  id: "songb10",
+  name: "B級",
+  kana: "B級",
+  alpha: "B級",
+  list: [
+    {
+      date: "2025-08-07",
+      time: "0:16:43",
+      url: "https://www.youtube.com/live/hCgFEkzusxs?si=OEjvimLd5LOQvhGf&t=1003"
     }
   ]
 });
