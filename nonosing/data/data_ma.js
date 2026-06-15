@@ -55,7 +55,12 @@ window.songs.push({
       date: "2023-07-30",
       time: "0:57:10",
       url: "https://www.youtube.com/live/PMXYFe5t780?si=RZy5Caa623ZlgwUQ&t=3430"
-    }
+     },
+    {
+      date: "2025-11-04",
+      time: "0:37:52",
+      url: "https://www.youtube.com/live/4PPFPSQk5-U?si=JXoL3e-D11p_Qe1k&t=2272"
+    } 
   ]
 });
 window.songs.push({

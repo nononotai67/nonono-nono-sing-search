@@ -107,4 +107,17 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songba9",
+  name: "BOOMBAYAH",
+  kana: "BOOMBAYAH",
+  alpha: "BOOMBAYAH",
+  list: [
+    {
+      date: "2025-08-14",
+      time: "1:07:02",
+      url: "https://www.youtube.com/live/m5NfRqEDCZs?si=LrORJG2J_pr_egMd&t=4022"
+    }
+  ]
+});
 

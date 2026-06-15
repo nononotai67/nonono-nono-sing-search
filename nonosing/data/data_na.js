@@ -88,6 +88,11 @@ window.songs.push({
       date: "2026-05-04",
       time: "1:08:24",
       url: "https://www.youtube.com/live/P5vq4IeOM5c?si=33iNuUIgUV3nUfon&t=4104"
+     },
+    {
+      date: "2025-11-04",
+      time: "0:46:13",
+      url: "https://www.youtube.com/live/4PPFPSQk5-U?si=750sjRKgpMrLXG3J&t=2773"
     }
   ]
 });

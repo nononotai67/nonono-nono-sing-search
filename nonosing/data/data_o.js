@@ -13,6 +13,24 @@ window.songs.push({
       date: "2025-12-23",
       time: "0:47:31",
       url: "https://www.youtube.com/live/k-iAfbx2qbs?si=iUmm2_2rh-UVrZyB&t=2851"
+     },
+    {
+      date: "2025-10-19",
+      time: "1:02:37",
+      url: "https://www.youtube.com/live/XupOA8OZLf4?si=whSlLQy51FnQ3qOM&t=3757"
+    }
+  ]
+});
+window.songs.push({
+  id: "songo2",
+  name: "Obsessed",
+  kana: "Obsessed",
+  alpha: "Obsessed",
+  list: [
+    {
+      date: "2025-08-14",
+      time: "0:45:29",
+      url: "https://www.youtube.com/live/m5NfRqEDCZs?si=WrUw6xoWY66erLTM&t=2729"
     }
   ]
 });

@@ -16,3 +16,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songpa2",
+  name: "Perfect",
+  kana: "Perfect",
+  alpha: "Perfect",
+  list: [
+    {
+      date: "2025-08-14",
+      time: "0:54:13",
+      url: "https://www.youtube.com/live/m5NfRqEDCZs?si=_jTSEYrQqQq_n1Tu&t=3253"
+    }
+  ]
+});

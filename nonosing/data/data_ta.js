@@ -18,9 +18,13 @@ window.songs.push({
       date: "2026-05-01",
       time: "0:02:03",
       url: "https://www.youtube.com/live/2pQyGxegG4k?si=EglKp8th2o9c24pa&t=123"
+     },
+    {
+      date: "2025-09-28",
+      time: "0:02:30",
+      url: "https://www.youtube.com/live/H6E30GSx1Sk?si=NPmWtuIwk0qlaVA8&t=150"
     }
   ]
-
 });
 window.songs.push({
   id: "songtata2",
@@ -47,6 +51,11 @@ window.songs.push({
       date: "2026-06-03",
       time: "0:29:15",
       url: "https://www.youtube.com/live/AEbOSvBJOAc?si=dN1pTHs9muT2b_cf&t=1755"
+     },
+    {
+      date: "2025-08-14",
+      time: "0:05:50",
+      url: "https://www.youtube.com/live/m5NfRqEDCZs?si=FZD2mIWx1nqaQ3jB&t=350"
     }
   ]
 });
@@ -156,6 +165,11 @@ window.songs.push({
       date: "2024-04-01",
       time: "0:42:54",
       url: "https://www.youtube.com/live/H9qbNFRaRtk?si=aVmFIZypDMxCWu1a&t=2574"
+     },
+    {
+      date: "2025-08-14",
+      time: "0:10:04",
+      url: "https://www.youtube.com/live/m5NfRqEDCZs?si=NFbsq78uhaqqK9u1&t=604"
     }
   ]
 });
@@ -218,6 +232,11 @@ window.songs.push({
       date: "2024-04-01",
       time: "0:46:14",
       url: "https://www.youtube.com/live/H9qbNFRaRtk?si=Vn5CLMVPYa9XU6DO&t=2774"
+     },
+    {
+      date: "2025-09-28",
+      time: "0:19:46",
+      url: "https://www.youtube.com/live/H6E30GSx1Sk?si=fXWrqg0YyqzXObE5&t=1186"
     }
   ]
 });
@@ -244,6 +263,11 @@ window.songs.push({
       date: "2026-05-07",
       time: "1:52:50",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=bwBfk40Ma2gfWDTB&t=6770"
+   },
+    {
+      date: "2025-08-14",
+      time: "0:56:00",
+      url: "https://www.youtube.com/live/m5NfRqEDCZs?si=jktJ2aKT3GkKjBD5&t=3360"
     }
   ]
 });
@@ -371,6 +395,19 @@ window.songs.push({
       date: "2025-12-23",
       time: "1:46:04",
       url: "https://www.youtube.com/live/k-iAfbx2qbs?si=_pgd-Qhb8kj2I7zJ&t=6364"
+    }
+  ]
+});
+window.songs.push({
+  id: "songta23",
+  name: "とても素敵な六月でした",
+  kana: "とてもすてきなろくがつでした",
+  alpha: "",
+  list: [
+    {
+      date: "2025-10-19",
+      time: "0:49:58",
+      url: "https://www.youtube.com/live/XupOA8OZLf4?si=ZOYuDHE5YberU3o-&t=2998"
     }
   ]
 });

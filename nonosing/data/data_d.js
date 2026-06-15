@@ -37,3 +37,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songd4",
+  name: "Ditto",
+  kana: "Ditto",
+  alpha: "Ditto",
+  list: [
+    {
+      date: "2025-10-19",
+      time: "0:58:35",
+      url: "https://www.youtube.com/live/XupOA8OZLf4?si=yHPRNbivYvFi2_st&t=3515"
+    }
+  ]
+});

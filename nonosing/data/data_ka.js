@@ -234,6 +234,11 @@ window.songs.push({
       date: "2025-07-20",
       time: "0:07:45",
       url: "https://www.youtube.com/live/WEA3g8rQsr4?si=EHDmzPxO-yQdE3zm&t=465"
+     },
+    {
+      date: "2025-10-19",
+      time: "1:12:41",
+      url: "https://www.youtube.com/live/XupOA8OZLf4?si=w7pVeu1XE3fG4AhV&t=4361"
     }
   ]
 });
@@ -368,6 +373,11 @@ window.songs.push({
       date: "2025-09-26",
       time: "0:34:09",
       url: "https://www.youtube.com/live/aOGcpivxUB8?si=aNJogxdPPd-j3a-q&t=2049"
+     },
+    {
+      date: "2025-09-28",
+      time: "0:05:56",
+      url: "https://www.youtube.com/live/H6E30GSx1Sk?si=tQ9QrKCHvTqBOT3m&t=356"
     }
   ]
 });
@@ -394,6 +404,32 @@ window.songs.push({
       date: "2024-04-01",
       time: "0:17:22",
       url: "https://www.youtube.com/live/H9qbNFRaRtk?si=MdAKDb2SPwX7lc0u&t=1042"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka24",
+  name: "気まぐれロマンティック",
+  kana: "きまぐれろまんてぃっく",
+  alpha: "",
+  list: [
+    {
+      date: "2025-11-04",
+      time: "0:30:53",
+      url: "https://www.youtube.com/live/4PPFPSQk5-U?si=wWSAPAX1JnIS-tdy&t=1853"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka25",
+  name: "廻廻奇譚",
+  kana: "かいかいきたん",
+  alpha: "",
+  list: [
+    {
+      date: "2025-08-14",
+      time: "1:06:13",
+      url: "https://www.youtube.com/live/m5NfRqEDCZs?si=icYKrQYAHQR3YIgg&t=3973"
     }
   ]
 });

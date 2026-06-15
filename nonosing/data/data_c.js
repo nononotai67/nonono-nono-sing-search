@@ -24,3 +24,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songc3",
+  name: "CASE143 Japanese ver.",
+  kana: "CASE143 Japanese ver.",
+  alpha: "CASE143 Japanese ver.",
+  list: [
+    {
+      date: "2025-08-14",
+      time: "0:41:54",
+      url: "https://www.youtube.com/live/m5NfRqEDCZs?si=jwWEzl925MiMN8RB&t=2514"
+    }
+  ]
+});

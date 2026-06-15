@@ -429,6 +429,11 @@ window.songs.push({
       date: "2025-06-09",
       time: "0:02:37",
       url: "https://www.youtube.com/live/fJr5cfLu77A?si=F9qFLu0K6Tqf7uUI&t=157"
+     },
+    {
+      date: "2025-10-19",
+      time: "0:42:27",
+      url: "https://www.youtube.com/live/XupOA8OZLf4?si=8IdLVrQeX3dNOKk_&t=2547"
     }
   ]
 });
@@ -533,6 +538,50 @@ window.songs.push({
       date: "2025-08-24",
       time: "0:00:15",
       url: "https://www.youtube.com/live/rzr98IwzCAI?si=h8DsI99C84sWZ7H1&t=15"
+     },
+    {
+      date: "2025-11-04",
+      time: "0:52:26",
+      url: "https://www.youtube.com/live/4PPFPSQk5-U?si=YvwENA-JpKgSoV_9&t=3146"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa32",
+  name: "ソワレ",
+  kana: "そわれ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-09-28",
+      time: "0:34:32",
+      url: "https://www.youtube.com/live/H6E30GSx1Sk?si=qx7pRQYPyaNrQ8DM&t=2072"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa33",
+  name: "3D",
+  kana: "すりーでぃー",
+  alpha: "",
+  list: [
+    {
+      date: "2025-10-19",
+      time: "0:59:03",
+      url: "https://www.youtube.com/live/XupOA8OZLf4?si=iYRINtQsFwLKRzIQ&t=3543"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa34",
+  name: "“青春病”",
+  kana: "せいしゅんびょう",
+  alpha: "",
+  list: [
+    {
+      date: "2025-10-19",
+      time: "1:07:22",
+      url: "https://www.youtube.com/live/XupOA8OZLf4?si=V8aGLS-i31pN0BF7&t=4042"
     }
   ]
 });

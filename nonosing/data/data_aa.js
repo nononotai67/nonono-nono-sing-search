@@ -54,6 +54,29 @@ window.songs.push({
       date: "2025-09-26",
       time: "0:13:12",
       url: "https://www.youtube.com/live/aOGcpivxUB8?si=uEAo9e24l_k411LX&t=792"
+     },
+    {
+      date: "2025-09-28",
+      time: "0:31:05",
+      url: "https://www.youtube.com/live/H6E30GSx1Sk?si=7KcTgTgKE7aYRfGJ&t=1865"
+     },
+    {
+      date: "2025-08-14",
+      time: "0:24:56",
+      url: "https://www.youtube.com/live/m5NfRqEDCZs?si=FeD1mfkKmDDhiYN1&t=1496"
+    }
+  ]
+});
+window.songs.push({
+  id: "songaa4",
+  name: "AS IF IT'S YOUR LAST",
+  kana: "AS IF IT'S YOUR LAST",
+  alpha: "AS IF IT'S YOUR LAST",
+  list: [
+    {
+      date: "2025-08-14",
+      time: "1:07:15",
+      url: "https://www.youtube.com/live/m5NfRqEDCZs?si=0OqGaRgMfTJWnWK7&t=4035"
     }
   ]
 });

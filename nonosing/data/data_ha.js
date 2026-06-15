@@ -88,6 +88,11 @@ window.songs.push({
       date: "2025-08-24",
       time: "0:04:47",
       url: "https://www.youtube.com/live/rzr98IwzCAI?si=CcZk7K03hYH-3oCO&t=287"
+     },
+    {
+      date: "2025-08-14",
+      time: "0:13:40",
+      url: "https://www.youtube.com/live/m5NfRqEDCZs?si=J1iViPK2yvSzY1IG&t=820"
     }
   ]
 });
@@ -175,6 +180,11 @@ window.songs.push({
       date: "2023-12-29",
       time: "0:06:56",
       url: "https://www.youtube.com/live/q7URvTzczco?si=niwyaoU47klIvD6A&t=416"
+     },
+    {
+      date: "2025-09-28",
+      time: "0:16:16",
+      url: "https://www.youtube.com/live/H6E30GSx1Sk?si=ZD5JAbOFKV4EWH4i&t=976"
     }
   ]
 });
@@ -208,6 +218,11 @@ window.songs.push({
       date: "2025-10-19",
       time: "0:03:06",
       url: "https://www.youtube.com/live/6kBy393P-zM?si=IP8cj1bF4Dr1jyFf&t=186"
+     },
+    {
+      date: "2025-09-28",
+      time: "0:12:54",
+      url: "https://www.youtube.com/live/H6E30GSx1Sk?si=85nkC1WhM-BQd-qi&t=774"
     }
   ]
 });
@@ -427,6 +442,11 @@ window.songs.push({
       date: "2025-08-24",
       time: "0:15:07",
       url: "https://www.youtube.com/live/rzr98IwzCAI?si=qc5_0lv01qHjMBkj&t=907"
+     },
+    {
+      date: "2025-10-19",
+      time: "1:17:54",
+      url: "https://www.youtube.com/live/XupOA8OZLf4?si=GSrXkq0xxJO8e6vU&t=4674"
     }
   ]
 });
@@ -471,6 +491,11 @@ window.songs.push({
       date: "2025-08-24",
       time: "0:10:14",
       url: "https://www.youtube.com/live/rzr98IwzCAI?si=8HOAr89vV21lQeHK&t=614"
+     },
+    {
+      date: "2025-09-28",
+      time: "0:26:45",
+      url: "https://www.youtube.com/live/H6E30GSx1Sk?si=7MqiMaPqoTc5quyX&t=1605"
     }
   ]
 });
@@ -572,6 +597,45 @@ window.songs.push({
       date: "2025-09-26",
       time: "0:01:39",
       url: "https://www.youtube.com/live/aOGcpivxUB8?si=jHSr_Fnhd6ZlRi0k&t=99"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha33",
+  name: "ハレンチ",
+  kana: "はれんち",
+  alpha: "",
+  list: [
+    {
+      date: "2025-09-28",
+      time: "0:23:20",
+      url: "https://www.youtube.com/live/H6E30GSx1Sk?si=vnEu5tPbip7Z1h1b&t=1400"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha34",
+  name: "ハナミズキ",
+  kana: "はなみずき",
+  alpha: "",
+  list: [
+    {
+      date: "2025-11-04",
+      time: "0:40:30",
+      url: "https://www.youtube.com/live/4PPFPSQk5-U?si=yHGY7lp7CeW7rasH&t=2430"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha35",
+  name: "人マニア",
+  kana: "ひとまにあ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-10-19",
+      time: "1:00:18",
+      url: "https://www.youtube.com/live/XupOA8OZLf4?si=MavLAIzBpzDR4xJV&t=3618"
     }
   ]
 });
