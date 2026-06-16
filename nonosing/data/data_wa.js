@@ -33,7 +33,12 @@ window.songs.push({
       date: "2025-06-09",
       time: "0:34:05",
       url: "https://www.youtube.com/live/fJr5cfLu77A?si=ZZHG9Exa_EU6OyvZ&t=2045"
-    }
+      },
+  {
+    date: "2025-12-17",
+    time: "0:14:05",
+    url: "https://www.youtube.com/live/NIch6QS8NaE?si=5FeNs5y90EAdXxtE&t=845"
+  }
   ]
 });
 window.songs.push({

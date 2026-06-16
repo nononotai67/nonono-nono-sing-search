@@ -31,7 +31,12 @@ window.songs.push({
       date: "2025-08-14",
       time: "1:00:38",
       url: "https://www.youtube.com/live/m5NfRqEDCZs?si=Tg_Wbx4sJJXyhJ5y&t=3638"
-    }
+      },
+  {
+    date: "2025-08-10",
+    time: "0:03:48",
+    url: "https://www.youtube.com/live/ltwV_7Jpteo?si=f7uPYS-C6qvtwXDb&t=228"
+  }
   ]
 });
 window.songs.push({
@@ -80,7 +85,12 @@ window.songs.push({
       date: "2026-05-03",
       time: "1:17:48",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=oUAPPfjDNtu3Dw2w&t=4668"
-    }
+      },
+  {
+    date: "2025-12-17",
+    time: "0:21:27",
+    url: "https://www.youtube.com/live/NIch6QS8NaE?si=jLHYf6_Ee5EMzSWz&t=1287"
+  }
   ]
 });
 window.songs.push({
@@ -98,7 +108,12 @@ window.songs.push({
       date: "2025-11-04",
       time: "0:14:39",
       url: "https://www.youtube.com/live/4PPFPSQk5-U?si=FydGz1j4eUogOQHh&t=879"
-    }
+      },
+  {
+    date: "2025-08-10",
+    time: "1:10:14",
+    url: "https://www.youtube.com/live/ltwV_7Jpteo?si=mZnsT7tHcguTBza0&t=4214"
+  }
   ]
 });
 window.songs.push({

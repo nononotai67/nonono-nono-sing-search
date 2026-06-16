@@ -185,7 +185,12 @@ window.songs.push({
       date: "2026-05-04",
       time: "1:28:27",
       url: "https://www.youtube.com/live/P5vq4IeOM5c?si=WWrYt8hkuWwqUfiy&t=5307"
-    }
+      },
+  {
+    date: "2025-08-14",
+    time: "0:54:44",
+    url: "https://www.youtube.com/live/fTiVIdcenoQ?si=fqEPKlcHchLgKxrG&t=3284"
+  }
   ]
 });
 window.songs.push({
@@ -273,7 +278,12 @@ window.songs.push({
       date: "2025-08-07",
       time: "0:59:19",
       url: "https://www.youtube.com/live/hCgFEkzusxs?si=79ruAFM9OSTl4x-T&t=3559"
-    }
+      },
+  {
+    date: "2025-12-17",
+    time: "0:29:23",
+    url: "https://www.youtube.com/live/NIch6QS8NaE?si=G328n9Id7s1y6Ac5&t=1763"
+  }
   ]
 });
 window.songs.push({
@@ -400,6 +410,32 @@ window.songs.push({
       date: "2025-08-07",
       time: "0:44:38",
       url: "https://www.youtube.com/live/hCgFEkzusxs?si=ofBmuzyvMYISnX5x&t=2678"
+    }
+  ]
+});
+window.songs.push({
+  id: "songa27",
+  name: "いらないもの",
+  kana: "いらないもの",
+  alpha: "",
+  list: [
+    {
+      date: "2025-08-14",
+      time: "0:29:14",
+      url: "https://www.youtube.com/live/fTiVIdcenoQ?si=i42NpE0-Tjk_07Tu&t=1754"
+    }
+  ]
+});
+window.songs.push({
+  id: "songa28",
+  name: "イケナイ太陽",
+  kana: "いけないたいよう",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-17",
+      time: "0:41:30",
+      url: "https://www.youtube.com/live/NIch6QS8NaE?si=i8TQexoy6tjczU84&t=2490"
     }
   ]
 });

@@ -37,7 +37,12 @@ window.songs.push({
       date: "2023-12-29",
       time: "0:11:05",     // 💡実際の時間に書き換えてください
       url: "https://www.youtube.com/live/q7URvTzczco?si=_hNdEOwowWuZA5zs&t=665" // 💡実際のURLに書き換えてください
-    }
+      },
+  {
+    date: "2025-08-10",
+    time: "0:45:53",
+    url: "https://www.youtube.com/live/ltwV_7Jpteo?si=jcJSt8asEHNVnMmE&t=2753"
+  }
   ]
 });
 window.songs.push({
@@ -96,7 +101,12 @@ window.songs.push({
       date: "2025-11-04",
       time: "0:21:39",
       url: "https://www.youtube.com/live/4PPFPSQk5-U?si=eLA0dsxOli6tBAmp&t=1299"
-    }
+      },
+  {
+    date: "2025-08-10",
+    time: "0:27:45",
+    url: "https://www.youtube.com/live/ltwV_7Jpteo?si=3KlO-gRzkB4fT6Ij&t=1665"
+  }
   ]
 });
 window.songs.push({
@@ -109,7 +119,12 @@ window.songs.push({
       date: "2026-05-07",
       time: "1:30:33",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=5UfzGy485dSB1kkS&t=5433"
-    }
+      },
+  {
+    date: "2025-08-10",
+    time: "0:22:05",
+    url: "https://www.youtube.com/live/ltwV_7Jpteo?si=kmjL_91I0RcGSw4M&t=1325"
+  }
   ]
 });
 window.songs.push({
@@ -135,6 +150,19 @@ window.songs.push({
       date: "2025-12-23",
       time: "1:31:03",
       url: "https://www.youtube.com/live/k-iAfbx2qbs?si=J-td86QoXGYvaE70&t=5463"
+    }
+  ]
+});
+window.songs.push({
+  id: "songra9",
+  name: "ライラック",
+  kana: "らいらっく",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-17",
+      time: "0:52:21",
+      url: "https://www.youtube.com/live/NIch6QS8NaE?si=U1xuo8qQ7fHsaakK&t=3141"
     }
   ]
 });

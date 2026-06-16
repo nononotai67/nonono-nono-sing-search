@@ -145,4 +145,30 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songs12",
+  name: "Sleep walk",
+  kana: "Sleep walk",
+  alpha: "Sleep walk",
+  list: [
+    {
+      date: "2025-08-14",
+      time: "0:11:23",
+      url: "https://www.youtube.com/live/fTiVIdcenoQ?si=BzS9R65H8izPS0pW&t=683"
+    }
+  ]
+});
+window.songs.push({
+  id: "songs13",
+  name: "snooze",
+  kana: "snooze",
+  alpha: "snooze",
+  list: [
+    {
+      date: "2025-08-10",
+      time: "0:51:18",
+      url: "https://www.youtube.com/live/ltwV_7Jpteo?si=1bn3gIyKQRNFeHEC&t=3078"
+    }
+  ]
+});
 

@@ -183,7 +183,12 @@ window.songs.push({
       date: "2023-07-30",
       time: "1:08:48",
       url: "https://www.youtube.com/live/PMXYFe5t780?si=6yDC2YzPhcwwDuGs&t=4128h"
-    }
+      },
+  {
+    date: "2025-08-10",
+    time: "1:02:09",
+    url: "https://www.youtube.com/live/ltwV_7Jpteo?si=whV-GaAatsnb5uQF&t=3729"
+  }
   ]
 });
 window.songs.push({
@@ -431,6 +436,19 @@ window.songs.push({
       date: "2025-08-07",
       time: "0:09:43",
       url: "https://www.youtube.com/live/hCgFEkzusxs?si=wrMNXx3_Ge_dSnPq&t=583"
+    }
+  ]
+});
+window.songs.push({
+  id: "songta25",
+  name: "ターミナル",
+  kana: "たーみなる",
+  alpha: "",
+  list: [
+    {
+      date: "2025-08-14",
+      time: "0:48:56",
+      url: "https://www.youtube.com/live/fTiVIdcenoQ?si=VyFwVNIs8I2BiDOZ&t=2936"
     }
   ]
 });

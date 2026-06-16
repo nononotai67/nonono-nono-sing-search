@@ -383,7 +383,12 @@ window.songs.push({
       date: "2025-08-07",
       time: "0:12:58",
       url: "https://www.youtube.com/live/hCgFEkzusxs?si=zQFnFDx6TdgI6mor&t=778"
-    }
+      },
+  {
+    date: "2025-12-17",
+    time: "0:57:20",
+    url: "https://www.youtube.com/live/NIch6QS8NaE?si=3QAzK1tcp7tPQPcX&t=3440"
+  }
   ]
 });
 window.songs.push({
@@ -422,7 +427,12 @@ window.songs.push({
       date: "2025-11-04",
       time: "0:30:53",
       url: "https://www.youtube.com/live/4PPFPSQk5-U?si=wWSAPAX1JnIS-tdy&t=1853"
-    }
+      },
+  {
+    date: "2025-12-17",
+    time: "0:48:04",
+    url: "https://www.youtube.com/live/NIch6QS8NaE?si=d1-n5f2EPZwMoQmP&t=2884"
+  }
   ]
 });
 window.songs.push({
@@ -435,6 +445,19 @@ window.songs.push({
       date: "2025-08-14",
       time: "1:06:13",
       url: "https://www.youtube.com/live/m5NfRqEDCZs?si=icYKrQYAHQR3YIgg&t=3973"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka26",
+  name: "カルチャ",
+  kana: "かるちゃ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-08-10",
+      time: "0:17:56",
+      url: "https://www.youtube.com/live/ltwV_7Jpteo?si=qSI_eG_7Q1s991F9&t=1076"
     }
   ]
 });

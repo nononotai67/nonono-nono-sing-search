@@ -215,6 +215,50 @@ window.songs.push({
       date: "2025-06-09",
       time: "0:06:01",
       url: "https://www.youtube.com/live/fJr5cfLu77A?si=tDpDz09YzQfSfVve&t=361"
+      },
+  {
+    date: "2025-08-10",
+    time: "0:14:00",
+    url: "https://www.youtube.com/live/ltwV_7Jpteo?si=An9LBZtsnfgi5J5z&t=840"
+  }
+  ]
+});
+window.songs.push({
+  id: "songma10",
+  name: "メーベル",
+  kana: "めーべる",
+  alpha: "",
+  list: [
+    {
+      date: "2025-08-10",
+      time: "0:09:13",
+      url: "https://www.youtube.com/live/ltwV_7Jpteo?si=Fuady9lbhr9TUVp6&t=553"
+    }
+  ]
+});
+window.songs.push({
+  id: "songma11",
+  name: "メトロシティ",
+  kana: "めとろしてぃ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-17",
+      time: "0:07:48",
+      url: "https://www.youtube.com/live/NIch6QS8NaE?si=UgmB9JKAmiwDbO2X&t=468"
+    }
+  ]
+});
+window.songs.push({
+  id: "songma12",
+  name: "メロドラマ",
+  kana: "めろどらま",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-17",
+      time: "0:09:22",
+      url: "https://www.youtube.com/live/NIch6QS8NaE?si=2mnPlyUJeFrbh1yf&t=562"
     }
   ]
 });
