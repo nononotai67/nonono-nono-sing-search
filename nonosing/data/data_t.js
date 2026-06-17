@@ -29,3 +29,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songt3",
+  name: "Theater",
+  kana: "Theater",
+  alpha: "Theater",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "3:38:26",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=JJIew2-Sg-Bm_5wq&t=13106"
+    }
+  ]
+});

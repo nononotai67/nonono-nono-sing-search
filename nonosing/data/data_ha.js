@@ -144,6 +144,11 @@ window.songs.push({
       date: "2026-04-25",
       time: "0:02:11",
       url: "https://www.youtube.com/live/Yhat0riYxYY?si=bfFiXsoXmS9evg5V&t=131"
+     },
+    {
+      date: "2026-01-05",
+      time: "0:33:56",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=lcn2RvvBCxV3keLt&t=2036"
     }
   ]
 });
@@ -248,6 +253,16 @@ window.songs.push({
       date: "2025-07-09",
       time: "1:10:26",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=6RWjFHRaW8-8zY34&t=4226"
+     },
+    {
+      date: "2026-01-05",
+      time: "2:40:02",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=4GxhPyZ-2gAZdzcR&t=9602"
+     },
+    {
+      date: "2025-10-17",
+      time: "0:37:52",
+      url: "https://www.youtube.com/live/Aq2-7M2IyV8?si=lBVJh2iDRfyNiuat&t=2272"
     }
   ]
 });
@@ -320,13 +335,18 @@ window.songs.push({
       date: "2026-05-07",
       time: "1:24:14",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=uBJe1xwx2MkE9Os7&t=5054"
+     },
+    {
+      date: "2025-10-17",
+      time: "0:32:52",
+      url: "https://www.youtube.com/live/Aq2-7M2IyV8?si=gzyeOay-Rgq1NgUK&t=1972"
     }
   ]
 });
 window.songs.push({
   id: "songha14",
-  name: "プロポーズ",
-  kana: "ぷろぽーず",
+  name: "プロポーズ / 内緒のピアス",
+  kana: "ぷろぽーずないしょのぴあす",
   alpha: "",
   list: [
     {
@@ -336,44 +356,24 @@ window.songs.push({
     },
     {
       date: "2026-05-03",
-      time: "0:10:39",
-      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=NdkLSXYKJUJ91ewS&t=639"
-    },
-    {
-      date: "2026-05-03",
       time: "1:12:36",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=VA98v7WkYRskCt5T&t=4356"
-        },
-    {
-      date: "2026-04-04",
-      time: "0:17:42",
-      url: "https://www.youtube.com/live/CIGspkqU2YU?si=6VsxYPSMU1GbehFU&t=1062"
-        },
-    {
-      date: "2025-12-23",
-      time: "0:18:47",
-      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=hL8Wtn9I1dJxDqY4&t=1127"
-        },
-    {
-      date: "2025-12-23",
-      time: "0:30:21",
-      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=nCJyImoMq550ZjUA&t=1821"
-     },
-    {
-      date: "2025-08-07",
-      time: "0:53:42",
-      url: "https://www.youtube.com/live/hCgFEkzusxs?si=8zQnemlje9XBJSwO&t=3222"
-        },
-  {
-    date: "2025-08-14",
-    time: "0:36:35",
-    url: "https://www.youtube.com/live/fTiVIdcenoQ?si=Vkwa5I54VQtIx7sM&t=2195"
-    },
+      },  
   {
     date: "2025-08-10",
     time: "0:34:17",
     url: "https://www.youtube.com/live/ltwV_7Jpteo?si=J2R4Lk2QBov6l7YZ&t=2057"
-  }
+    },
+    {
+      date: "2026-01-05",
+      time: "2:27:48",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=zH2Adwzk8eVJo1Hr&t=8868"
+     },
+    {
+      date: "2025-12-19",
+      time: "0:34:03",
+      url: "https://www.youtube.com/live/2_ZoQ5mXWww?si=1DRbj3oLaz_JavAW&t=2043"
+    }
   ]
 });
 window.songs.push({
@@ -399,6 +399,11 @@ window.songs.push({
       date: "2026-05-04",
       time: "0:47:34",
       url: "https://www.youtube.com/live/P5vq4IeOM5c?si=noeUrT2vIju1K1Zc&t=2854"
+     },
+    {
+      date: "2026-01-05",
+      time: "1:05:53",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=RLzm79_kL1Vd37h1&t=3953"
     }
   ]
 });
@@ -492,6 +497,11 @@ window.songs.push({
       date: "2025-10-19",
       time: "1:17:54",
       url: "https://www.youtube.com/live/XupOA8OZLf4?si=GSrXkq0xxJO8e6vU&t=4674"
+     },
+    {
+      date: "2026-01-05",
+      time: "1:28:33",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=pdjNFesbeWU0MKHE&t=5313"
     }
   ]
 });
@@ -556,7 +566,12 @@ window.songs.push({
     date: "2025-12-17",
     time: "0:03:12",
     url: "https://www.youtube.com/live/NIch6QS8NaE?si=KQROfkxuaNPCWH4P&t=192"
-  }
+   },
+    {
+      date: "2026-01-05",
+      time: "3:53:41",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=dqZiLHSyMC7q_a1S&t=14021"
+    }
   ]
 });
 window.songs.push({
@@ -649,6 +664,11 @@ window.songs.push({
       date: "2025-07-09",
       time: "4:08:38",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=DZQ18cAQ62vtmPZB&t=14918"
+     },
+    {
+      date: "2026-01-05",
+      time: "1:37:02",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=evMa8E8gNoA-21_0&t=5822"
     }
   ]
 });
@@ -701,6 +721,16 @@ window.songs.push({
       date: "2025-10-19",
       time: "1:00:18",
       url: "https://www.youtube.com/live/XupOA8OZLf4?si=MavLAIzBpzDR4xJV&t=3618"
+     },
+    {
+      date: "2026-01-05",
+      time: "1:33:50",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=o1cKYNXekkejgTWt&t=5630"
+     },
+    {
+      date: "2025-10-17",
+      time: "0:22:53",
+      url: "https://www.youtube.com/live/Aq2-7M2IyV8?si=tmkzay6gOz2jXG57&t=1373"
     }
   ]
 });
@@ -753,6 +783,111 @@ window.songs.push({
       date: "2025-07-09",
       time: "4:52:24",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=l8Sybf0JU-tgxoaQ&t=17544"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha40",
+  name: "プロポーズ/なとり",
+  kana: "ぷろぽーずなとり",
+  alpha: "",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "2:22:15",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=QUtGqOd-7oS35QZH&t=8535"
+      },
+  {
+    date: "2025-08-14",
+    time: "0:36:35",
+    url: "https://www.youtube.com/live/fTiVIdcenoQ?si=Vkwa5I54VQtIx7sM&t=2195"
+      },
+    {
+      date: "2025-12-23",
+      time: "0:30:21",
+      url: "https://www.youtube.com/live/k-iAfbx2qbs?si=nCJyImoMq550ZjUA&t=1821"
+      },
+    {
+      date: "2026-05-03",
+      time: "0:10:39",
+      url: "https://www.youtube.com/live/1cAffF7uQ1s?si=NdkLSXYKJUJ91ewS&t=639"
+     },
+    {
+      date: "2026-04-04",
+      time: "0:17:42",
+      url: "https://www.youtube.com/live/CIGspkqU2YU?si=6VsxYPSMU1GbehFU&t=1062"
+    },
+  {
+    date: "2025-08-14",
+    time: "0:36:35",
+    url: "https://www.youtube.com/live/fTiVIdcenoQ?si=Vkwa5I54VQtIx7sM&t=2195"
+     },
+    {
+      date: "2025-12-19",
+      time: "0:36:48",
+      url: "https://www.youtube.com/live/2_ZoQ5mXWww?si=0RYZBBxfur3DoHIo&t=2208"
+     },
+    {
+      date: "2025-11-19",
+      time: "0:20:49",
+      url: "https://www.youtube.com/live/VzqKCKXjocI?si=xisvJj1jdC8wGuVd&t=1249"
+    }
+   ]
+});
+window.songs.push({
+  id: "songha41",
+  name: "花になって",
+  kana: "はなになって",
+  alpha: "",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "3:19:15",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=iOVGMXuWFG_jH94H&t=11955"
+     },
+    {
+      date: "2025-10-17",
+      time: "0:20:02",
+      url: "https://www.youtube.com/live/Aq2-7M2IyV8?si=bqPPFi95gSW1Hxuz&t=1202"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha42",
+  name: "ハッピーエンド",
+  kana: "はっぴーえんど",
+  alpha: "",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "3:58:59",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=-rnJv85615LcswFq&t=14339"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha43",
+  name: "ヒロイン",
+  kana: "ひろいん",
+  alpha: "",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "4:03:32",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=AhOV52M8I91x86Zy&t=14612"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha44",
+  name: "花人局",
+  kana: "はなもたせ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-11-19",
+      time: "1:05:18",
+      url: "https://www.youtube.com/live/VzqKCKXjocI?si=uYJeI_XrRDwn6uNc&t=3918"
     }
   ]
 });

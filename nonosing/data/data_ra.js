@@ -42,7 +42,12 @@ window.songs.push({
     date: "2025-08-10",
     time: "0:45:53",
     url: "https://www.youtube.com/live/ltwV_7Jpteo?si=jcJSt8asEHNVnMmE&t=2753"
-  }
+   },
+    {
+      date: "2026-01-05",
+      time: "0:57:26",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=uEVzxBtCLafHRM4M&t=3446"
+    }
   ]
 });
 window.songs.push({
@@ -55,6 +60,11 @@ window.songs.push({
       date: "2024-04-17",
       time: "0:18:28",     // 💡実際の時間に書き換えてください
       url: "https://www.youtube.com/live/Ig6w5qKHfSg?si=E8bA3n3vYIFIvt-W&t=1108" // 💡実際のURLに書き換えてください
+     },
+    {
+      date: "2026-01-05",
+      time: "1:42:20",
+      url: "https://youtube.com"
     }
   ]
 });
@@ -106,7 +116,12 @@ window.songs.push({
     date: "2025-08-10",
     time: "0:27:45",
     url: "https://www.youtube.com/live/ltwV_7Jpteo?si=3KlO-gRzkB4fT6Ij&t=1665"
-  }
+   },
+    {
+      date: "2025-10-17",
+      time: "0:28:15",
+      url: "https://www.youtube.com/live/Aq2-7M2IyV8?si=vrBdkMiKV2VUojYG&t=1695"
+    }
   ]
 });
 window.songs.push({
@@ -155,6 +170,11 @@ window.songs.push({
       date: "2025-07-09",
       time: "1:58:55",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=y6i_sHChTjrqJ8TD&t=7135"
+     },
+    {
+      date: "2025-11-19",
+      time: "0:36:52",
+      url: "https://www.youtube.com/live/VzqKCKXjocI?si=rCPMJVs6FvQc7zX-&t=2212"
     }
   ]
 });
@@ -168,6 +188,11 @@ window.songs.push({
       date: "2025-12-17",
       time: "0:52:21",
       url: "https://www.youtube.com/live/NIch6QS8NaE?si=U1xuo8qQ7fHsaakK&t=3141"
+     },
+    {
+      date: "2025-10-17",
+      time: "0:50:03",
+      url: "https://www.youtube.com/live/Aq2-7M2IyV8?si=cd7AELdbPqrVIMIx&t=3003"
     }
   ]
 });
@@ -175,12 +200,51 @@ window.songs.push({
   id: "songra10",
   name: "ルージュの伝言",
   kana: "るーじゅのでんごん",
-  alpha: "r",
+  alpha: "",
   list: [
     {
       date: "2025-07-09",
       time: "4:03:11",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=DLHieGvlWZo63Vv6&t=14591"
+    }
+  ]
+});
+window.songs.push({
+  id: "songra11",
+  name: "恋愛裁判",
+  kana: "れんあいさいばん",
+  alpha: "",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "1:24:18",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=TVwXH164RRuYHAYC&t=5058"
+    }
+  ]
+});
+window.songs.push({
+  id: "songra12",
+  name: "劣等上等",
+  kana: "れっとうじょうとう",
+  alpha: "",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "1:59:05",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=-rNMZenzwczFl47k&t=7145"
+    }
+  ]
+});
+window.songs.push({
+  id: "songra13",
+  name: "レクイエム",
+  kana: "れくいえむ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-11-19",
+      time: "0:01:40",
+      url: "https://www.youtube.com/live/VzqKCKXjocI?si=1U_1gtmAz_dF296v&t=100"
     }
   ]
 });

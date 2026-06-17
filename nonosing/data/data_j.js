@@ -28,7 +28,17 @@ window.songs.push({
     date: "2025-12-17",
     time: "0:43:10",
     url: "https://www.youtube.com/live/NIch6QS8NaE?si=cJDpIc7FE-4WuOPM&t=2590"
-  }
+   },
+    {
+      date: "2026-01-05",
+      time: "0:22:19",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=68KFxxXBqypSjtT3&t=1339"
+     },
+    {
+      date: "2025-11-19",
+      time: "0:05:44",
+      url: "https://www.youtube.com/live/VzqKCKXjocI?si=_LZjJgMpNMOhuC1U&t=344"
+    }
   ]
 });
 window.songs.push({
@@ -41,6 +51,19 @@ window.songs.push({
       date: "2025-08-14",
       time: "0:39:50",
       url: "https://www.youtube.com/live/m5NfRqEDCZs?si=hplmaIRModOsmT3C&t=2390"
+    }
+  ]
+});
+window.songs.push({
+  id: "songj3",
+  name: "Jingle Bell Rock",
+  kana: "Jingle Bell Rock",
+  alpha: "Jingle Bell Rock",
+  list: [
+    {
+      date: "2025-12-19",
+      time: "0:16:07",
+      url: "https://www.youtube.com/live/2_ZoQ5mXWww?si=sGyaRJX6dkRtojKd&t=967"
     }
   ]
 });

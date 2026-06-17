@@ -49,6 +49,11 @@ window.songs.push({
       date: "2025-07-09",
       time: "1:52:49",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=jLmsWnDtIgtC5Nbw&t=6769"
+     },
+    {
+      date: "2025-11-19",
+      time: "0:41:31",
+      url: "https://www.youtube.com/live/VzqKCKXjocI?si=8EQyTjpHflxvU6xX&t=2491"
     }
   ]
 });
@@ -170,6 +175,32 @@ window.songs.push({
       date: "2025-07-09",
       time: "5:04:05",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=TwreaFTgiIra8qWA&t=18245"
+    }
+  ]
+});
+window.songs.push({
+  id: "songna11",
+  name: "猫",
+  kana: "ねこ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "4:00:57",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=0NW7YKYgnDNac-yx&t=14457"
+    }
+  ]
+});
+window.songs.push({
+  id: "songna12",
+  name: "ノーチラス",
+  kana: "のーちらす",
+  alpha: "",
+  list: [
+    {
+      date: "2025-11-19",
+      time: "1:13:11",
+      url: "https://www.youtube.com/live/VzqKCKXjocI?si=sj9o_tDNoPtkk9qT&t=4391"
     }
   ]
 });

@@ -11,3 +11,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songw2",
+  name: "Workin' Hard",
+  kana: "Workin' Hard",
+  alpha: "Workin' Hard",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "3:45:52",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=yuFwdytuRb7qP8z7&t=13552"
+    }
+  ]
+});

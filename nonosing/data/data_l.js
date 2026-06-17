@@ -73,3 +73,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songl6",
+  name: "Last Christmas",
+  kana: "Last Christmas",
+  alpha: "Last Christmas",
+  list: [
+    {
+      date: "2025-12-19",
+      time: "0:18:00",
+      url: "https://www.youtube.com/live/2_ZoQ5mXWww?si=XPH2NDeKWwaqJyet&t=1080"
+    }
+  ]
+});

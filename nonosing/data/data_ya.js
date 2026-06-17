@@ -160,3 +160,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songya10",
+  name: "夜永唄",
+  kana: "よながうた",
+  alpha: "",
+  list: [
+    {
+      date: "2025-11-19",
+      time: "0:53:05",
+      url: "https://www.youtube.com/live/VzqKCKXjocI?si=flNfL7aQYkL6RWvd&t=3185"
+    }
+  ]
+});

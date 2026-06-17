@@ -13,7 +13,25 @@ window.songs.push({
       date: "2025-08-14",
       time: "0:30:24",
       url: "https://www.youtube.com/live/m5NfRqEDCZs?si=0SrNwt922cQEJuA5&t=1824"
+     },
+    {
+      date: "2025-12-19",
+      time: "0:21:37",
+      url: "https://www.youtube.com/live/2_ZoQ5mXWww?si=s6VsbaMZzLlD0HBN&t=1297"
     }
   ]
 });
- 
+ window.songs.push({
+  id: "songh2",
+  name: "HELP !",
+  kana: "HELP !",
+  alpha: "HELP !",
+  list: [
+    {
+      date: "2025-08-14",
+      time: "0:03:09",
+      url: "https://youtube.com"
+    }
+  ]
+});
+

@@ -65,6 +65,11 @@ window.songs.push({
       date: "2025-12-23",
       time: "0:51:33",
       url: "https://www.youtube.com/live/k-iAfbx2qbs?si=z0RawFcfEb13FgJL&t=3093"
+     },
+    {
+      date: "2026-01-05",
+      time: "0:30:19",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=8sxJ27RelLUDgOCB&t=1819"
     }
   ]
 });
@@ -135,6 +140,19 @@ window.songs.push({
       date: "2025-08-07",
       time: "0:16:43",
       url: "https://www.youtube.com/live/hCgFEkzusxs?si=OEjvimLd5LOQvhGf&t=1003"
+    }
+  ]
+});
+window.songs.push({
+  id: "songba10",
+  name: "Biri-Biri",
+  kana: "Biri-Biri",
+  alpha: "Biri-Biri",
+  list: [
+    {
+      date: "2025-10-17",
+      time: "0:01:11",
+      url: "https://www.youtube.com/live/Aq2-7M2IyV8?si=zXlJxYQIO4XOYkn5&t=71"
     }
   ]
 });

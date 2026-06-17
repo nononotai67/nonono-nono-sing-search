@@ -24,6 +24,11 @@ window.songs = [
       date: "2025-07-09",
       time: "0:12:55",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=slOrVgdjYtFzrrZO&t=775"
+     },
+    {
+      date: "2026-01-05",
+      time: "0:09:40",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=0fqXt_w9yvN7xrVg&t=580"
     }
     ]
   }
@@ -262,6 +267,16 @@ window.songs.push({
       date: "2026-04-26",
       time: "0:47:45",
       url: "https://www.youtube.com/live/2NU9sX4M4Kc?si=wmjN1VOAtigYJrnc&t=2865"
+     },
+    {
+      date: "2026-01-05",
+      time: "1:48:34",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=wFPzZC1MASoMhkz2&t=6514"
+     },
+    {
+      date: "2025-10-17",
+      time: "0:40:54",
+      url: "https://www.youtube.com/live/Aq2-7M2IyV8?si=p-dtHS9xx7ocDs_p&t=2454"
     }
   ]
 });
@@ -414,6 +429,11 @@ window.songs.push({
       date: "2025-07-09",
       time: "3:50:30",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=nS2I4ABGtf2rm3rM&t=13830"
+     },
+    {
+      date: "2025-11-19",
+      time: "0:58:02",
+      url: "https://www.youtube.com/live/VzqKCKXjocI?si=X1CWX8JfZt2G_r1h&t=3482"
     }
   ]
 });
@@ -476,6 +496,11 @@ window.songs.push({
       date: "2025-12-17",
       time: "0:41:30",
       url: "https://www.youtube.com/live/NIch6QS8NaE?si=i8TQexoy6tjczU84&t=2490"
+     },
+    {
+      date: "2026-01-05",
+      time: "3:31:44",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=o7aos_cB1rLjgYCa&t=12704"
     }
   ]
 });
@@ -528,6 +553,84 @@ window.songs.push({
       date: "2025-07-09",
       time: "5:02:36",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=8eGItsDUHdXYk5KH&t=18156"
+    }
+  ]
+});
+window.songs.push({
+  id: "songa33",
+  name: "悪魔の子",
+  kana: "あくまのこ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "0:26:36",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=f4c90rpjFm-ZBAr2&t=1596"
+    }
+  ]
+});
+window.songs.push({
+  id: "songa34",
+  name: "うっせえわ",
+  kana: "うっせえわ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "2:08:42",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=UDC1bjZIm0uSCPfH&t=7722"
+    }
+  ]
+});
+window.songs.push({
+  id: "songa35",
+  name: "阿修羅ちゃん",
+  kana: "あしゅらちゃん",
+  alpha: "",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "2:59:50",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=kjawKGmsP02yZNFx&t=10790"
+    }
+  ]
+});
+window.songs.push({
+  id: "songa36",
+  name: "ウィーアー!",
+  kana: "うぃーあー",
+  alpha: "",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "3:34:32",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=NVCbALkjK-GapJt9&t=12872"
+    }
+  ]
+});
+window.songs.push({
+  id: "songa37",
+  name: "アスノヨゾラ哨戒班",
+  kana: "あすのよぞらしょうかいはん",
+  alpha: "",
+  list: [
+    {
+      date: "2025-10-17",
+      time: "0:26:46",
+      url: "https://www.youtube.com/live/Aq2-7M2IyV8?si=olQq9NprEeyuQ6at&t=1606"
+    }
+  ]
+});
+window.songs.push({
+  id: "songa38",
+  name: "エイリアンズ",
+  kana: "えいりあんず",
+  alpha: "",
+  list: [
+    {
+      date: "2025-11-19",
+      time: "1:22:06",
+      url: "https://www.youtube.com/live/VzqKCKXjocI?si=RyZTORtzQhtrsUiP&t=4926"
     }
   ]
 });

@@ -43,6 +43,11 @@ window.songs.push({
       date: "2025-07-09",
       time: "6:04:54",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=KEkAtUTky-ZU-yeF&t=21894"
+     },
+    {
+      date: "2026-01-05",
+      time: "2:46:31",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=j3phCsvzcAtclPwO&t=9991"
     }
   ]
 });
@@ -79,6 +84,19 @@ window.songs.push({
       date: "2026-05-01",
       time: "0:16:25",
       url: "https://www.youtube.com/live/2pQyGxegG4k?si=aJ56mnzbcsulUUEM&t=985"
+    }
+  ]
+});
+window.songs.push({
+  id: "songwa4",
+  name: "わたしの一番かわいいところ",
+  kana: "わたしのいちばんかわいいところ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-11-19",
+      time: "0:24:51",
+      url: "https://www.youtube.com/live/VzqKCKXjocI?si=xaTGMOmBlAJwGiIw&t=1491"
     }
   ]
 });

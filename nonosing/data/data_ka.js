@@ -184,6 +184,11 @@ window.songs.push({
       date: "2026-04-25",
       time: "0:00:08",
       url: "https://www.youtube.com/live/Yhat0riYxYY?si=CTobi3jiHGJDDq0Y&t=8"
+     },
+    {
+      date: "2025-10-17",
+      time: "0:21:32",
+      url: "https://www.youtube.com/live/Aq2-7M2IyV8?si=bh71KJPSaInV8C0t&t=1292"
     }
   ]
 });
@@ -264,6 +269,11 @@ window.songs.push({
       date: "2025-10-19",
       time: "1:12:41",
       url: "https://www.youtube.com/live/XupOA8OZLf4?si=w7pVeu1XE3fG4AhV&t=4361"
+     },
+    {
+      date: "2026-01-05",
+      time: "0:50:32",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=zUCLz5lcE4awqOA6&t=3032"
     }
   ]
 });
@@ -362,6 +372,11 @@ window.songs.push({
       date: "2025-07-20",
       time: "0:23:50",
       url: "https://www.youtube.com/live/WEA3g8rQsr4?si=tRJG4zzyE0ITvHWr&t=1430"
+     },
+    {
+      date: "2025-10-17",
+      time: "0:45:16",
+      url: "https://www.youtube.com/live/Aq2-7M2IyV8?si=hS97DjQF8DOXrKfG&t=2716"
     }
   ]
 });
@@ -413,7 +428,12 @@ window.songs.push({
     date: "2025-12-17",
     time: "0:57:20",
     url: "https://www.youtube.com/live/NIch6QS8NaE?si=3QAzK1tcp7tPQPcX&t=3440"
-  }
+   },
+    {
+      date: "2026-01-05",
+      time: "3:22:09",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=fGl_HCVHqLw5CZfK&t=12129"
+    }
   ]
 });
 window.songs.push({
@@ -439,6 +459,16 @@ window.songs.push({
       date: "2024-04-01",
       time: "0:17:22",
       url: "https://www.youtube.com/live/H9qbNFRaRtk?si=MdAKDb2SPwX7lc0u&t=1042"
+     },
+    {
+      date: "2025-10-17",
+      time: "0:07:37",
+      url: "https://www.youtube.com/live/Aq2-7M2IyV8?si=BW-TL6B9yMxxtvXf&t=457"
+     },
+    {
+      date: "2025-11-19",
+      time: "0:12:22",
+      url: "https://www.youtube.com/live/VzqKCKXjocI?si=dNhSeig6M7DIjsK2&t=742"
     }
   ]
 });
@@ -457,7 +487,12 @@ window.songs.push({
     date: "2025-12-17",
     time: "0:48:04",
     url: "https://www.youtube.com/live/NIch6QS8NaE?si=d1-n5f2EPZwMoQmP&t=2884"
-  }
+   },
+    {
+      date: "2026-01-05",
+      time: "3:26:36",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=34P90vfpyz_wj6u-&t=12396"
+    }
   ]
 });
 window.songs.push({
@@ -483,6 +518,63 @@ window.songs.push({
       date: "2025-08-10",
       time: "0:17:56",
       url: "https://www.youtube.com/live/ltwV_7Jpteo?si=qSI_eG_7Q1s991F9&t=1076"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka27",
+  name: "革命道中",
+  kana: "かくめいどうちゅう",
+  alpha: "",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "1:55:50",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=_kPL3FWxcN_WR7NK&t=6950"
+     },
+    {
+      date: "2025-10-17",
+      time: "0:36:47",
+      url: "https://www.youtube.com/live/Aq2-7M2IyV8?si=LyNc-g-jnblPrgo8&t=2207"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka28",
+  name: "クラクラ",
+  kana: "くらくら",
+  alpha: "",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "3:05:52",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=Ex1rqrsx1BRx2bC0&t=11152"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka29",
+  name: "紅蓮華",
+  kana: "ぐれんげ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "3:13:47",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=_R1n45UMd_--4xvx&t=11627"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka30",
+  name: "華奢なリップ",
+  kana: "きゃしゃなりっぷ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-11-19",
+      time: "0:10:23",
+      url: "https://www.youtube.com/live/VzqKCKXjocI?si=AbQzPwlQ8KGLmR76&t=623"
     }
   ]
 });

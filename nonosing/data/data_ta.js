@@ -23,6 +23,11 @@ window.songs.push({
       date: "2025-09-28",
       time: "0:02:30",
       url: "https://www.youtube.com/live/H6E30GSx1Sk?si=NPmWtuIwk0qlaVA8&t=150"
+     },
+    {
+      date: "2025-11-19",
+      time: "0:29:30",
+      url: "https://www.youtube.com/live/VzqKCKXjocI?si=JEsdRmOQqneKE83t&t=1770"
     }
   ]
 });
@@ -272,6 +277,11 @@ window.songs.push({
       date: "2025-07-09",
       time: "6:01:31",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=g421-iEN-daZ6vJB&t=21691"
+     },
+    {
+      date: "2026-01-05",
+      time: "1:01:36",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=5Gf9z_fX0eHFUJHu&t=3696"
     }
   ]
 });
@@ -474,6 +484,37 @@ window.songs.push({
       date: "2025-08-14",
       time: "0:48:56",
       url: "https://www.youtube.com/live/fTiVIdcenoQ?si=VyFwVNIs8I2BiDOZ&t=2936"
+     },
+    {
+      date: "2025-12-19",
+      time: "0:42:00",
+      url: "https://www.youtube.com/live/2_ZoQ5mXWww?si=RNqFuYqvod_uGVnm&t=2520"
+    }
+  ]
+});
+window.songs.push({
+  id: "songta26",
+  name: "テレキャスタービーボーイ",
+  kana: "てれきゃすたーびーぼーい",
+  alpha: "",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "2:31:15",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=B4lJSS4RtVh0abo6&t=9075"
+    }
+  ]
+});
+window.songs.push({
+  id: "songta27",
+  name: "たばこ",
+  kana: "たばこ",
+  alpha: "",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "4:11:38",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=9CLad8UaqPogOkUe&t=15098"
     }
   ]
 });

@@ -51,6 +51,11 @@ window.songs.push({
       date: "2025-08-07",
       time: "0:16:49",
       url: "https://www.youtube.com/live/hCgFEkzusxs?si=jDhT27ucdewgeP6o&t=1009"
+     },
+    {
+      date: "2025-11-19",
+      time: "1:17:27",
+      url: "https://www.youtube.com/live/VzqKCKXjocI?si=zpcDJy16WrOd-DtO&t=4647"
     }
   ]
 });
@@ -162,6 +167,11 @@ window.songs.push({
       date: "2024-04-01",
       time: "0:12:20",
       url: "https://www.youtube.com/live/H9qbNFRaRtk?si=uO5Fa3OZoIDlQpoD&t=740"
+     },
+    {
+      date: "2025-11-19",
+      time: "1:07:54",
+      url: "https://www.youtube.com/live/VzqKCKXjocI?si=IIcKVgo0GPb_i0nd&t=4074"
     }
   ]
 });
@@ -175,6 +185,11 @@ window.songs.push({
       date: "2026-05-03",
       time: "1:02:33",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=klyRC5bnsfLtXOy4&t=3753"
+     },
+    {
+      date: "2025-10-17",
+      time: "0:02:43",
+      url: "https://www.youtube.com/live/Aq2-7M2IyV8?si=dSulSy6AMOVHxg1y&t=163"
     }
   ]
 });
@@ -188,6 +203,11 @@ window.songs.push({
       date: "2026-05-01",
       time: "0:42:52",
       url: "https://www.youtube.com/live/2pQyGxegG4k?si=qHxTQ2jNjp0qoqB_&t=2572"
+     },
+    {
+      date: "2026-01-05",
+      time: "3:48:34",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=IE44qAY79saiFu5K&t=13714"
     }
   ]
 });
@@ -224,7 +244,12 @@ window.songs.push({
     date: "2025-08-10",
     time: "0:14:00",
     url: "https://www.youtube.com/live/ltwV_7Jpteo?si=An9LBZtsnfgi5J5z&t=840"
-  }
+   },
+    {
+      date: "2026-01-05",
+      time: "1:22:52",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=ae0meBIObX88FSrm&t=4972"
+    }
   ]
 });
 window.songs.push({
@@ -302,6 +327,32 @@ window.songs.push({
       date: "2025-07-09",
       time: "5:00:54",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=bJBleZ6VVefyvTqS&t=18054"
+    }
+  ]
+});
+window.songs.push({
+  id: "songma16",
+  name: "三日月",
+  kana: "みかづき",
+  alpha: "",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "4:18:10",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=eHcTyMF6BC2JCqL5&t=15490"
+    }
+  ]
+});
+window.songs.push({
+  id: "songma17",
+  name: "真夜中のドア〜stay with me",
+  kana: "まよなかのどあすてぃうぃずみー",
+  alpha: "",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "4:25:17",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=RMnooGhCqxcjLTiq&t=15917"
     }
   ]
 });

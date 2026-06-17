@@ -8,6 +8,11 @@ window.songs.push({
       date: "2023-12-29",
       time: "0:55:48",
       url: "https://www.youtube.com/live/q7URvTzczco?si=u-3LLqYsKh25Ps-H&t=3348"
+     },
+    {
+      date: "2025-10-17",
+      time: "0:55:18",
+      url: "https://www.youtube.com/live/Aq2-7M2IyV8?si=1bZ7vgzafSnNc3PT&t=3318"
     }
   ]
 });
@@ -70,11 +75,6 @@ window.songs.push({
       date: "2026-05-07",
       time: "0:39:29",
       url:"https://www.youtube.com/live/SvWYxUE-HHY?si=Q63kTVaXW2qNgcHo&t=2369"
-     },
-    {
-      date: "2025-08-14",
-      time: "0:30:58",
-      url: "https://www.youtube.com/live/m5NfRqEDCZs?si=C-k-lsOc3FwilrTV&t=1858"
     }
   ]
 });
@@ -168,6 +168,42 @@ window.songs.push({
       date: "2025-08-10",
       time: "0:51:18",
       url: "https://www.youtube.com/live/ltwV_7Jpteo?si=1bn3gIyKQRNFeHEC&t=3078"
+    }
+  ]
+});
+window.songs.push({
+  id: "songs14",
+  name: "SPECIALZ",
+  kana: "SPECIALZ",
+  alpha: "SPECIALZ",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "0:42:59",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=ERo4s20KCf_cuIAh&t=2579"
+     },
+    {
+      date: "2025-10-17",
+      time: "0:12:11",
+      url: "https://www.youtube.com/live/Aq2-7M2IyV8?si=scUYJkfyt_qgozPP&t=731"
+    }
+  ]
+});
+window.songs.push({
+  id: "songs15",
+  name: "Stay",
+  kana: "Stay",
+  alpha: "Stay",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "1:13:12",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=86pK9v363W02Qjjd&t=4392"
+     },
+    {
+      date: "2025-08-14",
+      time: "0:30:58",
+      url: "https://www.youtube.com/live/m5NfRqEDCZs?si=C-k-lsOc3FwilrTV&t=1858"
     }
   ]
 });

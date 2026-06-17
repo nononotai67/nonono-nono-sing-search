@@ -55,3 +55,16 @@ window.songs.push({
   }
   ]
 });
+window.songs.push({
+  id: "songd5",
+  name: "damn",
+  kana: "damn",
+  alpha: "damn",
+  list: [
+    {
+      date: "2026-01-05",
+      time: "3:41:36",
+      url: "https://www.youtube.com/live/k57aSX3Ugns?si=qcYlaG97ZmrzEB1M&t=13296"
+    }
+  ]
+});
