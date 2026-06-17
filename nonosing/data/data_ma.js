@@ -18,8 +18,12 @@ window.songs.push({
       date: "2026-05-03", 
       time: "0:02:31",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=bMel-KJsvYfDou7e&t=151"
+    },
+    {
+      date: "2025-07-09",
+      time: "3:41:25",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=xZw-BNAJ097rHoD2&t=13285"
     }
-
   ]
 });
 window.songs.push({
@@ -259,6 +263,45 @@ window.songs.push({
       date: "2025-12-17",
       time: "0:09:22",
       url: "https://www.youtube.com/live/NIch6QS8NaE?si=2mnPlyUJeFrbh1yf&t=562"
+    }
+  ]
+});
+window.songs.push({
+  id: "songma13",
+  name: "右肩の蝶",
+  kana: "みぎかたのちょう",
+  alpha: "",
+  list: [
+    {
+      date: "2025-07-09",
+      time: "0:51:38",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=k1jzUpt0b3IaNOdl&t=3098"
+    }
+  ]
+});
+window.songs.push({
+  id: "songma14",
+  name: "魔法の絨毯",
+  kana: "まほうのじゅうたん",
+  alpha: "",
+  list: [
+    {
+      date: "2025-07-09",
+      time: "4:47:02",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=apDJlLRDnvRP75BA&t=17222"
+    }
+  ]
+});
+window.songs.push({
+  id: "songma15",
+  name: "メロディー",
+  kana: "めろでぃー",
+  alpha: "",
+  list: [
+    {
+      date: "2025-07-09",
+      time: "5:00:54",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=bJBleZ6VVefyvTqS&t=18054"
     }
   ]
 });

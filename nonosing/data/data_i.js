@@ -13,6 +13,11 @@ window.songs.push({
       date: "2025-09-28",
       time: "0:09:27",
       url: "https://www.youtube.com/live/H6E30GSx1Sk?si=PPdC_gx6QyyenuRU&t=567"
+    },
+    {
+      date: "2025-07-09",
+      time: "3:31:07",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=h5l15o7Gv4gjxIDV&t=12667"
     }
   ]
 });

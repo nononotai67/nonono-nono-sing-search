@@ -34,3 +34,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songpa3",
+  name: "POP STAR",
+  kana: "POP STAR",
+  alpha: "POP STAR",
+  list: [
+    {
+      date: "2025-07-09",
+      time: "5:03:44",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=ui76QMD8wsQqJIiU&t=18224"
+    }
+  ]
+});

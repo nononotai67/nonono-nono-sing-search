@@ -56,6 +56,11 @@ window.songs.push({
       date: "2025-08-14",
       time: "0:05:50",
       url: "https://www.youtube.com/live/m5NfRqEDCZs?si=FZD2mIWx1nqaQ3jB&t=350"
+    },
+    {
+      date: "2025-07-09",
+      time: "0:21:07",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=mUgU2vQCo4t-LhGc&t=1267"
     }
   ]
 });
@@ -79,6 +84,11 @@ window.songs.push({
       date: "2026-05-01",
       time: "0:52:30",
       url: "https://www.youtube.com/live/2pQyGxegG4k?si=HJnM7hBbJ_Af8YNa&t=3150"
+    },
+    {
+      date: "2025-07-09",
+      time: "1:47:44",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=G_ih_duCCHgZOfbY&t=6464"
     }
   ]
 });
@@ -146,6 +156,11 @@ window.songs.push({
       date: "2024-10-19",
       time: "0:27:04",
       url: "https://www.youtube.com/live/fgNWDixmbFo?si=GAa8ft9F2NG_mrOw&t=1624"
+    },
+    {
+      date: "2025-07-09",
+      time: "6:16:37",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=USuKyrRNIR_4b1mh&t=22597"
     }
   ]
 });
@@ -247,6 +262,16 @@ window.songs.push({
       date: "2025-08-07",
       time: "0:53:46",
       url: "https://www.youtube.com/live/hCgFEkzusxs?si=bVAcLJk8y46y1EDI&t=3226"
+    },
+    {
+      date: "2025-07-09",
+      time: "1:41:13",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=fFnqR_E_4ZBVp6R4&t=6073"
+    },
+    {
+      date: "2025-07-09",
+      time: "6:01:31",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=g421-iEN-daZ6vJB&t=21691"
     }
   ]
 });

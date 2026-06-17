@@ -150,6 +150,11 @@ window.songs.push({
       date: "2025-12-23",
       time: "1:31:03",
       url: "https://www.youtube.com/live/k-iAfbx2qbs?si=J-td86QoXGYvaE70&t=5463"
+    },
+    {
+      date: "2025-07-09",
+      time: "1:58:55",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=y6i_sHChTjrqJ8TD&t=7135"
     }
   ]
 });
@@ -163,6 +168,19 @@ window.songs.push({
       date: "2025-12-17",
       time: "0:52:21",
       url: "https://www.youtube.com/live/NIch6QS8NaE?si=U1xuo8qQ7fHsaakK&t=3141"
+    }
+  ]
+});
+window.songs.push({
+  id: "songra10",
+  name: "ルージュの伝言",
+  kana: "るーじゅのでんごん",
+  alpha: "r",
+  list: [
+    {
+      date: "2025-07-09",
+      time: "4:03:11",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=DLHieGvlWZo63Vv6&t=14591"
     }
   ]
 });

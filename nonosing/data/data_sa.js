@@ -13,6 +13,11 @@ window.songs.push({
       date: "2025-05-07",
       time: "0:29:25",
       url: "https://www.youtube.com/live/SvWYxUE-HHY?si=1QH3oKEKR7gEaEzW&t=1765"
+    },
+    {
+      date: "2025-07-09",
+      time: "5:16:11",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=W3aNkR_aC3lpTcqE&t=18971"
     }
   ]
 });
@@ -97,6 +102,11 @@ window.songs.push({
       date: "2024-04-01",
       time: "0:37:11",
       url: "https://www.youtube.com/live/H9qbNFRaRtk?si=BJPDWPpmkXopek02&t=2231"
+    },
+    {
+      date: "2025-07-09",
+      time: "0:39:14",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=POE5XubIkibiCUx6&t=2354"
     }
   ]
 });
@@ -125,7 +135,12 @@ window.songs.push({
     date: "2025-08-10",
     time: "0:56:00",
     url: "https://www.youtube.com/live/ltwV_7Jpteo?si=lkzQk1FKO__3NrMF&t=3360"
-  }
+  },
+    {
+      date: "2025-07-09",
+      time: "5:30:43",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=fijXT7tCGB9nAvQX&t=19843"
+    }
   ]
 });
 window.songs.push({
@@ -204,6 +219,11 @@ window.songs.push({
       date: "2025-08-24",
       time: "0:38:33",
       url: "https://www.youtube.com/live/rzr98IwzCAI?si=nQhbMrOAjHcAPu5t&t=2313"
+    },
+    {
+      date: "2025-07-09",
+      time: "1:28:48",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=9e0vR3YiJ0c1vxS3&t=5328"
     }
   ]
 });
@@ -217,6 +237,11 @@ window.songs.push({
       date: "2024-04-17",
       time: "0:44:52",
       url: "https://www.youtube.com/live/Ig6w5qKHfSg?si=uGZw7jPzR25PY20G&t=2692"
+    },
+    {
+      date: "2025-07-09",
+      time: "2:13:59",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=YKAbI2NJ5bdo9vfe&t=8039"
     }
   ]
 });
@@ -289,6 +314,11 @@ window.songs.push({
       date: "2025-08-07",
       time: "0:05:37",
       url: "https://www.youtube.com/live/hCgFEkzusxs?si=qujIWGHqMoLUukrF&t=337"
+    },
+    {
+      date: "2025-07-09",
+      time: "5:24:20",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=DwVvu2pc_38WxV8s&t=19460"
     }
   ]
 });
@@ -400,6 +430,11 @@ window.songs.push({
       date: "2026-05-03",
       time: "1:19:25",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=uxlQFc3tq3cDI_3V&t=4765"
+    },
+    {
+      date: "2025-07-09",
+      time: "4:35:18",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=dvQilM69fGYAQ0Ix&t=16518"
     }
   ]
 });
@@ -573,6 +608,11 @@ window.songs.push({
       date: "2025-11-04",
       time: "0:52:26",
       url: "https://www.youtube.com/live/4PPFPSQk5-U?si=YvwENA-JpKgSoV_9&t=3146"
+    },
+    {
+      date: "2025-07-09",
+      time: "0:32:57",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=ovgmY1CZyum-5kW9&t=1977"
     }
   ]
 });
@@ -586,6 +626,11 @@ window.songs.push({
       date: "2025-09-28",
       time: "0:34:32",
       url: "https://www.youtube.com/live/H6E30GSx1Sk?si=qx7pRQYPyaNrQ8DM&t=2072"
+    },
+    {
+      date: "2025-07-09",
+      time: "1:16:14",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=MsO-8AO31azLy6RG&t=4574"
     }
   ]
 });
@@ -628,5 +673,58 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songsa36",
+  name: "絶対零度",
+  kana: "ぜったいれいど",
+  alpha: "z",
+  list: [
+    {
+      date: "2025-07-09",
+      time: "2:46:20",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=JYHYjsLFiKBCQh4x&t=9980"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa37",
+  name: "人生は夢だらけ",
+  kana: "じんせいはゆめだらけ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-07-09",
+      time: "4:07:36",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=040eoRoTHiu4eELp&t=14856"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa38",
+  name: "さそり座の女",
+  kana: "さそりざのおんな",
+  alpha: "",
+  list: [
+    {
+      date: "2025-07-09",
+      time: "5:08:38",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=_B_2X5PiX_PBEURf&t=18518"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa39",
+  name: "深海少女",
+  kana: "しんかいしょうじょ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-07-09",
+      time: "5:28:20",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=8u36L65jkMgSJxLj&t=19700"
+    }
+  ]
+});
+
 
 

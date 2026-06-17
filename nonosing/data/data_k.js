@@ -16,3 +16,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songk2",
+  name: "KING",
+  kana: "KING",
+  alpha: "KING",
+  list: [
+    {
+      date: "2025-07-09",
+      time: "0:28:27",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=47UOSnEvYa1Hn2f5&t=1707"
+    }
+  ]
+});

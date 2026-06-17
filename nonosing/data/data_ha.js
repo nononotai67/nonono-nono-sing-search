@@ -243,6 +243,11 @@ window.songs.push({
       date: "2025-08-07",
       time: "0:37:18",
       url: "https://www.youtube.com/live/hCgFEkzusxs?si=TtU4NnoIO7BvgFF4&t=2238"
+    },
+    {
+      date: "2025-07-09",
+      time: "1:10:26",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=6RWjFHRaW8-8zY34&t=4226"
     }
   ]
 });
@@ -446,6 +451,11 @@ window.songs.push({
       date: "2026-05-03",
       time: "0:46:03",
       url: "https://www.youtube.com/live/1cAffF7uQ1s?si=Bh7FTu8V7SqAtOj-&t=2763"
+    },
+    {
+      date: "2025-07-09",
+      time: "5:04:51",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=c1s-LOL7e1nKLHe6&t=18291"
     }
   ]
 });
@@ -500,6 +510,11 @@ window.songs.push({
       date: "2025-08-14",
       time: "1:08:55",
       url: "https://www.youtube.com/live/fTiVIdcenoQ?si=M69LWaNoInIRoEOE&t=4135"
+    },
+    {
+      date: "2025-07-09",
+      time: "2:58:11",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=3z8v-SDuvO2oiozZ&t=10691"
     }
   ]
 });
@@ -629,6 +644,11 @@ window.songs.push({
       date: "2024-04-01",
       time: "0:07:12",
       url: "https://www.youtube.com/live/H9qbNFRaRtk?si=XiBNREJqa14wetSq&t=432"
+    },
+    {
+      date: "2025-07-09",
+      time: "4:08:38",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=DZQ18cAQ62vtmPZB&t=14918"
     }
   ]
 });
@@ -681,6 +701,58 @@ window.songs.push({
       date: "2025-10-19",
       time: "1:00:18",
       url: "https://www.youtube.com/live/XupOA8OZLf4?si=MavLAIzBpzDR4xJV&t=3618"
+    }
+  ]
+});
+window.songs.push({
+  id: "songba36",
+  name: "美少女無罪♡パイレーツ",
+  kana: "びしょうじょむざいぱいれーつ",
+  alpha: "b",
+  list: [
+    {
+      date: "2025-07-09",
+      time: "2:20:42",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=P486KJb49hjBJtRo&t=8442"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha37",
+  name: "ふわふわ",
+  kana: "ふわふわ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-07-09",
+      time: "3:59:55",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=6Mb8L0hztqpUyikE&t=14395"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha38",
+  name: "灰色と青",
+  kana: "はいいろとあお",
+  alpha: "",
+  list: [
+    {
+      date: "2025-07-09",
+      time: "4:05:34",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=byPhLLdxWE8miaUM&t=14734"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha39",
+  name: "ヘビースモーク",
+  kana: "へびーすもーく",
+  alpha: "",
+  list: [
+    {
+      date: "2025-07-09",
+      time: "4:52:24",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=l8Sybf0JU-tgxoaQ&t=17544"
     }
   ]
 });

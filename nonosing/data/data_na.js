@@ -44,7 +44,12 @@ window.songs.push({
       date: "2025-12-23",
       time: "1:27:12",
       url: "https://www.youtube.com/live/k-iAfbx2qbs?si=AXhZE2AKe3PJeqH3&t=5232"
-      }
+      },
+    {
+      date: "2025-07-09",
+      time: "1:52:49",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=jLmsWnDtIgtC5Nbw&t=6769"
+    }
   ]
 });
 window.songs.push({
@@ -62,6 +67,11 @@ window.songs.push({
       date: "2024-04-01",
       time: "0:21:50",
       url: "https://www.youtube.com/live/H9qbNFRaRtk?si=1bztQk6SpQASVbTJ&t=1310"
+    },
+    {
+      date: "2025-07-09",
+      time: "2:08:15",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=th62njwWj9FEWT7V&t=7695"
     }
   ]
 });
@@ -75,6 +85,16 @@ window.songs.push({
       date: "2026-05-04",
       time: "1:02:41",
       url: "https://www.youtube.com/live/P5vq4IeOM5c?si=yM4fQnBLv-75J9Kt&t=3761"
+    },
+    {
+      date: "2025-07-09",
+      time: "3:45:35",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=xAevUCx-N8SEWZWZ&t=13535"
+    },
+    {
+      date: "2025-07-09",
+      time: "5:53:48",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=OO1OPoHQTMMR9eBU&t=21228"
     }
   ]
 });
@@ -119,6 +139,37 @@ window.songs.push({
       date: "2024-04-01",
       time: "0:00:57",
       url: "https://www.youtube.com/live/H9qbNFRaRtk?si=y2iT3gd5VAvlpoVR&t=57"
+    },
+    {
+      date: "2025-07-09",
+      time: "5:10:52",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=QpvdBoT-PalYXCjt&t=18652"
+    }
+  ]
+});
+window.songs.push({
+  id: "songna9",
+  name: "ネオンを消して",
+  kana: "ねおんをけして",
+  alpha: "",
+  list: [
+    {
+      date: "2025-07-09",
+      time: "4:57:50",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=s2miqRfPsaZZkR0q&t=17870"
+    }
+  ]
+});
+window.songs.push({
+  id: "songna10",
+  name: "にじいろ",
+  kana: "にじいろ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-07-09",
+      time: "5:04:05",
+      url: "https://www.youtube.com/live/AW24meUhkqQ?si=TwreaFTgiIra8qWA&t=18245"
     }
   ]
 });
