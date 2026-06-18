@@ -149,6 +149,11 @@ window.songs.push({
       date: "2026-01-05",
       time: "0:33:56",
       url: "https://www.youtube.com/live/k57aSX3Ugns?si=lcn2RvvBCxV3keLt&t=2036"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:44:07",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=pPnJ0OTN8f6RVChW&t=2647"
     }
   ]
 });
@@ -373,6 +378,11 @@ window.songs.push({
       date: "2025-12-19",
       time: "0:34:03",
       url: "https://www.youtube.com/live/2_ZoQ5mXWww?si=1DRbj3oLaz_JavAW&t=2043"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:54:15",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=zkTOE7y7U7rPiNsz&t=3255"
     }
   ]
 });
@@ -502,6 +512,16 @@ window.songs.push({
       date: "2026-01-05",
       time: "1:28:33",
       url: "https://www.youtube.com/live/k57aSX3Ugns?si=pdjNFesbeWU0MKHE&t=5313"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:08:22",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=UOlY4jo-HkTn6BrO&t=502"
+     },
+    {
+      date: "2025-12-01",
+      time: "1:08:17",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=Q6Tsial705GLev5u&t=4097"
     }
   ]
 });
@@ -571,6 +591,11 @@ window.songs.push({
       date: "2026-01-05",
       time: "3:53:41",
       url: "https://www.youtube.com/live/k57aSX3Ugns?si=dqZiLHSyMC7q_a1S&t=14021"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:31:52",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=aoiwqf7xkSWSGqiq&t=1912"
     }
   ]
 });
@@ -682,6 +707,11 @@ window.songs.push({
       date: "2025-09-26",
       time: "0:01:39",
       url: "https://www.youtube.com/live/aOGcpivxUB8?si=jHSr_Fnhd6ZlRi0k&t=99"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:21:02",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=3aVW8SoqD60t7JP8&t=1262"
     }
   ]
 });
@@ -783,6 +813,11 @@ window.songs.push({
       date: "2025-07-09",
       time: "4:52:24",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=l8Sybf0JU-tgxoaQ&t=17544"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:22:38",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=nnOiImnrkkIFmQJX&t=1358"
     }
   ]
 });
@@ -849,6 +884,11 @@ window.songs.push({
       date: "2025-10-17",
       time: "0:20:02",
       url: "https://www.youtube.com/live/Aq2-7M2IyV8?si=bqPPFi95gSW1Hxuz&t=1202"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:10:07",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=W6PdVFDMciW2CBwQ&t=607"
     }
   ]
 });
@@ -888,6 +928,45 @@ window.songs.push({
       date: "2025-11-19",
       time: "1:05:18",
       url: "https://www.youtube.com/live/VzqKCKXjocI?si=uYJeI_XrRDwn6uNc&t=3918"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha45",
+  name: "フラレガイガール",
+  kana: "ふられがいがーる",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:05:29",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=zbXqI8xInuJoDPxs&t=329"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha46",
+  name: "？",
+  kana: "はてな",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:35:25",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=2XhaLuUGOstts_NF&t=2125"
+    }
+  ]
+});
+window.songs.push({
+  id: "songha47",
+  name: "僕でありたい",
+  kana: "ぼくでありたい",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:56:10",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=oNUzZuwWT861SRbn&t=3370"
     }
   ]
 });

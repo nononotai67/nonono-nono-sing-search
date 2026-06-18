@@ -100,6 +100,11 @@ window.songs.push({
       date: "2025-07-09",
       time: "5:53:48",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=OO1OPoHQTMMR9eBU&t=21228"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:11:21",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=R2r_z93Q-vht8zyH&t=681"
     }
   ]
 });
@@ -201,6 +206,32 @@ window.songs.push({
       date: "2025-11-19",
       time: "1:13:11",
       url: "https://www.youtube.com/live/VzqKCKXjocI?si=sj9o_tDNoPtkk9qT&t=4391"
+    }
+  ]
+});
+window.songs.push({
+  id: "songna13",
+  name: "偽物勇者",
+  kana: "にせものゆうしゃ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:03:58",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=FK-DdEQLM4LtgV23&t=238"
+    }
+  ]
+});
+window.songs.push({
+  id: "songna14",
+  name: "泣き地蔵",
+  kana: "なきじぞう",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:33:16",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=Q_ODm63W3kWGceDT&t=1996"
     }
   ]
 });

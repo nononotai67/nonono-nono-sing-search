@@ -70,6 +70,11 @@ window.songs.push({
       date: "2026-01-05",
       time: "0:30:19",
       url: "https://www.youtube.com/live/k57aSX3Ugns?si=8sxJ27RelLUDgOCB&t=1819"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:09:34",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=wyIwAuRz5p4NEy7H&t=574"
     }
   ]
 });
@@ -153,6 +158,11 @@ window.songs.push({
       date: "2025-10-17",
       time: "0:01:11",
       url: "https://www.youtube.com/live/Aq2-7M2IyV8?si=zXlJxYQIO4XOYkn5&t=71"
+     },
+    {
+      date: "2025-12-01",
+      time: "1:00:27",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=dN3eU81WnPqyce_E&t=3627"
     }
   ]
 });

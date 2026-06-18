@@ -38,6 +38,11 @@ window.songs.push({
       date: "2025-07-09",
       time: "4:27:22",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=oRrWw9gh9rVwknA-&t=16042"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:06:56",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=wNMCw5O0WWLqpgKj&t=416"
     }
   ]
 });
@@ -390,6 +395,11 @@ window.songs.push({
       date: "2025-12-23",
       time: "1:56:06",
       url: "https://www.youtube.com/live/k-iAfbx2qbs?si=dIsR3ivJOl5k_IaV&t=6966"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:53:37",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=WN4WFb0FBL66B-Wb&t=3217"
     }
   ]
 });
@@ -492,6 +502,11 @@ window.songs.push({
       date: "2026-01-05",
       time: "3:26:36",
       url: "https://www.youtube.com/live/k57aSX3Ugns?si=34P90vfpyz_wj6u-&t=12396"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:13:47",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=UD0GneIdN-_lpbD8&t=827"
     }
   ]
 });
@@ -536,6 +551,11 @@ window.songs.push({
       date: "2025-10-17",
       time: "0:36:47",
       url: "https://www.youtube.com/live/Aq2-7M2IyV8?si=LyNc-g-jnblPrgo8&t=2207"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:18:42",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=mK4D3MLSpl5fgf2h&t=1122"
     }
   ]
 });
@@ -575,6 +595,19 @@ window.songs.push({
       date: "2025-11-19",
       time: "0:10:23",
       url: "https://www.youtube.com/live/VzqKCKXjocI?si=AbQzPwlQ8KGLmR76&t=623"
+    }
+  ]
+});
+window.songs.push({
+  id: "songka31",
+  name: "恋風",
+  kana: "こいかぜ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:15:40",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=0OhKhqA8vLneX-KT&t=940"
     }
   ]
 });

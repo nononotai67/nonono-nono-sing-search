@@ -95,7 +95,12 @@ window.songs.push({
     date: "2025-12-17",
     time: "0:21:27",
     url: "https://www.youtube.com/live/NIch6QS8NaE?si=jLHYf6_Ee5EMzSWz&t=1287"
-  }
+   },
+    {
+      date: "2025-12-01",
+      time: "0:16:41",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=l31ixPNJTSrSbvnb&t=1001"
+    }
   ]
 });
 window.songs.push({

@@ -34,3 +34,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songr3",
+  name: "Roar",
+  kana: "Roar",
+  alpha: "Roar",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:48:28",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=UVGhrIqD7quK2pcS&t=2908"
+    }
+  ]
+});

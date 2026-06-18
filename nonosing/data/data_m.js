@@ -29,3 +29,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songm3",
+  name: "My Heart Will Go On",
+  kana: "My Heart Will Go On",
+  alpha: "My Heart Will Go On",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "1:14:50",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=S0s87rsB1sXH7See&t=4490"
+    }
+  ]
+});

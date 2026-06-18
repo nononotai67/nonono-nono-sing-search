@@ -68,3 +68,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songd6",
+  name: "Dark Horse",
+  kana: "Dark Horse",
+  alpha: "Dark Horse",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:47:59",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=8TK6GvUMCLhiuI5X&t=2879"
+    }
+  ]
+});

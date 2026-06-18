@@ -21,6 +21,11 @@ window.songs.push({
       date: "2026-04-25",
       time: "0:38:19",
       url: "https://www.youtube.com/live/Yhat0riYxYY?si=-elBxvdVFYFMmpcv&t=2299"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:51:00",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=Uy2ja5kMEXQULs6H&t=3060"
     }
   ]
 });
@@ -34,6 +39,24 @@ window.songs.push({
       date: "2025-12-23",
       time: "1:26:21",
       url: "https://www.youtube.com/live/k-iAfbx2qbs?si=915LeYoU8hn-0zwS&t=5181"
+    }
+  ]
+});
+window.songs.push({
+  id: "songn4",
+  name: "number one girl",
+  kana: "number one girl",
+  alpha: "number one girl",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:49:30",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=wzdwu3er2zS9OSHK&t=2970"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:58:02",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=GZmlmtTkpo_GrNTb&t=3482"
     }
   ]
 });

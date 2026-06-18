@@ -323,7 +323,12 @@ window.songs.push({
     date: "2025-12-17",
     time: "0:29:23",
     url: "https://www.youtube.com/live/NIch6QS8NaE?si=G328n9Id7s1y6Ac5&t=1763"
-  }
+   },
+    {
+      date: "2025-12-01",
+      time: "0:05:03",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=OwSRsugiPy8CqiKS&t=303"
+    }
   ]
 });
 window.songs.push({
@@ -501,6 +506,11 @@ window.songs.push({
       date: "2026-01-05",
       time: "3:31:44",
       url: "https://www.youtube.com/live/k57aSX3Ugns?si=o7aos_cB1rLjgYCa&t=12704"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:14:24",
+      url: "https://youtube.com"
     }
   ]
 });
@@ -631,6 +641,58 @@ window.songs.push({
       date: "2025-11-19",
       time: "1:22:06",
       url: "https://www.youtube.com/live/VzqKCKXjocI?si=RyZTORtzQhtrsUiP&t=4926"
+    }
+  ]
+});
+window.songs.push({
+  id: "songa39",
+  name: "織姫とBABY",
+  kana: "おりひめとbaby",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:18:07",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=4X8eicy2153f7YkP&t=1087"
+    }
+  ]
+});
+window.songs.push({
+  id: "songa40",
+  name: "# あくあ色ぱれっと",
+  kana: "あくあいろぱれっと",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:21:40",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=iCzbyzeL_dgcXYOk&t=1300"
+    }
+  ]
+});
+window.songs.push({
+  id: "songa41",
+  name: "いーあるふぁんくらぶ",
+  kana: "いーあるふぁんくらぶ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:29:14",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=fVUZ0ARAawYRu4_W&t=1754"
+    }
+  ]
+});
+window.songs.push({
+  id: "songa42",
+  name: "生きる",
+  kana: "いきる",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:34:43",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=OoQdgIWgM0fG3_cy&t=2083"
     }
   ]
 });

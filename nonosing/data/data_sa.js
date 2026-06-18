@@ -59,6 +59,11 @@ window.songs.push({
       date: "2025-10-19",
       time: "0:25:50",
       url: "https://www.youtube.com/live/6kBy393P-zM?si=df_UcyLV5s-wOg5Q&t=1550"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:30:52",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=oPBbNWkQ0Ti6R6W6&t=1852"
     }
   ]
 });
@@ -145,6 +150,11 @@ window.songs.push({
       date: "2025-07-09",
       time: "5:30:43",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=fijXT7tCGB9nAvQX&t=19843"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:55:32",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=y7mwifN86n7_sK9H&t=3332"
     }
   ]
 });
@@ -247,6 +257,11 @@ window.songs.push({
       date: "2025-07-09",
       time: "2:13:59",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=YKAbI2NJ5bdo9vfe&t=8039"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:54:03",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=tlQxTZX0IUV-OIoM&t=3243"
     }
   ]
 });
@@ -661,6 +676,11 @@ window.songs.push({
       date: "2025-07-09",
       time: "1:16:14",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=MsO-8AO31azLy6RG&t=4574"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:40:14",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=xiSk5zSmTxy5CAtf&t=2414"
     }
   ]
 });
@@ -713,6 +733,16 @@ window.songs.push({
       date: "2025-07-09",
       time: "2:46:20",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=JYHYjsLFiKBCQh4x&t=9980"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:43:34",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=Vmnn2tFDfh3eq7Xx&t=2614"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:47:08",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=95emOBag2atExrRq&t=2828"
     }
   ]
 });
@@ -791,6 +821,45 @@ window.songs.push({
       date: "2025-11-19",
       time: "1:15:37",
       url: "https://www.youtube.com/live/VzqKCKXjocI?si=gEQdS5TOU5d7RuSb&t=4537"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa43",
+  name: "醜形恐怖症",
+  kana: "しゅうけいきょうふしょう",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:17:45",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=tTTcx2M0Dhu1BPCc&t=1065"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa44",
+  name: "宿命",
+  kana: "しゅくめい",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:38:47",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=9DnaZUmIOrMgiAtL&t=2327"
+    }
+  ]
+});
+window.songs.push({
+  id: "songsa45",
+  name: "シンデレラガール",
+  kana: "しんでれらがーる",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:42:06",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=UTp3ENh9JgAurRuw&t=2526"
     }
   ]
 });

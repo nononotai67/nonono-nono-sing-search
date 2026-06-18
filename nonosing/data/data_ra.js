@@ -93,6 +93,11 @@ window.songs.push({
       date: "2025-08-07",
       time: "1:09:05",
       url: "https://www.youtube.com/live/hCgFEkzusxs?si=2NLEo9xCAp35kZpY&t=4145"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:13:01",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=c1rR7h6mRFWyNWs5&t=781"
     }
   ]
 });
@@ -245,6 +250,19 @@ window.songs.push({
       date: "2025-11-19",
       time: "0:01:40",
       url: "https://www.youtube.com/live/VzqKCKXjocI?si=1U_1gtmAz_dF296v&t=100"
+    }
+  ]
+});
+window.songs.push({
+  id: "songra14",
+  name: "ロマンスの神様",
+  kana: "ろまんすのかみさま",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:36:05",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=sHVytNlmiW6fw6En&t=2165"
     }
   ]
 });

@@ -78,3 +78,16 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songp6",
+  name: "POP IN 2",
+  kana: "POP IN 2",
+  alpha: "POP IN 2",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:13:41",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=h59o1G0nsLoyKpKA&t=821"
+    }
+  ]
+});

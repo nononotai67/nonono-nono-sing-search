@@ -356,4 +356,43 @@ window.songs.push({
     }
   ]
 });
+window.songs.push({
+  id: "songma18",
+  name: "めらめらハートが熱くなる",
+  kana: "めらめらはーとがあつくなる",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:10:35",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=3HOuK034IsG3lYLU&t=635"
+    }
+  ]
+});
+window.songs.push({
+  id: "songma19",
+  name: "メランコリック",
+  kana: "めらんこりっく",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:23:37",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=ZKwl7RZbIzuZaeU4&t=1417"
+    }
+  ]
+});
+window.songs.push({
+  id: "songma20",
+  name: "ミックスナッツ",
+  kana: "みっくすなっつ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:24:21",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=fzVpAW4jQpnDYi3x&t=1461"
+    }
+  ]
+});
 

@@ -30,7 +30,12 @@ window.songs.push({
     {
       date: "2025-08-14",
       time: "0:03:09",
-      url: "https://youtube.com"
+      url: "https://www.youtube.com/live/fTiVIdcenoQ?si=J5D67MKPWGMPZYKZ&t=189"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:39:32",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=quprJiszJoMJZqoe&t=2372"
     }
   ]
 });

@@ -94,6 +94,11 @@ window.songs.push({
       date: "2025-07-09",
       time: "1:47:44",
       url: "https://www.youtube.com/live/AW24meUhkqQ?si=G_ih_duCCHgZOfbY&t=6464"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:16:07",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=kx0Q3W7hNlqz2ndg&t=967"
     }
   ]
 });
@@ -502,6 +507,11 @@ window.songs.push({
       date: "2026-01-05",
       time: "2:31:15",
       url: "https://www.youtube.com/live/k57aSX3Ugns?si=B4lJSS4RtVh0abo6&t=9075"
+     },
+    {
+      date: "2025-12-01",
+      time: "0:28:03",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=8CJGSDyOYfL5-A01&t=1683"
     }
   ]
 });
@@ -515,6 +525,19 @@ window.songs.push({
       date: "2026-01-05",
       time: "4:11:38",
       url: "https://www.youtube.com/live/k57aSX3Ugns?si=9CLad8UaqPogOkUe&t=15098"
+    }
+  ]
+});
+window.songs.push({
+  id: "songta28",
+  name: "トリコ",
+  kana: "とりこ",
+  alpha: "",
+  list: [
+    {
+      date: "2025-12-01",
+      time: "0:19:49",
+      url: "https://www.youtube.com/live/DYYttae8cBA?si=IxthkuRpBBU0oOoO&t=1189"
     }
   ]
 });
