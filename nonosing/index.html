@@ -603,6 +603,32 @@ div:has(> div[id^="sub-box-"]:not([style*="display"])) span[onclick*="none"] {
   display: none !important;
 }
 
+/* ⏱️ 超軽量Loading演出用スタイル */
+#loading-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #ffffff;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    transition: opacity 1.0s cubic-bezier(0.25, 1, 0.5, 1);
+  pointer-events: none;
+}
+body.dark-mode #loading-overlay {
+  background: #110914;
+}
+.loading-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #00c3ff;
+  letter-spacing: 2px;
+  animation: loadingPulse 1.2s ease-in-out infinite;
+}
+@keyframes loadingPulse {
+  0%, 100% { opacity: 0.6; text-shadow: 0 0 8px rgba(0, 195, 255, 0.3); }
+  50% { opacity: 1; text-shadow: 0 0 16px rgba(0, 195, 255, 0.8), 0 0 24px rgba(0, 195, 255, 0.4); }
+}
 
 
 
@@ -610,6 +636,11 @@ div:has(> div[id^="sub-box-"]:not([style*="display"])) span[onclick*="none"] {
 </style>
 </head>
 <body>
+<!-- ⏱️ 超軽量Loadingの幕（初期状態で表示、直後にJSで消す） -->
+<div id="loading-overlay"><div class="loading-text">Loading…</div></div>
+
+
+
 
 <!-- 🔍 隠し検索バーパネル（予測変換サジェスト対応版） -->
 <div id="searchPanel" class="search-panel" style="flex-direction: column; align-items: center; gap: 10px;">
@@ -1579,20 +1610,29 @@ function toggleDarkModeStyle() {
 </script>
 <!-- 🔄 ページを開いた瞬間に、前回保存されたダークモードの設定を自動で復元する処理 -->
 <script>
+// 新しく書き換えるコード（ダークモードの高速復元と0.3秒のLoadingフェードアウト）
 (function() {
+  // 1. 暗転バグを防ぐため即座にダークモードを適用
   const savedTheme = localStorage.getItem("themeMode");
   if (savedTheme === "dark") {
     document.body.classList.add("dark-mode");
-    // メニュー内の文字もON状態にしておく（数ミリ秒後に動かすためのタイマー処理）
     setTimeout(() => {
       const widget = document.getElementById("darkModeWidget");
-      if (widget) {
-        widget.innerText = "ON ☀️";
-        widget.style.color = "#ff3b9d";
-      }
+      if (widget) { widget.innerText = "ON ☀️"; widget.style.color = "#ff3b9d"; }
     }, 50);
   }
+  // 2. 0.3秒（300ミリ秒）後に爆速でフェードアウトを開始し、終わったら要素を非表示にする
+  window.addEventListener("DOMContentLoaded", () => {
+    const overlay = document.getElementById("loading-overlay");
+    if (overlay) {
+      setTimeout(() => {
+        overlay.style.opacity = "0";
+        setTimeout(() => { overlay.style.display = "none"; }, 300);
+      }, 300);
+    }
+  });
 })();
+
 
 // 📊 歌枠データから自動で計算してトップ3を画面に描き出すロジック
 (function() {
