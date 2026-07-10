@@ -871,9 +871,15 @@ body.dark-mode #loading-overlay {
         <div style="padding: 10px 14px; background: #fff2f9; border-radius: 10px; border-left: 4px solid #ff73c2;"><span style="font-weight: bold; font-size: 14px; color: #788699; margin-right: 10px;">3rd.</span> <a href="https://youtu.be/uUX8zLoK3TI?si=hAFrK8wbLX_C9eBO" target="_blank" style="color: #ff3b9d; font-size: 15px;">ののの音々ネ！</a></div>
         <div style="padding: 10px 14px; background: #f2f7fa; border-radius: 10px; border-left: 4px solid #00c3ff;"><span style="font-weight: bold; font-size: 14px; color: #788699; margin-right: 10px;">4th.</span> <a href="https://youtu.be/On5N72vpDFU?si=bylpPtBkXJzJxLR_" target="_blank" style="color: #0099ff; font-size: 15px;">ロクデナシテンシ</a></div>
         <div style="padding: 10px 14px; background: #fff2f9; border-radius: 10px; border-left: 4px solid #ff73c2;"><span style="font-weight: bold; font-size: 14px; color: #788699; margin-right: 10px;">5th.</span> <a href="https://youtu.be/Xb9MKKcVTK8?si=J5uKuaJmGSh4maxN" target="_blank" style="color: #ff3b9d; font-size: 15px;">HYPE SEEKER</a></div>
-      </div>
-    </div>
+        <div style="padding: 10px 14px; background: #f2f7fa; border-radius: 10px; border-left: 4px solid #00c3ff;"><span style="font-weight: bold; font-size: 14px; color: #788699; margin-right: 10px;">6th.</span> <a href="https://youtu.be/MF4Yw8IS6og?si=8rv5jtgbKxzjrPSN" target="_blank" style="color: #0099ff; font-size: 15px;">
+Princess Viral</a>
 
+
+</div>
+</div>
+
+
+    </div>
   </div>
 
   <!-- 🏆 総合ランキングトップ3の自動表示システム -->
@@ -1246,6 +1252,7 @@ function playRandomSong() {
   
   window.open(luckySong.url, '_blank');
 }
+
 // セトリ（お気に入り）の一括コピー機能
 function copyFavList() {
   const songsData = getSongsData();
@@ -1262,14 +1269,15 @@ function copyFavList() {
     });
   }
 
+  // 【修正】お気に入りが空なら、何もせず処理を終了
   if (textList.length === 0) {
-    alert("お気に入りに曲が登録されていません。");
     return;
   }
 
   const resultText = `🎧🤍 音ノ乃のの マイセトリ 🎧🤍\n\n${textList.join('\n')}`;
   
   navigator.clipboard.writeText(resultText).then(() => {
+    // 【お好みで】コピー成功時のポップアップも不要なら、この行（alert）ごと削除してください
     alert("セトリをクリップボードにコピーしました！SNSなどに貼り付けられます。");
   }).catch(() => {
     alert("コピーに失敗しました。お使いのブラウザの権限を確認してください。");
@@ -1278,8 +1286,8 @@ function copyFavList() {
 
 // 1. 「リストを空にする」を押したときに、メニューを切り替える
 function showDeleteMenu() {
+  // 【修正】お気に入りが空なら、何もせず処理を終了
   if (favorites.length === 0) {
-    alert("お気に入りに曲が登録されていません。");
     return;
   }
   document.getElementById("fav-normal-actions").style.display = "none";
@@ -1293,6 +1301,7 @@ function startSelectDelete() {
   document.getElementById("fav-select-actions").style.display = "flex";
   renderFav(); // 画面を再描画してチェックマークを出す
 }
+
 
 // 3. チェックボックスが押されるたびに「〇件を削除」の文字をリアルタイム更新する
 function updateDeleteCount() {
