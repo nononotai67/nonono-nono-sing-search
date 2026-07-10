@@ -865,7 +865,7 @@ body.dark-mode #loading-overlay {
       <div style="font-size: 13px; font-weight: bold; color: #788699; margin-bottom: 12px; border-bottom: 2px solid #fff2f9; padding-bottom: 4px;">💎 ののさんのオリジナル楽曲一覧（クリックでYouTubeへ）</div>
       
       <!-- 曲ごとのリンク集（指定されたURLにすべて書き換えました） -->
-      <div style="display: flex; flex-direction: column; gap: 8px;">
+      <div style="max-height: 315px; overflow-y: auto; display: flex; flex-direction: column; gap: 8px; padding-right: 4px; box-sizing: border-box;">
         <div style="padding: 10px 14px; background: #fff2f9; border-radius: 10px; border-left: 4px solid #ff73c2;"><span style="font-weight: bold; font-size: 14px; color: #788699; margin-right: 10px;">1st.</span> <a href="https://youtu.be/Hy4aFw7NHiw?si=kg74SaVbgC44Kyyn" target="_blank" style="color: #ff3b9d; font-size: 15px;">約束</a></div>
         <div style="padding: 10px 14px; background: #f2f7fa; border-radius: 10px; border-left: 4px solid #00c3ff;"><span style="font-weight: bold; font-size: 14px; color: #788699; margin-right: 10px;">2nd.</span> <a href="https://youtu.be/AayVsZmozVs?si=tT7cYNgZXWgoRUAB" target="_blank" style="color: #0099ff; font-size: 15px;">アルテマ</a></div>
         <div style="padding: 10px 14px; background: #fff2f9; border-radius: 10px; border-left: 4px solid #ff73c2;"><span style="font-weight: bold; font-size: 14px; color: #788699; margin-right: 10px;">3rd.</span> <a href="https://youtu.be/uUX8zLoK3TI?si=hAFrK8wbLX_C9eBO" target="_blank" style="color: #ff3b9d; font-size: 15px;">ののの音々ネ！</a></div>
@@ -876,9 +876,12 @@ Princess Viral</a>
 
 
 </div>
+
+<div style="text-align: left; margin-top: 12px; border-top: 1px solid #edf4f7; padding-top: 10px;">
+  <button class="close-btn" onclick="toggleOriginalAccordion()" style="margin: 0;">閉じる</button>
 </div>
 
-
+</div>
     </div>
   </div>
 
